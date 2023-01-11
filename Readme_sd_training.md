@@ -2543,7 +2543,9 @@ TNS -> Total Negative Slack = Sum of the negative slack paths
 WHS -> Worst Hold Slack  
 THS -> Total Hold Slack = Sum of the negative hold slack path  
 -WNS is the difference between the clock period and the delay between a pair of registers. A positive worst case setup time slack means the constraint is met and a negative slack means that the longest path has a path delay longer than the clock period of the circuit.  
-
+-TNS is the sum of the (real) negative slack in your design. If 0, then the design meets timing. If it is a positive number, then it means that there is negative slack in the design (hence your design fails). It cannot be negative.   
+-WHS is the worst hold slack in the design. Like WNS if positive, it means the path passes, if negative it fails.  
+-THS is the sum of the (real) negative hold slack. If zero, your design passes, if positive, your design fails.  
  
 1. Converting .lib into .db for tool to pick up:  
 > read_lib ; write_lib  
@@ -2567,5 +2569,7 @@ Different PVT corners WNS, WHS, TNS & THS values:
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/211890175-d4d49255-004f-4786-be3b-9ca3ff15e7c7.png">  
 
  🕵️ The best PVT -> ff, 100C, 1v95  
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/211901269-c404f3bf-954f-49f7-a350-4e6cbeea7d5d.png">
+
 
  </details> 
