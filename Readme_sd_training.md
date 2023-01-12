@@ -2570,9 +2570,10 @@ Different PVT corners WNS, WHS, TNS & THS values:
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/212004767-eabfcee3-c909-4d60-8fe3-c06b47c63184.png">
  
 
- 🕵️ The best PVT -> ff, 100C, 1v95  
+ 🕵️ The best PVT -> ff, n40C, 1v95  
  
-<img width="579" alt="image" src="https://user-images.githubusercontent.com/118953915/212008757-d810137a-bf70-4468-bd68-b9f8e8ab22b4.png">  
+Here is the QoR report:  
+<img width="568" alt="image" src="https://user-images.githubusercontent.com/118953915/212011886-ce2bafed-3004-44fb-a331-cddea0a1ac01.png">
 
 
  </details> 
