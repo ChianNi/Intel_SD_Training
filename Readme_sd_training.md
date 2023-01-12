@@ -2560,7 +2560,12 @@ set target_library { /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/r
 set link_library { * /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/rvmyth/day14/timing_libs/sky130_fd_sc_hd__ff_100C_1v65.db /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/rvmyth/day14/timing_libs/avsdpll.db /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/rvmyth/day14/timing_libs/avsddac.db }  
 
 3. After that, start read in design and link with the library
-> read_verilog ; link ; source in constraints 
+> read_verilog ; link ; source in constraints ; compile ; report_qor  
+
+Here is the constraints set in the design:  
+-> Clock period tighten to 2ns, in order to see the timing result in worst condition    
+<img width="365" alt="image" src="https://user-images.githubusercontent.com/118953915/212014578-336d7a9c-7500-43db-990d-ee334103565e.png">
+
  
 Here is the results:  
 > Command: report_qor  
