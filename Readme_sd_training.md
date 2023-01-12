@@ -2571,9 +2571,10 @@ Different PVT corners WNS, WHS, TNS & THS values:
  
 
  🕵️ The best PVT -> ff, n40C, 1v95  
+-> Not picking 100C, because it is having higher hold slack than n40C
  
 Here is the QoR report:  
-<img width="568" alt="image" src="https://user-images.githubusercontent.com/118953915/212011886-ce2bafed-3004-44fb-a331-cddea0a1ac01.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/212011886-ce2bafed-3004-44fb-a331-cddea0a1ac01.png">
 
 
  </details> 
