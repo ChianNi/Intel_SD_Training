@@ -2566,8 +2566,9 @@ Here is the results:
 > Command: report_qor  
  
 Different PVT corners WNS, WHS, TNS & THS values:    
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/211889414-dba22892-0238-4ea5-912c-b9c02128842e.png">  
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/211890175-d4d49255-004f-4786-be3b-9ca3ff15e7c7.png">  
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/212004688-02949031-0f50-4ff2-90fa-9c6f64168990.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/212004767-eabfcee3-c909-4d60-8fe3-c06b47c63184.png">
+ 
 
  🕵️ The best PVT -> ff, 100C, 1v95  
  
