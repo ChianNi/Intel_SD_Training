@@ -2572,7 +2572,8 @@ Different PVT corners WNS, WHS, TNS & THS values:
 
  🕵️ The best PVT -> ff, 100C, 1v95  
  
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/211901269-c404f3bf-954f-49f7-a350-4e6cbeea7d5d.png">
+<img width="579" alt="image" src="https://user-images.githubusercontent.com/118953915/212008757-d810137a-bf70-4468-bd68-b9f8e8ab22b4.png">  
+
 
  </details> 
 
