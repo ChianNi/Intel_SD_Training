@@ -15,6 +15,7 @@
 + **[ Day_12 : BabySoC Modelling ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_12)**
 + **[ Day_13 : Post-synthesis simulation ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_13)**
 + **[ Day_14 : Synopsys DC and timing analysis ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_14)**
++ **[ Day_15 : Inception of EDA and PDK ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_15)**
 
 #
 # Day_0 
@@ -2572,5 +2573,15 @@ Different PVT corners WNS, WHS, TNS & THS values:
  
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/211901269-c404f3bf-954f-49f7-a350-4e6cbeea7d5d.png">
 
-
  </details> 
+
+#
+# Day_15 
+**⭐Inception of EDA and PDK**
+
+<details><summary> ⚡ Lecture Session: Inception of EDA and PDK </summary>
+
+### *__Lecture Session__*
+ 
+ 
+</details> 
