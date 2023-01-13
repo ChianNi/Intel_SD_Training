@@ -2571,7 +2571,7 @@ Here is the results:
 > Command: report_qor  
  
 Different PVT corners WNS, WHS, TNS & THS values:    
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/212004688-02949031-0f50-4ff2-90fa-9c6f64168990.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/212218501-7746ba3d-d510-450e-adcc-c5e35296d8b6.png">
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/212004767-eabfcee3-c909-4d60-8fe3-c06b47c63184.png">
  
 
