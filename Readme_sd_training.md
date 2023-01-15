@@ -2652,4 +2652,34 @@ Stage | Implementation | Details |
 5 | Routing | After clock routing, then will be signal routing </br> - implement the interconnect using the available metal layers as defined by PDK (there is 6 routing layers in sky130 PDK) </br> - Metal is tracks from a routing grid </br> - Routing grid is huge, so required to divide and conquer </br> ->Global Routing: Generates routing guides </br> ->Detailed Routing: uses  routing guides to implement the actual wiring| 
 6 |  Sign off | Construct final layout and undergo verification </br> ->Physical verifications </br> Design Rule Checking (DRC) -> make sure final layout go through all the design rules </br> Layout vs Schematic (LVS) -> make sure final layout matches the gate level netlist </br> ->Timing verification </br> Static Timing Analysis (STA) -> make sure all the timing constraints are met and the circuit run at designated clock frequency
 
+3.Introduction to OpenLANE and Strive chipsets  
+Problem might faced when using Open Source EDA: Tools qualification, Tools calibration, Missing tools  
+
+What is OpenLANE?  
+- Started as an Open-Source Flow for a True Open Source Tape-Out Experiment  
+- striVe is a family of open everything SoCs (Open PDK, Open EDA, Open RTL)  
+Here is the striVe Soc Family (figure taken from training video):  
+![image](https://user-images.githubusercontent.com/118953915/212530288-5931263d-2379-4b92-966a-fa7a0df0261e.png)
+- Main goal for OpenLANE ASIC Flowl: Produce a clean GDSII with no human intervention (no-human-in-the-loop)
+   - Clean: No LVS violations, no DRC violations, No timing violations (WIP)
+- Tuned for SkyWater 130nm Open PDK, also supports XFAB180 and GF130G
+- Containerized:
+   - Functional out of the box
+   - Instructions to build and run natively will follow
+- Can be used to harden Macros and Chips (GDS)
+- Two modes of operation: Autonomous or interactive
+- Design Space Exploration: Find the best set of flow configurations (experience)
+- Large number of design examples: 43+ designs with their best configurations
+
+4.Introduction to OpenLANE detailed ASIC design flow
+
+Here is the OpenLane ASIC Flow (figure from training video) :
+![image](https://user-images.githubusercontent.com/118953915/212530519-6407b044-7d4b-4e96-8b67-9ed4c9a8ac84.png)
  
+- The flow start with design RTL and end with final layout in GDSII format 
+- OpenLANE is based on several open sources project (Eg: OpenROAD, KLayout, Yosys, QFlow, ABC, Fault, Magic VLSI Layout Tool, and etc
+- The flow start with RTL synthesis where RTL is fed into Yosys with the design constraints. Yosys will translate the RTL into logic circuits using generic components and circuit can be optimized and mapped into cells from standard cell libraries using command: abc (need to be guided during the optimization through scripts). 
+- OpenLANE comes with several abc scripts. Different design can used different strategies to achieve objective
+- Synthesis exploration utility is used to generate report that will show the design delay and area to review the synthesis strategy. From the exploration, we can pick the best strategy to continue with.
+- OpenLANE also has design exploration utility which can be used to sweep the design configurations and generate reports
+- The report will show out different design methods and the number of violations generated after generating the final layout, which can help us to pick the best configurations for the design and clean layout
