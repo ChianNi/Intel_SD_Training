@@ -2756,15 +2756,15 @@ After enter into openlane directory:
 
 Prepare design setup
 > prep -design picorv32a
-<img width="694" alt="image" src="https://user-images.githubusercontent.com/118953915/212550612-58f41d97-cfca-4760-9121-9159826b4fba.png">  
 
+<img width="694" alt="image" src="https://user-images.githubusercontent.com/118953915/212550612-58f41d97-cfca-4760-9121-9159826b4fba.png">  
+<img width="604" alt="image" src="https://user-images.githubusercontent.com/118953915/212550701-98c473bb-b34c-4037-875f-6d4a819943a5.png">
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/212550750-b5e11c2d-050f-44ea-9154-9bac6a8eeded.png">
 </details>
 
 <details><summary> Lab Session 3-> Review files after design prep and run synthesis </summary>  
 </br> 
  
-<img width="604" alt="image" src="https://user-images.githubusercontent.com/118953915/212550701-98c473bb-b34c-4037-875f-6d4a819943a5.png">
-<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/212550750-b5e11c2d-050f-44ea-9154-9bac6a8eeded.png">
 
  </details>
 
@@ -2806,3 +2806,11 @@ In dir openLANE_flow:
 Then, all reports and results will dump out under directory synthesis:  
 ![image](https://user-images.githubusercontent.com/118953915/212551126-534fa25b-02ff-4840-a86f-be1441034309.png)
 
+Task on checking flops ratio in the design:  
+<img width="618" alt="image" src="https://user-images.githubusercontent.com/118953915/212551742-9f8bd63e-3cf6-4a94-b28f-89b566cf9ad0.png">
+
+Here is some of the output/report generated:  
+<img width="706" alt="image" src="https://user-images.githubusercontent.com/118953915/212552112-3bbd501e-4637-4760-8a35-2c936c1f0d30.png">
+<img width="434" alt="image" src="https://user-images.githubusercontent.com/118953915/212552164-20d38cff-303e-422c-a44e-1b8b0a24fa31.png">
+
+</details>
