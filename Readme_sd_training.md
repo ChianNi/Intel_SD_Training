@@ -2652,8 +2652,9 @@ Stage | Implementation | Details |
 5 | Routing | After clock routing, then will be signal routing </br> - implement the interconnect using the available metal layers as defined by PDK (there is 6 routing layers in sky130 PDK) </br> - Metal is tracks from a routing grid </br> - Routing grid is huge, so required to divide and conquer </br> ->Global Routing: Generates routing guides </br> ->Detailed Routing: uses  routing guides to implement the actual wiring| 
 6 |  Sign off | Construct final layout and undergo verification </br> ->Physical verifications </br> Design Rule Checking (DRC) -> make sure final layout go through all the design rules </br> Layout vs Schematic (LVS) -> make sure final layout matches the gate level netlist </br> ->Timing verification </br> Static Timing Analysis (STA) -> make sure all the timing constraints are met and the circuit run at designated clock frequency
 
+ 
 3.Introduction to OpenLANE and Strive chipsets  
-Problem might faced when using Open Source EDA: Tools qualification, Tools calibration, Missing tools  
+- Problem might faced when using Open Source EDA: Tools qualification, Tools calibration, Missing tools  
 
 What is OpenLANE?  
 - Started as an Open-Source Flow for a True Open Source Tape-Out Experiment  
@@ -2670,16 +2671,54 @@ Here is the striVe Soc Family (figure taken from training video):
 - Two modes of operation: Autonomous or interactive
 - Design Space Exploration: Find the best set of flow configurations (experience)
 - Large number of design examples: 43+ designs with their best configurations
-
+</br>  
+ 
 4.Introduction to OpenLANE detailed ASIC design flow
 
-Here is the OpenLane ASIC Flow (figure from training video) :
+Here is the OpenLane ASIC Flow (Figure taken from training video) :
 ![image](https://user-images.githubusercontent.com/118953915/212530519-6407b044-7d4b-4e96-8b67-9ed4c9a8ac84.png)
  
 - The flow start with design RTL and end with final layout in GDSII format 
 - OpenLANE is based on several open sources project (Eg: OpenROAD, KLayout, Yosys, QFlow, ABC, Fault, Magic VLSI Layout Tool, and etc
 - The flow start with RTL synthesis where RTL is fed into Yosys with the design constraints. Yosys will translate the RTL into logic circuits using generic components and circuit can be optimized and mapped into cells from standard cell libraries using command: abc (need to be guided during the optimization through scripts). 
 - OpenLANE comes with several abc scripts. Different design can used different strategies to achieve objective
-- Synthesis exploration utility is used to generate report that will show the design delay and area to review the synthesis strategy. From the exploration, we can pick the best strategy to continue with.
+
+Synthesis exploration utility is used to generate report that will show the design delay and area to review the synthesis strategy. From the exploration, we can pick the best strategy to continue with.
 - OpenLANE also has design exploration utility which can be used to sweep the design configurations and generate reports
-- The report will show out different design methods and the number of violations generated after generating the final layout, which can help us to pick the best configurations for the design and clean layout
+- The report will show out different design methods and the number of violations generated after generating the final layout, which can help us to pick the best configurations for the design and clean layout  
+- The design exploration utility is also used for regression testing (CI)
+run OpenLANE on ~70 designs and compare the results to the best known ones
+Will generate out report showing the design metric and  the number of violations and compared to best known results
+
+After synthesis, proceed to testing before fabrication using open-source: Fault (but this step is optional)
+- Design for test (DFT): Scan Insertion, Automatic Test Pattern Generation (ATPG), Test Patterns Compaction, Fault Coverage, Fault Simulation
+- Physical Implementation (also called automated PnR (Place and Route) using open source: OpenROAD
+   - Floor/Power Planning, End Decoupling Capacitors and Tap cells insertion, Placement: Global and Detailed, Post placement optimization, Clock Tree Synthesis (CTS), Routing: Global and Detailed
+- Optimisation involved some transformation of gate level netlist during synthesis so we need LEC (logic equivalent checking) using open-source: yosys
+   - Compared netlist from optimisation and during physical implementation to gate level netlist from synthesis to make sure functionally equivalent
+   - Every time the netlist is modified, verification must be performed
+     - CTS /Post Placement optimizations modifies the netlist
+     - LEC is used to formally confirm that the function did not change after the modifying the netlist
+
+During physical implementation, there is a special step is called Antenna Diodes Insertion which required to address antenna rule violations
+- when a metal wire segment is fabricated, it can act as an antenna
+   - reactive ion etching causes charge to accumulate on the wire
+   - transistor gates can be damaged during fabrication
+- There are 2 solutions dealing with antenna rules violations:
+   - Bridging attaches a higher layer intermediately
+      - requires Router awareness
+   - Add antenna diode cell to leak away charges
+      - Antenna diodes are provided by SCL
+- In OpenLANE, there is a preventive approach
+   - add a Fake Antenna Diode next to every cell input after placement
+   - run Antenna Checker (Magic) on the routed layout
+- if the checker reports a violation on the cell input pin, replace the Fake Diode cell by a real one (automatically inserting antenna diode when needed)
+
+
+Sign OFF- STA, DRC & LVS
+RC Extraction: DEF2SPEF
+STA: OpenSTA (OpenROAD)
+Magic is used for DRC and SPICE Extraction from Layout
+Magic and Netgen are used for LVS
+Extracted SPICE by Magic vs. Verilog netlist
+
