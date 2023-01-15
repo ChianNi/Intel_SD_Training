@@ -2588,9 +2588,67 @@ Here is the QoR report:
 # Day_15 
 **⭐Inception of EDA and PDK**
 
-<details><summary> ⚡ Lecture Session: Inception of EDA and PDK </summary>
+<details><summary> ⚡ Lecture Session: Inception of EDA and PDK - Live session </summary>
+  
+- OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization.   
+- The flow performs full ASIC implementation steps from RTL all the way down to GDSII.  
+> Can refer this github for OpenLane architecture: https://github.com/efabless/openlane#openlane-architecture  
 
-### *__Lecture Session__*
+ </details> 
  
+<details><summary> ⚡ Lecture Session: How to talk to computers? </summary>
+  
+1.Introduction to QFN-48 Package, chip, pads, core, die and IPs  
+![image](https://user-images.githubusercontent.com/118953915/212528402-412820b8-986c-480a-aba5-80004759fc4e.png)
+![image](https://user-images.githubusercontent.com/118953915/212528404-95cf7877-b8ab-43d5-b9f1-3cfa4a970115.png)   
+>Can refer this previous notes for introduction on package:  https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#lecture-session
  
+2.Introduction to RISC-V
+RISC-V Instruction Set Architecture (ISA)  
+An Instruction Set Architecture (ISA) is part of the abstract model of a computer that defines how the CPU is controlled by the software  
+>Can refer this previous notes for datails on ISA:  https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_11
+
+![image](https://user-images.githubusercontent.com/118953915/212528426-c002e5cb-012d-48fa-a96f-9622f2ba541f.png)
+
+Assembly language (Hex) -> Machine language(binary) <-understood by the hardware of computer)
+>Can refer this previous notes:  https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_0
+
+3.From Software Applications to Hardware  
+ ![image](https://user-images.githubusercontent.com/118953915/212528445-e20cb461-7b5b-4a03-8554-39bc8d4cc28a.png)  
+ ![image](https://user-images.githubusercontent.com/118953915/212528450-eddeabe5-4ce3-48e4-9906-bb3970c35ff6.png)
+
 </details> 
+ 
+<details><summary> ⚡ Lecture Session: SoC designs and OpenLane </summary>  
+      
+1.Introduction to all components of open-source digital asic design
+Digital Asic Design  
+ASIC required following:  
+Element | Open Source | 
+--- | --- |
+ RTL IP’s/RTL designs (HDL) | librecores.org, opencores.org,github.com
+EDA Tools | Qflow,OpenROAD, OpenLANE |
+PDK data | google+skywater-pdk |  
+ 
+PDK (Process Design Kit)  
+– Collection of files used to model a fabrication process for the EDA tools used to design an IC (Consists: proceed design rules (DRC,LVS,PEX) , device models, digital std cell libraries, I/O libraries)  
+- Set of files used within the semiconductor industry to model a fabrication process for the design tools used to design an integrated circuit. The PDK is created by the foundry defining a certain technology variation for their processes. It is then passed to their customers to use in the design process. The customers may enhance the PDK, tailoring it to their specific design styles and markets.  
+- The designers use the PDK to design, simulate, draw and verify the design before handing the design back to the foundry to produce chips. The data in the PDK is specific to the foundry's process variation and is chosen early in the design process, influenced by the market requirements for the chip. An accurate PDK will increase the chances of first-pass successful silicon.  
+> Can refer think link for more details: https://en.wikipedia.org/wiki/Process_design_kit  
+
+ASIC Flow Objective: RTL to GDSII
+-> also known as Automated PnR and/or Physical implementation
+
+2.Simplified RTL2GDS flow
+
+
+Stage | Implementation | Details |
+--- | ---| ---|
+1 | Synthesis | Converts RTL to a circuit out of components from the standard cell library </br> -> HDL-> gate level netlist (must functionally equivalent to RTL)    </br> - “standard cells” have regular layout and each has different views/models (Electrical,HDL,SPICE, Layout(Abstract and detailed-gds))  
+2 | Floor planning + Power planning | - Floor planning </br> Chip Floor-Planning: Partition the chip between different system building blocks and place the I/O pads </br> - Macro Floor-planning: Dimensions, pin locations, rows definition </br> Power Planning </br> Provide power to all macros, standard cells, and all other cells are present in the design </br> Power and Ground nets are usually laid out on the metal layers. In this create power and ground structure for both IO pads and core logic. The IO pads power and ground buses are built into the pad itself and will be connected by abutment </br> - power pads, power straps, power ring
+3 | Placement | Place the cells on the floorplan rows, aligned with the sites (place close to reduce interconnection delay and help in routing) </br> Usually done in two steps: </br> (i)Global placement is very first stage of the placement where cells are placed inside the core area for the first time looking at the timing and congestion. Global Placement aims at generating a rough placement solution that may violate some placement constraints while maintaining a global view of the whole Netlist -might have overlap </br> Detailed placement: The position obtained from global placements are minimally altered to be legal |
+4 | CTS |Before routing signal, we need to route the clock </br> Create clock distribution network </br> To deliver the clock to all sequential elements (Eg:Flip Flop)- global disrtubution network </br> Ensure in a good shape with minimum skew & latency (zero is hard to achieve) </br> ->Usually in a Tree (H, X, ...)
+5 | Routing | After clock routing, then will be signal routing </br> - implement the interconnect using the available metal layers as defined by PDK (there is 6 routing layers in sky130 PDK) </br> - Metal is tracks from a routing grid </br> - Routing grid is huge, so required to divide and conquer </br> ->Global Routing: Generates routing guides </br> ->Detailed Routing: uses  routing guides to implement the actual wiring| 
+6 |  Sign off | Construct final layout and undergo verification </br> ->Physical verifications </br> Design Rule Checking (DRC) -> make sure final layout go through all the design rules </br> Layout vs Schematic (LVS) -> make sure final layout matches the gate level netlist </br> ->Timing verification </br> Static Timing Analysis (STA) -> make sure all the timing constraints are met and the circuit run at designated clock frequency
+
+ 
