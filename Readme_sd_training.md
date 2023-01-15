@@ -2714,11 +2714,10 @@ During physical implementation, there is a special step is called Antenna Diodes
    - run Antenna Checker (Magic) on the routed layout
 - if the checker reports a violation on the cell input pin, replace the Fake Diode cell by a real one (automatically inserting antenna diode when needed)
 
-
-Sign OFF- STA, DRC & LVS
-RC Extraction: DEF2SPEF
-STA: OpenSTA (OpenROAD)
-Magic is used for DRC and SPICE Extraction from Layout
-Magic and Netgen are used for LVS
-Extracted SPICE by Magic vs. Verilog netlist
+Sign OFF -STA, DRC & LVS  
+- RC Extraction (from routed layout): DEF2SPEF  
+- STA: OpenSTA (OpenROAD) –timing report  
+- Physical verification DRC & LVS     
+   - Magic is used for DRC and SPICE Extraction from Layout  
+   - Magic and Netgen are used for LVS (Extracted SPICE by Magic vs Verilog netlist)  
 
