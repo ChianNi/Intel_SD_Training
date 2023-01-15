@@ -2506,6 +2506,10 @@ Save netlist:
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/211854971-4e000827-5967-401b-a3f4-4ef207b63af0.png">
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/211857045-c4ea55f2-7ed0-4767-ac9e-804aafbf30f2.png">
 
+Generate waveform:  
+> vcs gls.v sky130_fd_sc_hd.v primitives.v  
+-Not able to generate due to dc_shell not able to recognize variable "primitive" and table in primitive.v  
+
 </details>
 
  
@@ -2720,4 +2724,85 @@ Sign OFF -STA, DRC & LVS
 - Physical verification DRC & LVS     
    - Magic is used for DRC and SPICE Extraction from Layout  
    - Magic and Netgen are used for LVS (Extracted SPICE by Magic vs Verilog netlist)  
+
+</details>
+
+<details><summary> Lab Session 1-> Get familiar to open-source EDA tools: OpenLANE Directory structure in detail </summary>  
+</br>  
+ 
+OpenLANE is not a tool, it is a flow which is comprised a lot of open source EDA tool (yosys,…)  
+Aim of OpenLANE: To complete the RTL to GDSII flow  
+
+> ls -ltr: View Reverse Output Order by Date  
+> ls -t:	Sort by time & date  
+> ls –-help: Can open up manual for explanation on each switches  
+ 
+<img width="560" alt="image" src="https://user-images.githubusercontent.com/118953915/212550492-bcca2e5a-dd37-4fa5-9603-8c76e12a0f84.png">  
+<img width="641" alt="image" src="https://user-images.githubusercontent.com/118953915/212550506-3e1e97d1-4780-414a-bf39-991c0e78326a.png">
+
+</details>
+
+<details><summary> Lab Session 2-> Design preparation step </summary>  
+</br>  
+ 
+> Steps to run OpenLANE can refer this github: https://github.com/nickson-jose/openlane_build_script  
+ 
+After enter into openlane directory:   
+> make mount   
+> ./flow.tcl -interactive  
+> package require openlane 0.9  
+
+<img width="467" alt="image" src="https://user-images.githubusercontent.com/118953915/212550529-aecaab7d-b4eb-47bc-9d17-0919f3a991ed.png">
+
+Prepare design setup
+> prep -design picorv32a
+<img width="694" alt="image" src="https://user-images.githubusercontent.com/118953915/212550612-58f41d97-cfca-4760-9121-9159826b4fba.png">  
+
+</details>
+
+<details><summary> Lab Session 3-> Review files after design prep and run synthesis </summary>  
+</br> 
+ 
+<img width="604" alt="image" src="https://user-images.githubusercontent.com/118953915/212550701-98c473bb-b34c-4037-875f-6d4a819943a5.png">
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/212550750-b5e11c2d-050f-44ea-9154-9bac6a8eeded.png">
+
+ </details>
+
+<details><summary> Lab Session 4-> OpenLANE Project Git Link Description </summary>  
+</br> 
+
+> Can refer this github for more details about OpenLANE-> https://github.com/efabless/OpenLane   
+> Can refer this github for more details on OpenLane Design Stages: https://github.com/efabless/OpenLane#openlane-design-stages  
+> Can refer this github for comamnd to be used in interactive mode on each stages: https://github.com/efabless/OpenLane/blob/master/docs/source/advanced_readme.md   
+
+Must run all this command in sequence:    
+> run_synthesis  
+run_floorplan  
+run_placement  
+run_cts  
+run_routing  
+write_powered_verilog followed by set_netlist $::env(routing_logs)/$::env(DESIGN_NAME).powered.v  
+run_magic  
+run_magic_spice_export  
+run_magic_drc  
+run_lvs  
+run_antenna_check  
+ 
+> Can refer this 2 youtube links for more information:  
+> Search for: fossi dial up  
+> https://www.youtube.com/playlist?list=PLUg3wIOWD8yoZCg9XpFSgEgljx6MSdm9L  
+![image](https://user-images.githubusercontent.com/118953915/212550990-ccb56296-e5c5-404b-bd0a-2a519fb5d8e0.png)  
+
+</details>
+
+<details><summary> Lab Session 5-> Steps to characterize synthesis results </summary>  
+</br> 
+ 
+In dir openLANE_flow:  
+> run_synthesis  
+ 
+<img width="251" alt="image" src="https://user-images.githubusercontent.com/118953915/212551418-8ec3d957-d2c5-430d-87fb-a95536371c03.png">
+
+Then, all reports and results will dump out under directory synthesis:  
+![image](https://user-images.githubusercontent.com/118953915/212551126-534fa25b-02ff-4840-a86f-be1441034309.png)
 
