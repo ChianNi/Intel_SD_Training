@@ -2641,6 +2641,7 @@ ASIC Flow Objective: RTL to GDSII
 
 2.Simplified RTL2GDS flow
 
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/118953915/212530024-9e78d4ce-4ddb-4a6d-9b51-1aedc721f0cb.png">
 
 Stage | Implementation | Details |
 --- | ---| ---|
