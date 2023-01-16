@@ -16,6 +16,8 @@
 + **[ Day_13 : Post-synthesis simulation ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_13)**
 + **[ Day_14 : Synopsys DC and timing analysis ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_14)**
 + **[ Day_15 : Inception of EDA and PDK ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_15)**
++ **[ Day_16 : Understand importance of good floorplan vs bad floor plan and introduction to library cells ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_16)**
+
 
 #
 # Day_0 
@@ -2766,6 +2768,8 @@ Prepare design setup
 </br> 
  
 <img width="437" alt="image" src="https://user-images.githubusercontent.com/118953915/212552251-d0120726-3dae-4de5-a808-c25f89db4e8f.png">  
+   
+
 <img width="524" alt="image" src="https://user-images.githubusercontent.com/118953915/212552266-d099067e-01fd-4eb3-a336-c771c93646ee.png">  
 <img width="530" alt="image" src="https://user-images.githubusercontent.com/118953915/212552279-121d71e4-14c1-4797-8d63-f78614bc0a9a.png">  
 
@@ -2817,3 +2821,12 @@ Here is some of the output/report generated:
 <img width="434" alt="image" src="https://user-images.githubusercontent.com/118953915/212552164-20d38cff-303e-422c-a44e-1b8b0a24fa31.png">
 
 </details>
+
+ 
+#
+# Day_16 
+**⭐ Good Floorplan vs Bad Floorplan**
+
+<details><summary> ⚡ Lecture Session: Good Floorplan vs Bad Floorplan - Live session </summary>
+
+### *__Lecture Session__*
