@@ -2764,6 +2764,7 @@ Prepare design setup
 
 <details><summary> Lab Session 3-> Review files after design prep and run synthesis </summary>  
 </br> 
+ 
 <img width="437" alt="image" src="https://user-images.githubusercontent.com/118953915/212552251-d0120726-3dae-4de5-a808-c25f89db4e8f.png">  
 <img width="524" alt="image" src="https://user-images.githubusercontent.com/118953915/212552266-d099067e-01fd-4eb3-a336-c771c93646ee.png">  
 <img width="530" alt="image" src="https://user-images.githubusercontent.com/118953915/212552279-121d71e4-14c1-4797-8d63-f78614bc0a9a.png">  
