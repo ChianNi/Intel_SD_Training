@@ -16,7 +16,7 @@
 + **[ Day_13 : Post-synthesis simulation ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_13)**
 + **[ Day_14 : Synopsys DC and timing analysis ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_14)**
 + **[ Day_15 : Inception of EDA and PDK ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_15)**
-+ **[ Day_16 : Understand importance of good floorplan vs bad floor plan and introduction to library cells ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_16)**
++ **[ Day_16 : Good Floorplan vs Bad Floorplan ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_16)**
 
 
 #
