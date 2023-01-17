@@ -2514,11 +2514,13 @@ Generate waveform:
 <img width="653" alt="image" src="https://user-images.githubusercontent.com/118953915/212827125-13c2e0fe-d125-4cb4-a157-61099a5f6830.png">
 
 Will proceed using iverilog to generate waveform  
+<img width="547" alt="image" src="https://user-images.githubusercontent.com/118953915/212933363-4337f66e-f0fa-4b01-964a-f6c5ed37da59.png">
 
- 
+ Here is the waveform for both pre_synthesis and post_synthesis:  
+<img width="541" alt="image" src="https://user-images.githubusercontent.com/118953915/212933561-8d0d5abb-f75c-48a9-9e18-4dccc5bb742b.png">
+
 </details>
 
- 
 #
 # Day_14 
 **⭐Synopsys DC and timing analysis**
