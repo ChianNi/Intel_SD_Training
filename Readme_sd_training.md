@@ -2867,8 +2867,8 @@ There is 2 macros are placing far apart
 
  </br>
  
-<img width="742" alt="image" src="https://user-images.githubusercontent.com/118953915/212959807-a075419f-e6f8-4705-8b2f-607438e4fbc0.png">
-  
+
+![image](https://user-images.githubusercontent.com/118953915/212960738-6a62611c-41f2-436e-aa66-3e64ce2e4622.png)  
 ![image](https://user-images.githubusercontent.com/118953915/212958010-28e2b778-83a3-4b2b-834f-09741ee683bd.png)  
   
 Another example with rectangle core:  
