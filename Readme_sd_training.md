@@ -2826,6 +2826,8 @@ Here is some of the output/report generated:
 <img width="706" alt="image" src="https://user-images.githubusercontent.com/118953915/212552112-3bbd501e-4637-4760-8a35-2c936c1f0d30.png">
 <img width="434" alt="image" src="https://user-images.githubusercontent.com/118953915/212552164-20d38cff-303e-422c-a44e-1b8b0a24fa31.png">
 
+Flip flops is biggest std cell and timing is calculated among flops  
+ 
 </details>
 
  
@@ -2836,3 +2838,102 @@ Here is some of the output/report generated:
 <details><summary> ⚡ Lecture Session: Good Floorplan vs Bad Floorplan - Live session </summary>
 
 ### *__Lecture Session__*
+
+</br>
+
+Floorplan is the process of deriving the die size, allocating space for soft blocks, planning power, and macro placement etc. We specify the floorplan by Size or Die/IO/Core Coordinates. We derive core and module sizes based on the standard cell utilization.  
+
+Floorplan Stage:  
+(i) Find height and width of core and die    
+(ii) Define location of Preplaced Cell   
+-> Sequence: Macro & IP cell first, then tap/decap/boundary (physical cell)  
+-> standard cell not being placed floorplan stage  
+ 
+Macro cell is power hungry so required decap cell  
+- Decap cell is basically a capacitor cell which is used temporarily in the design between power and ground rails to counter the functional failure. We cant have functional failure in our design. So to avoid any kind of functional failure due to Dynamic IR, we use Decap cells in our design.   
+- The end cap cells in VLSI are positioned in the design to guard against manufacturing damage to a regular cell's gate that is located close to the border. They aid in avoiding the boundary's base layer DRC (Nwell and Implant layer). The other block is properly aligned with boundary cells.  
+- After that, proceed built power and ground network (grid like structure)  
+
+Example of bad floorplan:  
+There is 2 macros are placing far apart  
+-> The longer the distance, the more need to route, which means increase in area  
+-> Degrade in timing   
+
+In OpenLANE, we can decide whether  we want placed standard cell by prioritize timing or congestion by add in switch during type in command for the tool to read in
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Chip Floor planning considerations - Utilization factor and aspect ratio </summary>  
+
+ </br>
+ 
+![image](https://user-images.githubusercontent.com/118953915/212957950-15f2df79-32f7-48b6-afe8-333b0e18a337.png)  
+ ![image](https://user-images.githubusercontent.com/118953915/212958010-28e2b778-83a3-4b2b-834f-09741ee683bd.png)  
+  
+Another example with rectangle core:  
+![image](https://user-images.githubusercontent.com/118953915/212958064-aeca75ab-007c-42cc-a744-b2294a523b4c.png)  
+ 
+Another example with bigger core: 
+![image](https://user-images.githubusercontent.com/118953915/212958116-0804b611-85e8-4e7b-b402-e59c60ebbc1f.png)
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Concept of pre-placed cells </summary> 
+ 
+</br>  
+
+![image](https://user-images.githubusercontent.com/118953915/212958265-d0747d4f-78e0-44d0-a050-763324f861ca.png)  
+![image](https://user-images.githubusercontent.com/118953915/212958294-2987b9fc-c3bf-45bb-bb83-394041f48e7e.png)  
+![image](https://user-images.githubusercontent.com/118953915/212958321-37f8f1fc-00e4-42ac-ab9f-d0f73793e3be.png)
+ 
+All above are Macro/IP cells which are complex logic and reused multiple times (implement once but will reuse multiple times in the circuit)   
+ 
+</details>
+
+<details><summary> ⚡ Lecture Session: De-coupling capacitors </summary> 
+ 
+</br>   
+ 
+- A decoupling capacitor is a capacitor used to decouple (Eg: prevent electrical energy from transferring to) one part of a circuit from another  
+- Noise caused by other circuit elements is shunted through the capacitor, reducing its effect on the rest of the circuit  
+- For higher frequencies, an alternative name is bypass capacitor as it is used to bypass the power supply or other high-impedance component of a circuit  
+ ![image](https://user-images.githubusercontent.com/118953915/212958577-bf083f21-5ed7-4b85-a993-339fa4fa3cbc.png)
+![image](https://user-images.githubusercontent.com/118953915/212958602-c30f3606-437b-4bea-9b0a-26f261c219cd.png)
+![image](https://user-images.githubusercontent.com/118953915/212958645-c4d25ea4-a48e-4bf0-8d83-e91a81a875c1.png)
+![image](https://user-images.githubusercontent.com/118953915/212958656-5100bc12-b9d3-4168-9b86-248fe8d313ba.png)
+![image](https://user-images.githubusercontent.com/118953915/212958685-2b434fba-b007-4f1c-8910-cd6f42ae44c6.png)
+![image](https://user-images.githubusercontent.com/118953915/212958714-f2a534e3-6669-43b8-8169-dd2da8cf9fc1.png)
+
+ </details>
+
+<details><summary> ⚡ Lecture Session: Power Planning </summary>
+
+ </br>  
+
+![image](https://user-images.githubusercontent.com/118953915/212958828-85eb9d45-8489-4759-834b-242cdd02dccb.png)
+![image](https://user-images.githubusercontent.com/118953915/212958882-cb57af17-832e-4231-b46e-3b95d56d3ba0.png)
+![image](https://user-images.githubusercontent.com/118953915/212958892-bed50cbb-484a-42c7-a2df-03d17603821e.png)
+![image](https://user-images.githubusercontent.com/118953915/212958909-76b88647-b3e6-4620-9ae5-4dca8cff588e.png)
+ ![image](https://user-images.githubusercontent.com/118953915/212958926-1d61b5c6-e2f2-4d44-aa1b-b8065b73b333.png)
+![image](https://user-images.githubusercontent.com/118953915/212958949-4290772b-a4c0-49f2-a9af-2e1b64dec295.png)  
+
+ </details>
+
+<details><summary> ⚡ Lecture Session: Pin placement and logical cell placement blockage </summary>
+ 
+</br>   
+ 
+ ![image](https://user-images.githubusercontent.com/118953915/212959068-c773c041-5785-43ea-b89c-4b3ede9d76f4.png)
+![image](https://user-images.githubusercontent.com/118953915/212959083-5ac63bf8-cf19-4ceb-b93b-1262a5ff2e20.png)
+![image](https://user-images.githubusercontent.com/118953915/212959104-439ec701-23a2-475f-a170-94e141b5470f.png)
+
+</details> 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<details><summary> ⚡ Lecture Session: Chip Floor planning considerations - Utilization factor and aspect ratio </summary>
+ </details>
