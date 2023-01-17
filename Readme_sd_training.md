@@ -2512,6 +2512,9 @@ Generate waveform:
 > vcs gls.v sky130_fd_sc_hd.v primitives.v  
 -Not able to generate due to dc_shell not able to recognize variable "primitive" and table in primitive.v  
 
+Will proceed using iverilog to generate waveform  
+
+ 
 </details>
 
  
