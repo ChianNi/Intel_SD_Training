@@ -2929,12 +2929,173 @@ All above are Macro/IP cells which are complex logic and reused multiple times (
 ![image](https://user-images.githubusercontent.com/118953915/212959104-439ec701-23a2-475f-a170-94e141b5470f.png)
 
 </details> 
- 
- 
- 
- 
- 
- 
 
-<details><summary> ⚡ Lecture Session: Chip Floor planning considerations - Utilization factor and aspect ratio </summary>
+<details><summary> Lab Session -> Steps to run floorplan using OpenLANE </summary>  
+ 
+</br> 
+ 
+ After done synthesis, now proceed to floorplan  
+ ![image](https://user-images.githubusercontent.com/118953915/212989879-42c60ac2-c057-40e7-87e1-1f7dd54a9cd3.png)
+
+>run_floorplan  
+
+ ![image](https://user-images.githubusercontent.com/118953915/212989972-80f123ea-421e-4bc4-9c19-d7942687c0db.png)
+![image](https://user-images.githubusercontent.com/118953915/212990033-a2f11ca3-6f15-4857-8fe8-3363029743f4.png)
+![image](https://user-images.githubusercontent.com/118953915/212990084-5ab12ac3-ba16-4f40-897f-7fd21529cc90.png)
+
+</details> 
+
+<details><summary> Lab Session -> Review floorplan files and steps to view floorplan </summary>  
+ 
+</br> 
+ 
+![image](https://user-images.githubusercontent.com/118953915/212990385-3cb37326-fc79-440d-a001-83056ad806f2.png)  
+![image](https://user-images.githubusercontent.com/118953915/212990431-7f77b665-9669-48a1-9c41-3d2427e4119d.png)  
+
+</details> 
+
+<details><summary> Lab Session -> Review floorplan layout in Magic </summary>  
+ 
+</br> 
+
+![image](https://user-images.githubusercontent.com/118953915/212990692-aaeaa9cf-d384-4d42-92ef-edf9a7acabff.png)
+
+![image](https://user-images.githubusercontent.com/118953915/212990764-13626344-0f93-4ab7-ba96-891aeeb6d03b.png)
+
  </details>
+
+<details><summary> ⚡ Lecture Session: Library Binding and Placement: Netlist binding and initial place design </summary>
+
+</br>
+
+For placement and routing:    
+![image](https://user-images.githubusercontent.com/118953915/212991079-5b920fe2-f680-472b-b174-b6c8b9fb8b2e.png)
+![image](https://user-images.githubusercontent.com/118953915/212991114-6a80f1f8-a604-46ff-b1f0-01cd871b6bfc.png)
+![image](https://user-images.githubusercontent.com/118953915/212991137-fc932d4a-3d97-4b64-8439-6eb7749e3e78.png)
+![image](https://user-images.githubusercontent.com/118953915/212991153-fcf3135b-a018-4244-bcc3-9a92b419adc3.png)
+![image](https://user-images.githubusercontent.com/118953915/212991167-9116f477-fc44-4d3d-85aa-4267bcb9a0b6.png)
+![image](https://user-images.githubusercontent.com/118953915/212991186-f64d597a-f7b5-4bbb-8dc0-2af92e87ddf3.png)
+
+ </details>
+
+<details><summary> ⚡ Lecture Session: Optimize placement using estimated wire-length and capacitance </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212991262-55075371-53ef-4b81-82da-2fe0d0ec486c.png)
+
+ </details>
+
+<details><summary> ⚡ Lecture Session: Final placement optimization </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212991551-9f322229-d9c4-4d63-b28c-012140773a17.png)
+![image](https://user-images.githubusercontent.com/118953915/212991567-0581e605-7ce6-418c-bcff-685604a7eea9.png)
+
+</details> 
+
+<details><summary> Lab Session -> Congestion aware placement using RePlAce </summary>  
+ 
+</br> 
+
+- Global placement assigns general locations to movable objects, while detailed placement refines object locations to legal cell sites and enforces nonoverlapping constraints. The detailed locations enable more accurate estimates of circuit delay for the purpose of timing optimization  
+- Legalization is an essential step where the overlaps between gates/macros must be removed  
+
+> run_placement -> global placement objective is to reduce wire length , in OpenLANE is applying concept HPWL – half parameter wire length  
+
+![image](https://user-images.githubusercontent.com/118953915/212992037-ec8d7b99-677b-4aea-98c3-8ebe65501978.png)
+![image](https://user-images.githubusercontent.com/118953915/212992084-fdc03a23-9889-4875-aaee-1a2d3cbb082c.png)
+
+ </details>
+
+<details><summary> ⚡ Lecture Session: Need for libraries and characterization </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212992317-392efe03-ad12-4224-8c13-43aaa1706891.png)
+
+Clock tree synthesis (CTS)  
+- Clock Tree Synthesis (CTS) is the technique of balancing the clock delay to all clock inputs by inserting buffers/inverters along the clock routes of an ASIC design. As a result, CTS is used to balance the skew and reduce insertion latency.  
+- Received clock at exactly the same time for each of the flip flops. Clock signal reaching all the clock endpoints.   
+
+Routing  
+- Making physical connections between signal pins using metal layers are called Routing  
+- Routing is the stage after CTS and optimization where exact paths for the interconnection of standard cells and macros and I/O pins are determined.  
+- Need taking care of each cell characteristic  
+
+Static timing analysis (STA)   
+- Is a method of validating the timing performance of a design by checking all possible paths for timing violations  
+![image](https://user-images.githubusercontent.com/118953915/212992490-4cd48d43-6187-4df8-9a38-539ffd79e6f1.png)
+
+ </details>
+
+<details><summary> ⚡ Lecture Session: Cell design and characterization flows : Inputs for cell design flow </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212992600-ef97d229-d83a-4337-a390-1c06f40c8ddb.png)
+![image](https://user-images.githubusercontent.com/118953915/212992645-c50beb3c-7776-4d65-911a-3994ddf13df7.png)
+![image](https://user-images.githubusercontent.com/118953915/212992658-2e4238fa-3242-4952-a7b8-56601d7d0131.png)
+![image](https://user-images.githubusercontent.com/118953915/212992674-7838e57a-49d1-4b7c-b133-001a18004d77.png)
+
+ </details>
+
+<details><summary> ⚡ Lecture Session: Circuit design step </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212992933-be4bef30-e2df-4c85-8507-db7c987efff2.png)
+![image](https://user-images.githubusercontent.com/118953915/212992946-3b23e876-e1c9-4fbb-bc0d-ca168c491935.png)
+![image](https://user-images.githubusercontent.com/118953915/212992960-57a880ae-92e8-4f20-aed5-025d7f757612.png)
+![image](https://user-images.githubusercontent.com/118953915/212992979-ce65b0b6-7459-4340-ba6d-7e0484a09560.png)
+![image](https://user-images.githubusercontent.com/118953915/212993000-25ae3127-e7af-4eb9-8f11-c9061d76a0c9.png)
+![image](https://user-images.githubusercontent.com/118953915/212993021-4de88e55-5979-42fb-b9f8-a0e5e220b1fa.png)
+
+ </details>
+
+<details><summary> ⚡ Lecture Session: Layout design step </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212993115-aba4d584-4938-4f51-b03c-1b2b3d9e1b1c.png)
+![image](https://user-images.githubusercontent.com/118953915/212993130-a3d36eb8-31a4-4c70-83fe-985d485ac2f6.png)
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Typical characterization flow </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212993204-4d540344-0b35-4f5c-8669-766014b293ef.png)
+![image](https://user-images.githubusercontent.com/118953915/212993215-b46639ad-cbe0-4657-892e-8e046f997dc6.png)
+
+</details>
+
+<details><summary> ⚡ Lecture Session: General timing characterization parameters: Timing threshold definitions </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212993288-4422f50d-6516-41a0-8f7a-8bb5cb435f71.png)
+![image](https://user-images.githubusercontent.com/118953915/212993309-a9d83916-5460-4276-ae91-88a7c4d42fd4.png)
+![image](https://user-images.githubusercontent.com/118953915/212993323-5c3e35ba-756c-471e-92db-cbf74324b7e0.png)
+![image](https://user-images.githubusercontent.com/118953915/212993346-57bdea07-30a1-410c-b667-a56dd8d3b8ab.png)
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Propagation delay and transition time </summary>
+
+</br>
+
+![image](https://user-images.githubusercontent.com/118953915/212993400-58dd8a6b-b23d-48c4-aba2-b78abae86300.png)
+![image](https://user-images.githubusercontent.com/118953915/212993416-7199784b-f3e5-49b6-9285-f78fe4a852f2.png)
+![image](https://user-images.githubusercontent.com/118953915/212993432-82668836-9420-4539-90f8-7abca231c1cc.png)
+![image](https://user-images.githubusercontent.com/118953915/212993450-47651637-2bb3-477c-9cdd-7a713ba8b8e2.png)
+![image](https://user-images.githubusercontent.com/118953915/212993470-12dcf77f-09b8-49c0-adab-d123b634b934.png)
+![image](https://user-images.githubusercontent.com/118953915/212993482-864df02a-15ac-46fe-bee4-e150d551559e.png)
+
+</details>
+
+
+
+
