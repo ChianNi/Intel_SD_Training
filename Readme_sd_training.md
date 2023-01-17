@@ -2841,25 +2841,25 @@ Flip flops is biggest std cell and timing is calculated among flops
 
 </br>
 
-Floorplan is the process of deriving the die size, allocating space for soft blocks, planning power, and macro placement etc. We specify the floorplan by Size or Die/IO/Core Coordinates. We derive core and module sizes based on the standard cell utilization.  
+1.Floorplan is the process of deriving the die size, allocating space for soft blocks, planning power, and macro placement etc. We specify the floorplan by Size or Die/IO/Core Coordinates. We derive core and module sizes based on the standard cell utilization.  
 
-Floorplan Stage:  
+2.Floorplan Stage:  
 (i) Find height and width of core and die    
 (ii) Define location of Preplaced Cell   
--> Sequence: Macro & IP cell first, then tap/decap/boundary (physical cell)  
--> standard cell not being placed floorplan stage  
+     - Sequence: Macro & IP cell first, then tap/decap/boundary (physical cell)  
+     - standard cell not being placed floorplan stage  
  
-Macro cell is power hungry so required decap cell  
+3.Macro cell is power hungry so required decap cell  
 - Decap cell is basically a capacitor cell which is used temporarily in the design between power and ground rails to counter the functional failure. We cant have functional failure in our design. So to avoid any kind of functional failure due to Dynamic IR, we use Decap cells in our design.   
 - The end cap cells in VLSI are positioned in the design to guard against manufacturing damage to a regular cell's gate that is located close to the border. They aid in avoiding the boundary's base layer DRC (Nwell and Implant layer). The other block is properly aligned with boundary cells.  
 - After that, proceed built power and ground network (grid like structure)  
 
-Example of bad floorplan:  
+4.Example of bad floorplan:  
 There is 2 macros are placing far apart  
 -> The longer the distance, the more need to route, which means increase in area  
 -> Degrade in timing   
 
-In OpenLANE, we can decide whether  we want placed standard cell by prioritize timing or congestion by add in switch during type in command for the tool to read in
+5.In OpenLANE, we can decide whether  we want placed standard cell by prioritize timing or congestion by add in switch during type in command for the tool to read in
 
 </details>
 
@@ -2867,8 +2867,9 @@ In OpenLANE, we can decide whether  we want placed standard cell by prioritize t
 
  </br>
  
-![image](https://user-images.githubusercontent.com/118953915/212957950-15f2df79-32f7-48b6-afe8-333b0e18a337.png)  
- ![image](https://user-images.githubusercontent.com/118953915/212958010-28e2b778-83a3-4b2b-834f-09741ee683bd.png)  
+<img width="742" alt="image" src="https://user-images.githubusercontent.com/118953915/212959807-a075419f-e6f8-4705-8b2f-607438e4fbc0.png">
+  
+![image](https://user-images.githubusercontent.com/118953915/212958010-28e2b778-83a3-4b2b-834f-09741ee683bd.png)  
   
 Another example with rectangle core:  
 ![image](https://user-images.githubusercontent.com/118953915/212958064-aeca75ab-007c-42cc-a744-b2294a523b4c.png)  
