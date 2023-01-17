@@ -2510,7 +2510,8 @@ Save netlist:
 
 Generate waveform:  
 > vcs gls.v sky130_fd_sc_hd.v primitives.v  
--Not able to generate due to dc_shell not able to recognize variable "primitive" and table in primitive.v  
+-Not able to generate due to dc_shell not able to recognize variable "primitive" and table in primitive.v   
+<img width="653" alt="image" src="https://user-images.githubusercontent.com/118953915/212827125-13c2e0fe-d125-4cb4-a157-61099a5f6830.png">
 
 Will proceed using iverilog to generate waveform  
 
