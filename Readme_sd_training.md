@@ -16,8 +16,8 @@
 + **[ Day_13 : Post-synthesis simulation ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_13)**
 + **[ Day_14 : Synopsys DC and timing analysis ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_14)**
 + **[ Day_15 : Inception of EDA and PDK ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_15)**
-+ **[ Day_16 : Good Floorplan vs Bad Floorplan ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_16)**
-
++ **[ Day_16 : Understand importance of good floorplan vs bad floor plan and introduction to library cells ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_16)**
++ **[ Day_17 : Design and characterise one library cell using Layout tool and spice simulator ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_17)**
 
 #
 # Day_0 
@@ -2833,7 +2833,7 @@ Flip flops is biggest std cell and timing is calculated among flops
  
 #
 # Day_16 
-**⭐ Good Floorplan vs Bad Floorplan**
+**⭐ Understand importance of good floorplan vs bad floor plan and introduction to library cells**
 
 <details><summary> ⚡ Lecture Session: Good Floorplan vs Bad Floorplan - Live session </summary>
 
@@ -3095,6 +3095,19 @@ Static timing analysis (STA)
 
 </details>
 
+#
+# Day_17 
+**⭐Design and characterise one library cell using Layout tool and spice simulator**
 
+<details><summary> ⚡ Lecture Session: Std Cell Characterise Experiment - Live session </summary>
 
+> Can refer this github link for more details: https://github.com/nickson-jose/vsdstdcelldesign  
+> -> Overview of Physical Design flow: https://github.com/nickson-jose/vsdstdcelldesign#overview-of-physical-design-flow  
+> --> Magic file: https://github.com/nickson-jose/vsdstdcelldesign/blob/master/sky130_inv.mag  
+> --> .lib file: https://github.com/nickson-jose/vsdstdcelldesign/tree/master/libs
 
+In training will cover on design & charaterize std cell and checking PPA, then tabulate into .lib 
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Design library cell using Magic Layout and ngspice characterization: Labs for CMOS inverter ngspice simulations: IO placer revision </summary>
