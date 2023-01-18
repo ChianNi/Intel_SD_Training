@@ -2959,8 +2959,7 @@ All above are Macro/IP cells which are complex logic and reused multiple times (
 </br> 
 
 ![image](https://user-images.githubusercontent.com/118953915/212990692-aaeaa9cf-d384-4d42-92ef-edf9a7acabff.png)
-
-![image](https://user-images.githubusercontent.com/118953915/212990764-13626344-0f93-4ab7-ba96-891aeeb6d03b.png)
+![image](https://user-images.githubusercontent.com/118953915/213062609-b2d7d99e-df3b-4542-a77f-95d0b38d8f4c.png)
 
  </details>
 
