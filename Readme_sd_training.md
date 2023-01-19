@@ -3147,6 +3147,17 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
  </br>
 
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213381886-3e154d1e-bde9-417b-b273-481393f0ef7c.png">
+<img width="449" alt="image" src="https://user-images.githubusercontent.com/118953915/213381910-0f12ab06-95a5-4223-b48e-659f2d15e516.png">
+<img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/213381950-afda3773-5d64-463d-9af8-12d88413e32f.png">
+
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Static and dynamic simulation of CMOS inverter</summary>
+
+ </br>
+
 <img width="638" alt="image" src="https://user-images.githubusercontent.com/118953915/213378822-fd624756-2acb-4210-b2d4-9da23f8271c0.png">
 <img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/213378855-c25f10f4-0c94-489c-8b27-9991a51e568e.png">
 <img width="450" alt="image" src="https://user-images.githubusercontent.com/118953915/213378883-03e4af6d-63c5-4c83-8bd1-8e27ccb1fe1b.png">
@@ -3156,18 +3167,42 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
 </details>
 
-<details><summary> ⚡ Lecture Session: Static and dynamic simulation of CMOS inverter</summary>
-
- </br>
-
-</details>
-
-<details><summary> Lab Session -> Lab steps to git clone vsdstdcelldesign </summary>
+<details><summary> Lab Session -> Steps to git clone vsdstdcelldesign </summary>
 
 </br>
 
 <img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/213379095-54cf1933-26d9-4655-a9b3-5144d6770db3.png">
 
 </details>
+
+<details><summary> ⚡ Inception of Layout & CMOS fabrication process: Create Active regions inverter</summary>
+
+</br>
+
+Doping is the process of adding impurities to intrinsic semiconductors to alter their properties.
+
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/118953915/213382662-1935a706-c92b-402d-8789-dbe450bff8ed.png">
+<img width="537" alt="image" src="https://user-images.githubusercontent.com/118953915/213382714-60e939d9-1f5b-46bb-87a6-5306e41b5fdd.png">
+<img width="493" alt="image" src="https://user-images.githubusercontent.com/118953915/213382757-de015fab-6efd-4d9b-824c-5cd9594243f4.png">
+<img width="660" alt="image" src="https://user-images.githubusercontent.com/118953915/213382851-e2e908f0-da69-41a1-8d74-4b94a6ad212a.png">
+<img width="659" alt="image" src="https://user-images.githubusercontent.com/118953915/213382914-62454728-7fb6-4062-a087-fff1026e2083.png">
+
+</details>
+
+<details><summary> ⚡ Formation of N-well and P-well </summary>
+
+ </br>
+ 
+ <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213382961-528acc81-f330-4a94-9fb6-bc4254da0d4a.png">
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/118953915/213383103-d78d147b-241b-49a2-89ad-48f00029c403.png">
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/213383280-81d7467f-69a3-40a3-8c33-dfbc11ea845d.png">
+
+</details>
+
+<details><summary> ⚡ Formation of gate terminal </summary>
+
+</br>
+
 
 
