@@ -3344,6 +3344,60 @@ LEF only have metal layer, no information on logic path, only provide info on bo
 
 </br>
 
-<img width="653" alt="image" src="https://user-images.githubusercontent.com/118953915/213526460-8bb0fc4a-74da-4153-af81-609a344e5363.png">
+>ngspice sky130_inv.spice
+> plot y vs time a
+
+<img width="653" alt="image" src="https://user-images.githubusercontent.com/118953915/213526460-8bb0fc4a-74da-4153-af81-609a344e5363.png">  
+
+To characterize cell -> Find value of 4 parameters
+- Rise transition: time taken for output waveform to rise from 20% of max value to 80% of max value Vdd
+- Fall transition: time taken for output to fall from 80% to 20%
+- Cell rise/fall delay/propagation delay: is a propagation delay where the output is rising/falling (50%)
+
+<img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213526632-80a1c3c9-123a-46c8-a283-6e5b0bc346b0.png">  
+<img width="566" alt="image" src="https://user-images.githubusercontent.com/118953915/213526672-57bad4af-e0a3-4ea7-b219-84d8f84a540b.png">    
+<img width="319" alt="image" src="https://user-images.githubusercontent.com/118953915/213526737-6c93dd17-755c-4d50-9971-68c8b11b0b46.png">  
+
+Done characterize inverter  
+
+</details>
+
+<details><summary> ⚡ Lecture Session: introduction to Magic tool options and DRC rules </summary>
+
+</br>
+
+> Here is the webpage: http://opencircuitdesign.com/  
+> Can refer this link for some tutorial on Magic/Tech files/ DRC: http://opencircuitdesign.com/magic/index.html , http://opencircuitdesign.com/magic/tutorials/tut9.html  
 
 
+$\textcolor{blue}{\text{Magic}}$  
+- Is an interactive system for creating and modifying VLSI circuit layouts  
+- Magic has built-in knowledge of layout rules; as you are editing, it continuously checks for rule violations. 
+- Magic also knows about connectivity and transistors, and contains a built-in hierarchical circuit extractor. 
+
+$\textcolor{blue}{\text{CIF (Caltech Intermediate Form)}}$  
+- CIF and GDSII Stream Format are standard layout description languages used to transfer mask-level layouts between organizations and design tools. Magic can be used to read and write files in CIF and GDS formats  
+- CIF is a file format for describing integrated circuits. CIF provides a limited set of graphics primitives that are useful for describing the two-dimensional shapes on the different layers of a chip. The format allows hierarchical description, which makes the representation concise. In addition, it is a terse but human-readable text format.
+
+$\textcolor{blue}{\text{Design Rule Checking (DRC)}}$  
+- Verifies whether a specific design meets the constraints imposed by the process technology to be used for its manufacturing  
+
+- Example on types of DRCs:
+   - Minimum width and spacing for metal  
+   - Minimum area  
+   - Different net spacing  
+   - Shorts violation  
+   - Less than min edge length  
+
+> Can rerfer this link for details on DRC: https://www.design-reuse.com/articles/41504/design-rule-checks-drc-a-practical-view-for-28nm-technology.html#:~:text=Description%3A%20This%20type%20violation%20pops,are%20seeing%20the%20VIA%20misalignment   
+
+
+</details>
+
+<details><summary> Lab Session -> Introduction to Sky130 pdk's and steps to download labs </summary>
+
+</br>
+
+</details>
+
+To be continue
