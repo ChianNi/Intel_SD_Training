@@ -3101,6 +3101,8 @@ Static timing analysis (STA)
 
 <details><summary> ⚡ Lecture Session: Std Cell Characterise Experiment - Live session </summary>
 
+ </br>
+ 
 > Can refer this github link for more details: https://github.com/nickson-jose/vsdstdcelldesign  
 > -> Overview of Physical Design flow: https://github.com/nickson-jose/vsdstdcelldesign#overview-of-physical-design-flow  
 > --> Magic file: https://github.com/nickson-jose/vsdstdcelldesign/blob/master/sky130_inv.mag  
@@ -3115,6 +3117,8 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 </br>
 
 <img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213377914-10a8a685-48bc-4de4-aee0-138bbf61d6e9.png">   
+
+</br>
 
 <img width="451" alt="image" src="https://user-images.githubusercontent.com/118953915/213377974-9624a55d-6dc1-4e66-9646-395164412250.png">   
 
@@ -3139,9 +3143,15 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 <img width="629" alt="image" src="https://user-images.githubusercontent.com/118953915/213378544-f4d4d95c-b18e-432c-b195-14879421691c.png">  
 <img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/213378572-85f5f370-ca94-4a8a-ae5d-d8e465c40ada.png">  
 
+</br>
+
 <img width="316" alt="image" src="https://user-images.githubusercontent.com/118953915/213378604-83f1ad04-b1cd-458a-a087-025c14a3206d.png"> 
 
+</br>
+
 <img width="540" alt="image" src="https://user-images.githubusercontent.com/118953915/213378637-c0768d9b-12fa-4619-9e9b-7a9f09950ec5.png">  
+
+</br>
 
 <img width="304" alt="image" src="https://user-images.githubusercontent.com/118953915/213378685-045a6a89-1859-4697-a929-282e7b9ac088.png">  
 
@@ -3152,6 +3162,8 @@ In training will cover on design & charaterize std cell and checking PPA, then t
  </br>
 
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213381886-3e154d1e-bde9-417b-b273-481393f0ef7c.png"> 
+
+</br>
 
 <img width="449" alt="image" src="https://user-images.githubusercontent.com/118953915/213381910-0f12ab06-95a5-4223-b48e-659f2d15e516.png">  
 <img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/213381950-afda3773-5d64-463d-9af8-12d88413e32f.png">  
@@ -3165,6 +3177,8 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
 <img width="638" alt="image" src="https://user-images.githubusercontent.com/118953915/213378822-fd624756-2acb-4210-b2d4-9da23f8271c0.png">  
 <img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/213378855-c25f10f4-0c94-489c-8b27-9991a51e568e.png">  
+
+</br>
 
 <img width="450" alt="image" src="https://user-images.githubusercontent.com/118953915/213378883-03e4af6d-63c5-4c83-8bd1-8e27ccb1fe1b.png">  
 <img width="627" alt="image" src="https://user-images.githubusercontent.com/118953915/213378921-65d4adb2-5e99-4bed-bfd3-fa289efe3763.png">  
@@ -3203,6 +3217,8 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 <img width="611" alt="image" src="https://user-images.githubusercontent.com/118953915/213383103-d78d147b-241b-49a2-89ad-48f00029c403.png">    
 <img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">      
 
+</br>
+
 <img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/213383280-81d7467f-69a3-40a3-8c33-dfbc11ea845d.png">    
 
 </details>
@@ -3213,9 +3229,12 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 
 <img width="391" alt="image" src="https://user-images.githubusercontent.com/118953915/213385718-f560aa70-6a5c-49f1-93a5-9df132dea08b.png">  
  
+ </br>
  
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213385798-c6daffd7-59f7-4444-86da-4356383ca9ae.png">  
 <img width="444" alt="image" src="https://user-images.githubusercontent.com/118953915/213385844-c15cc591-f90d-46bc-9b4e-2aa64389ffa8.png">   
+
+</br>
 
 <img width="383" alt="image" src="https://user-images.githubusercontent.com/118953915/213385864-9fafc65c-5a8a-488f-a846-7b6b60aee0e0.png">  
 <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213385992-82bb02a8-9896-43fc-936b-1cb63f282891.png">  
@@ -3277,16 +3296,19 @@ Reason of having this 2 dopping profile:
 </br>
 
 <img width="474" alt="image" src="https://user-images.githubusercontent.com/118953915/213518884-f720fa24-ee7f-4582-b7a5-fd1a35313db0.png">  
-<img width="698" alt="image" src="https://user-images.githubusercontent.com/118953915/213518984-c8cb459a-2f59-4dcb-81d7-848229cec091.png">
-<img width="320" alt="image" src="https://user-images.githubusercontent.com/118953915/213519037-47a3c8ac-2eb1-4fff-b26d-069ae4abf844.png"> 
+<img width="698" alt="image" src="https://user-images.githubusercontent.com/118953915/213518984-c8cb459a-2f59-4dcb-81d7-848229cec091.png">  
+<img width="320" alt="image" src="https://user-images.githubusercontent.com/118953915/213519037-47a3c8ac-2eb1-4fff-b26d-069ae4abf844.png">   
+
 </br>
 
-<img width="413" alt="image" src="https://user-images.githubusercontent.com/118953915/213519095-61edd7de-48f3-40f9-a342-cc09f08b4437.png">
-<img width="713" alt="image" src="https://user-images.githubusercontent.com/118953915/213519162-2e011d71-f59b-4914-b671-4e19f46cb301.png">
-<img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/213519215-15ba6ca2-362a-491f-8499-f6e4ce187804.png">
-<img width="626" alt="image" src="https://user-images.githubusercontent.com/118953915/213519256-83455aa6-a388-4888-9533-0dbdecec362d.png">
-<img width="507" alt="image" src="https://user-images.githubusercontent.com/118953915/213519394-06937e9e-feb3-47f8-a596-f4c42ea4380d.png">
+LEF only have metal layer, no information on logic path, only provide info on boundary/cell/length to place a cell  
+-> Cell LEF - It's an abstract view of the cell and only gives information about PR boundary, pin position and metal layer information of the cell  
 
+> Can refer this github link for introduction on LEF: https://github.com/nickson-jose/vsdstdcelldesign#introduction-to-lef  
+ 
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/118953915/213519719-93d91e82-3da0-4e21-be19-46e58cb730b0.png">
+
+</br>
 
 </details>
 
@@ -3294,16 +3316,34 @@ Reason of having this 2 dopping profile:
 
 </br>
 
-> Can refer this github link for introduction on LEF: https://github.com/nickson-jose/vsdstdcelldesign#introduction-to-lef  
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/118953915/213519095-61edd7de-48f3-40f9-a342-cc09f08b4437.png">
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/118953915/213519162-2e011d71-f59b-4914-b671-4e19f46cb301.png">
+<img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/213519215-15ba6ca2-362a-491f-8499-f6e4ce187804.png">
+<img width="626" alt="image" src="https://user-images.githubusercontent.com/118953915/213519256-83455aa6-a388-4888-9533-0dbdecec362d.png">  
 
-LEF only have metal layer, no information on logic path, only provide info on boundary/cell/length to place a cell  
--> Cell LEF - It's an abstract view of the cell and only gives information about PR boundary, pin position and metal layer information of the cell  
+> extract all  
+> ext2spice cthresh 0 rthresh 0 <- extract all parasitic capacitance  
+> ext2spice  
+ 
+<img width="507" alt="image" src="https://user-images.githubusercontent.com/118953915/213519394-06937e9e-feb3-47f8-a596-f4c42ea4380d.png">
 
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/118953915/213519719-93d91e82-3da0-4e21-be19-46e58cb730b0.png">
+</details>
 
-<img width="564" alt="image" src="https://user-images.githubusercontent.com/118953915/213519825-713f3ff4-c5e4-46ef-8a21-f1a8c6052486.png">
+<details><summary> Lab Session -> Tech File: Steps to create final SPICE deck using Sky130 tech </summary>
+
+</br>
 
 
+<img width="564" alt="image" src="https://user-images.githubusercontent.com/118953915/213519825-713f3ff4-c5e4-46ef-8a21-f1a8c6052486.png">  
 
+<img width="762" alt="image" src="https://user-images.githubusercontent.com/118953915/213526290-a8cd7237-5786-4076-abf3-f1bc6de2c36e.png">
+
+</details>
+
+<details><summary> Lab Session -> Steps to characterize inverter using sky130 model files </summary>
+
+</br>
+
+<img width="653" alt="image" src="https://user-images.githubusercontent.com/118953915/213526460-8bb0fc4a-74da-4153-af81-609a344e5363.png">
 
 
