@@ -3114,8 +3114,8 @@ In training will cover on design & charaterize std cell and checking PPA, then t
  
 </br>
 
-<img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213377914-10a8a685-48bc-4de4-aee0-138bbf61d6e9.png">  
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/118953915/213377974-9624a55d-6dc1-4e66-9646-395164412250.png">  
+<img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213377914-10a8a685-48bc-4de4-aee0-138bbf61d6e9.png">   
+<img width="451" alt="image" src="https://user-images.githubusercontent.com/118953915/213377974-9624a55d-6dc1-4e66-9646-395164412250.png">   
 
 
 </details>
@@ -3192,11 +3192,11 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 <details><summary> ⚡ Formation of N-well and P-well </summary>
 
  </br>
- 
- <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213382961-528acc81-f330-4a94-9fb6-bc4254da0d4a.png">  
-<img width="611" alt="image" src="https://user-images.githubusercontent.com/118953915/213383103-d78d147b-241b-49a2-89ad-48f00029c403.png">  
-<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">  
-<img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/213383280-81d7467f-69a3-40a3-8c33-dfbc11ea845d.png">  
+  
+ <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213382961-528acc81-f330-4a94-9fb6-bc4254da0d4a.png">    
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/118953915/213383103-d78d147b-241b-49a2-89ad-48f00029c403.png">    
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">    
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/213383280-81d7467f-69a3-40a3-8c33-dfbc11ea845d.png">    
 
 </details>
 
@@ -3204,5 +3204,15 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 
 </br>
 
+<img width="391" alt="image" src="https://user-images.githubusercontent.com/118953915/213385718-f560aa70-6a5c-49f1-93a5-9df132dea08b.png">  
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213385798-c6daffd7-59f7-4444-86da-4356383ca9ae.png">  
+<img width="444" alt="image" src="https://user-images.githubusercontent.com/118953915/213385844-c15cc591-f90d-46bc-9b4e-2aa64389ffa8.png">   
+<img width="383" alt="image" src="https://user-images.githubusercontent.com/118953915/213385864-9fafc65c-5a8a-488f-a846-7b6b60aee0e0.png">  
+<img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213385992-82bb02a8-9896-43fc-936b-1cb63f282891.png">  
+<img width="518" alt="image" src="https://user-images.githubusercontent.com/118953915/213386025-e37c8cbc-9eeb-4d41-8d34-59c0d31eb1b6.png">  
 
+</details>
 
+<details><summary> ⚡ Lightly doped drain (LDD) formation </summary>
+
+</br>
