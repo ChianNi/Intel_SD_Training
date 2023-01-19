@@ -3110,4 +3110,64 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
 </details>
 
-<details><summary> ⚡ Lecture Session: Design library cell using Magic Layout and ngspice characterization: Labs for CMOS inverter ngspice simulations: IO placer revision </summary>
+<details><summary> Lab Session -> CMOS inverter ngspice simulations: IO placer revision </summary>
+ 
+</br>
+
+<img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213377914-10a8a685-48bc-4de4-aee0-138bbf61d6e9.png">
+<img width="451" alt="image" src="https://user-images.githubusercontent.com/118953915/213377974-9624a55d-6dc1-4e66-9646-395164412250.png">
+
+
+</details>
+
+<details><summary> ⚡ Lecture Session: SPICE deck creation for CMOS inverter </summary>
+
+ </br>
+
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/118953915/213378148-c8d457b1-0e01-4180-b50d-6cc5375cb2c8.png">
+<img width="649" alt="image" src="https://user-images.githubusercontent.com/118953915/213378185-85d2c351-dc3e-4a96-9196-80c5199e902e.png">
+<img width="488" alt="image" src="https://user-images.githubusercontent.com/118953915/213378245-1f5e6bc9-b29e-4a54-bb36-19d9f929fb87.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: SPICE simulation lab for CMOS inverter </summary>
+
+ </br>
+
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/118953915/213378498-e59733fc-4847-4d1c-88bf-f29bcc0d256d.png">
+<img width="629" alt="image" src="https://user-images.githubusercontent.com/118953915/213378544-f4d4d95c-b18e-432c-b195-14879421691c.png">
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/213378572-85f5f370-ca94-4a8a-ae5d-d8e465c40ada.png">
+<img width="316" alt="image" src="https://user-images.githubusercontent.com/118953915/213378604-83f1ad04-b1cd-458a-a087-025c14a3206d.png">
+<img width="540" alt="image" src="https://user-images.githubusercontent.com/118953915/213378637-c0768d9b-12fa-4619-9e9b-7a9f09950ec5.png">
+<img width="304" alt="image" src="https://user-images.githubusercontent.com/118953915/213378685-045a6a89-1859-4697-a929-282e7b9ac088.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Switching Threshold Vm </summary>
+
+ </br>
+
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/118953915/213378822-fd624756-2acb-4210-b2d4-9da23f8271c0.png">
+<img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/213378855-c25f10f4-0c94-489c-8b27-9991a51e568e.png">
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/118953915/213378883-03e4af6d-63c5-4c83-8bd1-8e27ccb1fe1b.png">
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/118953915/213378921-65d4adb2-5e99-4bed-bfd3-fa289efe3763.png">
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/118953915/213378948-f02a9647-a228-4e63-97f0-54d25f9c9bfd.png">
+<img width="484" alt="image" src="https://user-images.githubusercontent.com/118953915/213379000-c9925f5c-31ad-4a8b-8cbc-994fcd25a102.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Static and dynamic simulation of CMOS inverter</summary>
+
+ </br>
+
+</details>
+
+<details><summary> Lab Session -> Lab steps to git clone vsdstdcelldesign </summary>
+
+</br>
+
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/213379095-54cf1933-26d9-4655-a9b3-5144d6770db3.png">
+
+</details>
+
+
