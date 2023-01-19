@@ -3201,7 +3201,7 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
   
  <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213382961-528acc81-f330-4a94-9fb6-bc4254da0d4a.png">    
 <img width="611" alt="image" src="https://user-images.githubusercontent.com/118953915/213383103-d78d147b-241b-49a2-89ad-48f00029c403.png">    
-<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">  
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">      
 
 <img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/213383280-81d7467f-69a3-40a3-8c33-dfbc11ea845d.png">    
 
@@ -3212,12 +3212,14 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 </br>
 
 <img width="391" alt="image" src="https://user-images.githubusercontent.com/118953915/213385718-f560aa70-6a5c-49f1-93a5-9df132dea08b.png">  
-
+ 
+ 
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213385798-c6daffd7-59f7-4444-86da-4356383ca9ae.png">  
 <img width="444" alt="image" src="https://user-images.githubusercontent.com/118953915/213385844-c15cc591-f90d-46bc-9b4e-2aa64389ffa8.png">   
 
 <img width="383" alt="image" src="https://user-images.githubusercontent.com/118953915/213385864-9fafc65c-5a8a-488f-a846-7b6b60aee0e0.png">  
 <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213385992-82bb02a8-9896-43fc-936b-1cb63f282891.png">  
+
 <img width="518" alt="image" src="https://user-images.githubusercontent.com/118953915/213386025-e37c8cbc-9eeb-4d41-8d34-59c0d31eb1b6.png">  
 
 </details>
@@ -3276,7 +3278,9 @@ Reason of having this 2 dopping profile:
 
 <img width="474" alt="image" src="https://user-images.githubusercontent.com/118953915/213518884-f720fa24-ee7f-4582-b7a5-fd1a35313db0.png">  
 <img width="698" alt="image" src="https://user-images.githubusercontent.com/118953915/213518984-c8cb459a-2f59-4dcb-81d7-848229cec091.png">
-<img width="320" alt="image" src="https://user-images.githubusercontent.com/118953915/213519037-47a3c8ac-2eb1-4fff-b26d-069ae4abf844.png">  
+<img width="320" alt="image" src="https://user-images.githubusercontent.com/118953915/213519037-47a3c8ac-2eb1-4fff-b26d-069ae4abf844.png"> 
+</br>
+
 <img width="413" alt="image" src="https://user-images.githubusercontent.com/118953915/213519095-61edd7de-48f3-40f9-a342-cc09f08b4437.png">
 <img width="713" alt="image" src="https://user-images.githubusercontent.com/118953915/213519162-2e011d71-f59b-4914-b671-4e19f46cb301.png">
 <img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/213519215-15ba6ca2-362a-491f-8499-f6e4ce187804.png">
@@ -3295,7 +3299,7 @@ Reason of having this 2 dopping profile:
 LEF only have metal layer, no information on logic path, only provide info on boundary/cell/length to place a cell  
 -> Cell LEF - It's an abstract view of the cell and only gives information about PR boundary, pin position and metal layer information of the cell  
 
-<img width="181" alt="image" src="https://user-images.githubusercontent.com/118953915/213519719-93d91e82-3da0-4e21-be19-46e58cb730b0.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/118953915/213519719-93d91e82-3da0-4e21-be19-46e58cb730b0.png">
 
 <img width="564" alt="image" src="https://user-images.githubusercontent.com/118953915/213519825-713f3ff4-c5e4-46ef-8a21-f1a8c6052486.png">
 
