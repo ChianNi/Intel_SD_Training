@@ -2977,7 +2977,7 @@ For placement and routing:
 
  </details>
 
-<details><summary> ⚡ Lecture Session: Optimize placement using estimated wire-length and capacitance </summary>
+<details><summary> ⚡ Lecture Session: Optimize placement using estimated wire: length and capacitance </summary>
 
 </br>
 
@@ -3001,7 +3001,7 @@ For placement and routing:
 - Global placement assigns general locations to movable objects, while detailed placement refines object locations to legal cell sites and enforces nonoverlapping constraints. The detailed locations enable more accurate estimates of circuit delay for the purpose of timing optimization  
 - Legalization is an essential step where the overlaps between gates/macros must be removed  
 
-> run_placement -> global placement objective is to reduce wire length , in OpenLANE is applying concept HPWL – half parameter wire length  
+> run_placement -> global placement objective is to reduce wire length , in OpenLANE is applying concept HPWL - half parameter wire length  
 
 ![image](https://user-images.githubusercontent.com/118953915/212992037-ec8d7b99-677b-4aea-98c3-8ebe65501978.png)
 ![image](https://user-images.githubusercontent.com/118953915/212992084-fdc03a23-9889-4875-aaee-1a2d3cbb082c.png)
@@ -3114,8 +3114,8 @@ In training will cover on design & charaterize std cell and checking PPA, then t
  
 </br>
 
-<img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213377914-10a8a685-48bc-4de4-aee0-138bbf61d6e9.png">
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/118953915/213377974-9624a55d-6dc1-4e66-9646-395164412250.png">
+<img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213377914-10a8a685-48bc-4de4-aee0-138bbf61d6e9.png">  
+<img width="451" alt="image" src="https://user-images.githubusercontent.com/118953915/213377974-9624a55d-6dc1-4e66-9646-395164412250.png">  
 
 
 </details>
@@ -3124,9 +3124,9 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
  </br>
 
-<img width="646" alt="image" src="https://user-images.githubusercontent.com/118953915/213378148-c8d457b1-0e01-4180-b50d-6cc5375cb2c8.png">
-<img width="649" alt="image" src="https://user-images.githubusercontent.com/118953915/213378185-85d2c351-dc3e-4a96-9196-80c5199e902e.png">
-<img width="488" alt="image" src="https://user-images.githubusercontent.com/118953915/213378245-1f5e6bc9-b29e-4a54-bb36-19d9f929fb87.png">
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/118953915/213378148-c8d457b1-0e01-4180-b50d-6cc5375cb2c8.png">  
+<img width="649" alt="image" src="https://user-images.githubusercontent.com/118953915/213378185-85d2c351-dc3e-4a96-9196-80c5199e902e.png">  
+<img width="488" alt="image" src="https://user-images.githubusercontent.com/118953915/213378245-1f5e6bc9-b29e-4a54-bb36-19d9f929fb87.png">  
 
 </details>
 
@@ -3134,12 +3134,12 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
  </br>
 
-<img width="481" alt="image" src="https://user-images.githubusercontent.com/118953915/213378498-e59733fc-4847-4d1c-88bf-f29bcc0d256d.png">
-<img width="629" alt="image" src="https://user-images.githubusercontent.com/118953915/213378544-f4d4d95c-b18e-432c-b195-14879421691c.png">
-<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/213378572-85f5f370-ca94-4a8a-ae5d-d8e465c40ada.png">
-<img width="316" alt="image" src="https://user-images.githubusercontent.com/118953915/213378604-83f1ad04-b1cd-458a-a087-025c14a3206d.png">
-<img width="540" alt="image" src="https://user-images.githubusercontent.com/118953915/213378637-c0768d9b-12fa-4619-9e9b-7a9f09950ec5.png">
-<img width="304" alt="image" src="https://user-images.githubusercontent.com/118953915/213378685-045a6a89-1859-4697-a929-282e7b9ac088.png">
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/118953915/213378498-e59733fc-4847-4d1c-88bf-f29bcc0d256d.png">  
+<img width="629" alt="image" src="https://user-images.githubusercontent.com/118953915/213378544-f4d4d95c-b18e-432c-b195-14879421691c.png">  
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/213378572-85f5f370-ca94-4a8a-ae5d-d8e465c40ada.png">  
+<img width="316" alt="image" src="https://user-images.githubusercontent.com/118953915/213378604-83f1ad04-b1cd-458a-a087-025c14a3206d.png">  
+<img width="540" alt="image" src="https://user-images.githubusercontent.com/118953915/213378637-c0768d9b-12fa-4619-9e9b-7a9f09950ec5.png">   
+<img width="304" alt="image" src="https://user-images.githubusercontent.com/118953915/213378685-045a6a89-1859-4697-a929-282e7b9ac088.png">  
 
 </details>
 
@@ -3147,9 +3147,9 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
  </br>
 
-<img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213381886-3e154d1e-bde9-417b-b273-481393f0ef7c.png">
-<img width="449" alt="image" src="https://user-images.githubusercontent.com/118953915/213381910-0f12ab06-95a5-4223-b48e-659f2d15e516.png">
-<img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/213381950-afda3773-5d64-463d-9af8-12d88413e32f.png">
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213381886-3e154d1e-bde9-417b-b273-481393f0ef7c.png">  
+<img width="449" alt="image" src="https://user-images.githubusercontent.com/118953915/213381910-0f12ab06-95a5-4223-b48e-659f2d15e516.png">  
+<img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/213381950-afda3773-5d64-463d-9af8-12d88413e32f.png">  
 
 
 </details>
@@ -3158,12 +3158,12 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
  </br>
 
-<img width="638" alt="image" src="https://user-images.githubusercontent.com/118953915/213378822-fd624756-2acb-4210-b2d4-9da23f8271c0.png">
-<img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/213378855-c25f10f4-0c94-489c-8b27-9991a51e568e.png">
-<img width="450" alt="image" src="https://user-images.githubusercontent.com/118953915/213378883-03e4af6d-63c5-4c83-8bd1-8e27ccb1fe1b.png">
-<img width="627" alt="image" src="https://user-images.githubusercontent.com/118953915/213378921-65d4adb2-5e99-4bed-bfd3-fa289efe3763.png">
-<img width="640" alt="image" src="https://user-images.githubusercontent.com/118953915/213378948-f02a9647-a228-4e63-97f0-54d25f9c9bfd.png">
-<img width="484" alt="image" src="https://user-images.githubusercontent.com/118953915/213379000-c9925f5c-31ad-4a8b-8cbc-994fcd25a102.png">
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/118953915/213378822-fd624756-2acb-4210-b2d4-9da23f8271c0.png">  
+<img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/213378855-c25f10f4-0c94-489c-8b27-9991a51e568e.png">  
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/118953915/213378883-03e4af6d-63c5-4c83-8bd1-8e27ccb1fe1b.png">  
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/118953915/213378921-65d4adb2-5e99-4bed-bfd3-fa289efe3763.png">  
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/118953915/213378948-f02a9647-a228-4e63-97f0-54d25f9c9bfd.png">  
+<img width="484" alt="image" src="https://user-images.githubusercontent.com/118953915/213379000-c9925f5c-31ad-4a8b-8cbc-994fcd25a102.png">  
 
 </details>
 
@@ -3171,7 +3171,7 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
 </br>
 
-<img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/213379095-54cf1933-26d9-4655-a9b3-5144d6770db3.png">
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/213379095-54cf1933-26d9-4655-a9b3-5144d6770db3.png">  
 
 </details>
 
@@ -3181,11 +3181,11 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
 Doping is the process of adding impurities to intrinsic semiconductors to alter their properties.
 
-<img width="503" alt="image" src="https://user-images.githubusercontent.com/118953915/213382662-1935a706-c92b-402d-8789-dbe450bff8ed.png">
-<img width="537" alt="image" src="https://user-images.githubusercontent.com/118953915/213382714-60e939d9-1f5b-46bb-87a6-5306e41b5fdd.png">
-<img width="493" alt="image" src="https://user-images.githubusercontent.com/118953915/213382757-de015fab-6efd-4d9b-824c-5cd9594243f4.png">
-<img width="660" alt="image" src="https://user-images.githubusercontent.com/118953915/213382851-e2e908f0-da69-41a1-8d74-4b94a6ad212a.png">
-<img width="659" alt="image" src="https://user-images.githubusercontent.com/118953915/213382914-62454728-7fb6-4062-a087-fff1026e2083.png">
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/118953915/213382662-1935a706-c92b-402d-8789-dbe450bff8ed.png">  
+<img width="537" alt="image" src="https://user-images.githubusercontent.com/118953915/213382714-60e939d9-1f5b-46bb-87a6-5306e41b5fdd.png">  
+<img width="493" alt="image" src="https://user-images.githubusercontent.com/118953915/213382757-de015fab-6efd-4d9b-824c-5cd9594243f4.png">  
+<img width="660" alt="image" src="https://user-images.githubusercontent.com/118953915/213382851-e2e908f0-da69-41a1-8d74-4b94a6ad212a.png">  
+<img width="659" alt="image" src="https://user-images.githubusercontent.com/118953915/213382914-62454728-7fb6-4062-a087-fff1026e2083.png">  
 
 </details>
 
@@ -3193,10 +3193,10 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 
  </br>
  
- <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213382961-528acc81-f330-4a94-9fb6-bc4254da0d4a.png">
-<img width="611" alt="image" src="https://user-images.githubusercontent.com/118953915/213383103-d78d147b-241b-49a2-89ad-48f00029c403.png">
-<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">
-<img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/213383280-81d7467f-69a3-40a3-8c33-dfbc11ea845d.png">
+ <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213382961-528acc81-f330-4a94-9fb6-bc4254da0d4a.png">  
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/118953915/213383103-d78d147b-241b-49a2-89ad-48f00029c403.png">  
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">  
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/213383280-81d7467f-69a3-40a3-8c33-dfbc11ea845d.png">  
 
 </details>
 
