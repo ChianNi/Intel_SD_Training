@@ -3355,7 +3355,10 @@ To characterize cell -> Find value of 4 parameters
 - Cell rise/fall delay/propagation delay: is a propagation delay where the output is rising/falling (50%)
 
 <img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213526632-80a1c3c9-123a-46c8-a283-6e5b0bc346b0.png">  
-<img width="566" alt="image" src="https://user-images.githubusercontent.com/118953915/213526672-57bad4af-e0a3-4ea7-b219-84d8f84a540b.png">    
+<img width="566" alt="image" src="https://user-images.githubusercontent.com/118953915/213526672-57bad4af-e0a3-4ea7-b219-84d8f84a540b.png">   
+
+</br> 
+
 <img width="319" alt="image" src="https://user-images.githubusercontent.com/118953915/213526737-6c93dd17-755c-4d50-9971-68c8b11b0b46.png">  
 
 Done characterize inverter  
