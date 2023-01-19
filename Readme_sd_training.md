@@ -3115,6 +3115,7 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 </br>
 
 <img width="390" alt="image" src="https://user-images.githubusercontent.com/118953915/213377914-10a8a685-48bc-4de4-aee0-138bbf61d6e9.png">   
+
 <img width="451" alt="image" src="https://user-images.githubusercontent.com/118953915/213377974-9624a55d-6dc1-4e66-9646-395164412250.png">   
 
 
@@ -3137,8 +3138,11 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 <img width="481" alt="image" src="https://user-images.githubusercontent.com/118953915/213378498-e59733fc-4847-4d1c-88bf-f29bcc0d256d.png">  
 <img width="629" alt="image" src="https://user-images.githubusercontent.com/118953915/213378544-f4d4d95c-b18e-432c-b195-14879421691c.png">  
 <img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/213378572-85f5f370-ca94-4a8a-ae5d-d8e465c40ada.png">  
-<img width="316" alt="image" src="https://user-images.githubusercontent.com/118953915/213378604-83f1ad04-b1cd-458a-a087-025c14a3206d.png">  
-<img width="540" alt="image" src="https://user-images.githubusercontent.com/118953915/213378637-c0768d9b-12fa-4619-9e9b-7a9f09950ec5.png">   
+
+<img width="316" alt="image" src="https://user-images.githubusercontent.com/118953915/213378604-83f1ad04-b1cd-458a-a087-025c14a3206d.png"> 
+
+<img width="540" alt="image" src="https://user-images.githubusercontent.com/118953915/213378637-c0768d9b-12fa-4619-9e9b-7a9f09950ec5.png">  
+
 <img width="304" alt="image" src="https://user-images.githubusercontent.com/118953915/213378685-045a6a89-1859-4697-a929-282e7b9ac088.png">  
 
 </details>
@@ -3147,7 +3151,8 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
  </br>
 
-<img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213381886-3e154d1e-bde9-417b-b273-481393f0ef7c.png">  
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213381886-3e154d1e-bde9-417b-b273-481393f0ef7c.png"> 
+
 <img width="449" alt="image" src="https://user-images.githubusercontent.com/118953915/213381910-0f12ab06-95a5-4223-b48e-659f2d15e516.png">  
 <img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/213381950-afda3773-5d64-463d-9af8-12d88413e32f.png">  
 
@@ -3160,6 +3165,7 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
 <img width="638" alt="image" src="https://user-images.githubusercontent.com/118953915/213378822-fd624756-2acb-4210-b2d4-9da23f8271c0.png">  
 <img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/213378855-c25f10f4-0c94-489c-8b27-9991a51e568e.png">  
+
 <img width="450" alt="image" src="https://user-images.githubusercontent.com/118953915/213378883-03e4af6d-63c5-4c83-8bd1-8e27ccb1fe1b.png">  
 <img width="627" alt="image" src="https://user-images.githubusercontent.com/118953915/213378921-65d4adb2-5e99-4bed-bfd3-fa289efe3763.png">  
 <img width="640" alt="image" src="https://user-images.githubusercontent.com/118953915/213378948-f02a9647-a228-4e63-97f0-54d25f9c9bfd.png">  
@@ -3195,7 +3201,8 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
   
  <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213382961-528acc81-f330-4a94-9fb6-bc4254da0d4a.png">    
 <img width="611" alt="image" src="https://user-images.githubusercontent.com/118953915/213383103-d78d147b-241b-49a2-89ad-48f00029c403.png">    
-<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">    
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/213383157-041cc797-26ea-45c6-bc02-c78ad753becc.png">  
+
 <img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/213383280-81d7467f-69a3-40a3-8c33-dfbc11ea845d.png">    
 
 </details>
@@ -3205,8 +3212,10 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 </br>
 
 <img width="391" alt="image" src="https://user-images.githubusercontent.com/118953915/213385718-f560aa70-6a5c-49f1-93a5-9df132dea08b.png">  
+
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/213385798-c6daffd7-59f7-4444-86da-4356383ca9ae.png">  
 <img width="444" alt="image" src="https://user-images.githubusercontent.com/118953915/213385844-c15cc591-f90d-46bc-9b4e-2aa64389ffa8.png">   
+
 <img width="383" alt="image" src="https://user-images.githubusercontent.com/118953915/213385864-9fafc65c-5a8a-488f-a846-7b6b60aee0e0.png">  
 <img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/213385992-82bb02a8-9896-43fc-936b-1cb63f282891.png">  
 <img width="518" alt="image" src="https://user-images.githubusercontent.com/118953915/213386025-e37c8cbc-9eeb-4d41-8d34-59c0d31eb1b6.png">  
@@ -3216,3 +3225,5 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 <details><summary> ⚡ Lightly doped drain (LDD) formation </summary>
 
 </br>
+
+
