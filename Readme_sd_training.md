@@ -3181,7 +3181,7 @@ In training will cover on design & charaterize std cell and checking PPA, then t
 
 </details>
 
-<details><summary> ⚡ Inception of Layout & CMOS fabrication process: Create Active regions inverter</summary>
+<details><summary> ⚡ Lecture Session: Inception of Layout & CMOS fabrication process: Create Active regions inverter</summary>
 
 </br>
 
@@ -3195,7 +3195,7 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 
 </details>
 
-<details><summary> ⚡ Formation of N-well and P-well </summary>
+<details><summary> ⚡ Lecture Session: Formation of N-well and P-well </summary>
 
  </br>
   
@@ -3207,7 +3207,7 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 
 </details>
 
-<details><summary> ⚡ Formation of gate terminal </summary>
+<details><summary> ⚡ Lecture Session: Formation of gate terminal </summary>
 
 </br>
 
@@ -3222,8 +3222,84 @@ Doping is the process of adding impurities to intrinsic semiconductors to alter 
 
 </details>
 
-<details><summary> ⚡ Lightly doped drain (LDD) formation </summary>
+<details><summary> ⚡ Lecture Session: Lightly doped drain (LDD) formation </summary>
 
 </br>
+
+Reason of having this 2 dopping profile:
+- Hot electron effect
+    - Electric field, E=V/d
+       - High energy carriers break Si-Si bonds (more electron and hole -cant control dopping profile well)
+    - Crosses 3.2eV barrier between Si conduction band SiO2 conduction band, enter oxide layer cause liberty issue
+- Short channel effect
+   - For short channels, drain field penetrates channel (gate difficult control current- source and drain)
+
+<img width="489" alt="image" src="https://user-images.githubusercontent.com/118953915/213517092-bdca9107-8a16-433d-8871-b9731a65bec2.png">  
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/118953915/213517155-2fd6cf39-d5e7-4d22-b264-dae110b51453.png">  
+<img width="637" alt="image" src="https://user-images.githubusercontent.com/118953915/213517258-aad6f190-03b8-45b6-aaa2-1f9f0b844525.png">  
+<img width="705" alt="image" src="https://user-images.githubusercontent.com/118953915/213517345-c835ad0d-6a60-4c3d-80c6-4f93e90e027b.png">  
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Source & drain formation </summary>
+
+</br>
+
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/118953915/213517858-97919587-a975-46b4-a5bd-720ba467c75b.png">  
+<img width="749" alt="image" src="https://user-images.githubusercontent.com/118953915/213517905-add36849-7daf-4bb9-aa62-d4acd7658326.png">  
+<img width="694" alt="image" src="https://user-images.githubusercontent.com/118953915/213517970-c96a0dda-e569-4c64-b01a-8ed5702145c0.png">  
+<img width="703" alt="image" src="https://user-images.githubusercontent.com/118953915/213518083-334ab46b-3d4e-4025-b54a-751e337e79ee.png">  
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Local interconnect formation </summary>
+
+</br>
+
+<img width="469" alt="image" src="https://user-images.githubusercontent.com/118953915/213518174-8f4f1a84-a1b6-4c89-8fb0-4028d811986b.png">
+<img width="664" alt="image" src="https://user-images.githubusercontent.com/118953915/213518221-4583c906-9d57-46c4-a520-3d8ea0e63b93.png">
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/118953915/213518267-9bd2f801-4faa-4a16-9592-bae690147138.png">
+<img width="694" alt="image" src="https://user-images.githubusercontent.com/118953915/213518304-d6dce84f-05ea-4f27-8385-5e5354961f35.png">
+<img width="672" alt="image" src="https://user-images.githubusercontent.com/118953915/213518342-4c967b52-4485-4a2a-84fc-17eb0c4058cd.png">
+<img width="637" alt="image" src="https://user-images.githubusercontent.com/118953915/213518400-9b27aa71-8d16-499e-ad28-8b919584dd09.png">
+<img width="605" alt="image" src="https://user-images.githubusercontent.com/118953915/213518450-75cbd7d6-b92d-439a-b2ea-12d33d6ab041.png">
+<img width="642" alt="image" src="https://user-images.githubusercontent.com/118953915/213518481-51ed92b1-3d91-4d93-b313-bdcd2634c988.png">
+<img width="346" alt="image" src="https://user-images.githubusercontent.com/118953915/213518503-e72db99e-d63b-44f9-9ede-92e2ef46b8bf.png">  
+
+<img width="395" alt="image" src="https://user-images.githubusercontent.com/118953915/213518561-6b3ebd9c-352a-4618-ab65-ef7fc9a2633b.png">
+
+</details>
+
+<details><summary> Lab Session -> Introduction to Sky130 basic layers layout and LEF using inverter </summary>
+
+</br>
+
+<img width="474" alt="image" src="https://user-images.githubusercontent.com/118953915/213518884-f720fa24-ee7f-4582-b7a5-fd1a35313db0.png">  
+<img width="698" alt="image" src="https://user-images.githubusercontent.com/118953915/213518984-c8cb459a-2f59-4dcb-81d7-848229cec091.png">
+<img width="320" alt="image" src="https://user-images.githubusercontent.com/118953915/213519037-47a3c8ac-2eb1-4fff-b26d-069ae4abf844.png">  
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/118953915/213519095-61edd7de-48f3-40f9-a342-cc09f08b4437.png">
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/118953915/213519162-2e011d71-f59b-4914-b671-4e19f46cb301.png">
+<img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/213519215-15ba6ca2-362a-491f-8499-f6e4ce187804.png">
+<img width="626" alt="image" src="https://user-images.githubusercontent.com/118953915/213519256-83455aa6-a388-4888-9533-0dbdecec362d.png">
+<img width="507" alt="image" src="https://user-images.githubusercontent.com/118953915/213519394-06937e9e-feb3-47f8-a596-f4c42ea4380d.png">
+
+
+</details>
+
+<details><summary> Lab Session -> Steps to create std cell layout and extract spice netlist </summary>
+
+</br>
+
+> Can refer this github link for introduction on LEF: https://github.com/nickson-jose/vsdstdcelldesign#introduction-to-lef  
+
+LEF only have metal layer, no information on logic path, only provide info on boundary/cell/length to place a cell  
+-> Cell LEF - It's an abstract view of the cell and only gives information about PR boundary, pin position and metal layer information of the cell  
+
+<img width="181" alt="image" src="https://user-images.githubusercontent.com/118953915/213519719-93d91e82-3da0-4e21-be19-46e58cb730b0.png">
+
+<img width="564" alt="image" src="https://user-images.githubusercontent.com/118953915/213519825-713f3ff4-c5e4-46ef-8a21-f1a8c6052486.png">
+
+
+
 
 
