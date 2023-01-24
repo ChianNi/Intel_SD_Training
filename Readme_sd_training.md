@@ -18,6 +18,7 @@
 + **[ Day_15 : Inception of EDA and PDK ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_15)**
 + **[ Day_16 : Understand importance of good floorplan vs bad floor plan and introduction to library cells ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_16)**
 + **[ Day_17 : Design and characterise one library cell using Layout tool and spice simulator ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_17)**
++ **[ Day_18 : Pre-layout timing analysis and importance of good clock tree  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_18)**
 
 #
 # Day_0 
@@ -3097,7 +3098,7 @@ Static timing analysis (STA)
 
 #
 # Day_17 
-**⭐Design and characterise one library cell using Layout tool and spice simulator**
+**⭐ Design and characterise one library cell using Layout tool and spice simulator**
 
 <details><summary> ⚡ Lecture Session: Std Cell Characterise Experiment - Live session </summary>
 
@@ -3451,6 +3452,9 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 <img width="677" alt="image" src="https://user-images.githubusercontent.com/118953915/214233994-d18beea8-bfbf-4f6d-a246-004023e8f2d3.png">
 <img width="680" alt="image" src="https://user-images.githubusercontent.com/118953915/214234080-08a52bab-c30f-46a0-b49a-0abd521ca1e0.png">
 <img width="437" alt="image" src="https://user-images.githubusercontent.com/118953915/214234123-8f53e46d-5353-43fe-bfcb-6ca4fb48bf14.png">
+
+</br>
+
 <img width="439" alt="image" src="https://user-images.githubusercontent.com/118953915/214234206-dfb37b13-031c-4b34-a2e2-29202f9c7c7c.png"> 
 
 > tech load sky130A.tech  
@@ -3481,12 +3485,15 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 > load nwell.mag  
 
 <img width="415" alt="image" src="https://user-images.githubusercontent.com/118953915/214235651-d49507d7-6b5a-4c48-abc7-af0a01efc9ba.png">
+
+</br>
+
 <img width="572" alt="image" src="https://user-images.githubusercontent.com/118953915/214235693-58f4e61b-9cf9-444d-8fdf-a1efd2e28075.png">
 
 > cif ostyle drc  
 > cif see dnwell_shrink   
 > cif see nwell_missing    
-> 
+
 <img width="562" alt="image" src="https://user-images.githubusercontent.com/118953915/214235729-c1b2f157-5552-4072-90a5-3d1d8b050c0d.png">
 <img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/214235771-b95534ab-61c9-4c79-9a6e-fbc55ec62e80.png">
 
@@ -3504,3 +3511,77 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 <img width="539" alt="image" src="https://user-images.githubusercontent.com/118953915/214235455-b8f38626-89da-437c-bdf9-79bb0eae65fa.png">
 
 </details>
+
+</details>
+
+#
+# Day_18 
+**⭐ Pre-layout timing analysis and importance of good clock tree**
+
+<details><summary> ⚡ Lecture Session: Pre-layout timing analysis and importance of good clock tree - Live session </summary>
+
+</br>
+ 
+$\textcolor{blue}{\text{CTS (Clock Tree Synthesis)}}$  
+- Is a technique for distributing the clock equally among all sequential parts of a VLSI design  
+- The purpose of CTS is to reduce skew and delay  
+- Clock Tree Synthesis is provided the placement data as well as the clock tree limitations as input  
+
+Good clock tree must skew balance     
+- From timing point of view: Good clock tree converging the design, reduce the work load/timing spend to resolve the setup/hold violation  
+- From power point of view: Good clock tree help in reduce power consumption. Clock signal consuming 70-80% power because signal keep changing throughout the chip  
+- From area point of view: If bad clock tree will cause unclock sequential clock, need more buffer, clock gating issue that will lead to huge area  
+
+Good clock tree will achieve good result in PPA   
+> Can refer this link for more details on clock tree & PPA: https://semiwiki.com/ip/movellus/305173-performance-power-and-area-ppa-benefits-through-intelligent-clock-networks    
+
+✏️ Before clock trees is build only have setup. Hold will be in ideal (0 in value)   
+
+$\textcolor{blue}{\text{Engineering change order (ECO)}}$  
+- Refers to a practice in the VLSI design flow to accommodate specification changes, to rectify functional errors, or to fix non-functional design requirements, such as timing and power, with minimal disturbance to the existing implementation, to save as much as possible the already-spent optimization efforts  
+
+</details>
+
+<details><summary> Lab Session -> Timing modelling using delay tables: Lab steps to convert grid info to track info </summary>
+
+</br>
+
+$\textcolor{blue}{\text{Library Exchange Format (LEF)}}$    
+- Is a specification for representing the physical layout of an integrated circuit in an ASCII format. It includes design rules and abstract information about the standard cells. LEF only has the basic information required at that level to serve the purpose of the concerned CAD tool  
+- Contain information on input, output , power and group port , does not consist logic path information  
+
+<img width="428" alt="image" src="https://user-images.githubusercontent.com/118953915/214241528-130efd67-b2e5-4f3d-94d0-e5c8245e8194.png">
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/118953915/214241618-d25d7779-d8f8-41e9-96b1-312dedc48afd.png">
+
+Now we need to extract LEF to plug into design flow instead of using standard cell library as previous training  
+
+✏️ Guideline for making standard cell set:  
+- The input and output ports must lies on the intersection of vertical and horizontal tracks  
+- The width/height of std cell should be in odd multiples of the x/y pitch of the tracks (The distance between two tracks is called a pitch)  
+
+> For more details on pitch can refer:  https://signoffsemiconductors.com/standard-cell-library/#:~:text=Pitch%20%3A%20The%20distance%20between%20two,layers%20as%20shown%20in%20Fig.
+
+</details>
+
+<details><summary> Lab Session -> Steps to convert magic layout to std cell LEF </summary>
+
+</br>
+
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/118953915/214241664-c420929b-e079-46f7-a2e4-5e3cfb5acd11.png">
+<img width="668" alt="image" src="https://user-images.githubusercontent.com/118953915/214241695-accf9440-bad0-44ff-93ea-012fb08c8465.png">
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/118953915/214241981-fc08b212-34d8-432c-86eb-5c97004719c4.png">
+<img width="436" alt="image" src="https://user-images.githubusercontent.com/118953915/214242052-465ba15c-cc45-4af0-907d-40961617448c.png">  
+
+> save sky130A_vsdinv..mag  
+> magic -T sky130A_vsdinv.mag  
+> lef write    
+
+<img width="469" alt="image" src="https://user-images.githubusercontent.com/118953915/214242096-d1797a16-a02c-4012-904c-47804689da28.png">  
+
+</details>
+
+<details><summary> Lab Session -> Introduction to timing libs and steps to include new cell in synthesis </summary>
+
+</br>
+
+To be continue  
