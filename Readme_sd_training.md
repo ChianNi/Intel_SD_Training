@@ -3368,7 +3368,7 @@ Done characterize inverter
 
 </details>
 
-<details><summary> ⚡ Lecture Session: introduction to Magic tool options and DRC rules </summary>
+<details><summary> Lab Session -> Introduction to Magic tool options and DRC rules </summary>
 
 </br>
 
@@ -3395,7 +3395,7 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
    - Shorts violation  
    - Less than min edge length  
 
-> Can rerfer this link for details on DRC: https://www.design-reuse.com/articles/41504/design-rule-checks-drc-a-practical-view-for-28nm-technology.html#:~:text=Description%3A%20This%20type%20violation%20pops,are%20seeing%20the%20VIA%20misalignment   
+> Can refer this link for details on DRC: https://www.design-reuse.com/articles/41504/design-rule-checks-drc-a-practical-view-for-28nm-technology.html#:~:text=Description%3A%20This%20type%20violation%20pops,are%20seeing%20the%20VIA%20misalignment   
 
 
 </details>
@@ -3404,6 +3404,99 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 
 </br>
 
+<img width="616" alt="image" src="https://user-images.githubusercontent.com/118953915/214232851-5be01549-4117-4879-933e-c045a43ce660.png">
+<img width="388" alt="image" src="https://user-images.githubusercontent.com/118953915/214232895-25dca44c-4971-401d-b46e-0b42382222f5.png">  
+
+> magic -d XR  
+
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/118953915/214232925-a40d4a6e-dc09-4874-b90c-f836dba4cfa6.png">
+<img width="633" alt="image" src="https://user-images.githubusercontent.com/118953915/214232957-0f34f666-4072-48c6-bc19-712677250148.png">
+
 </details>
 
-To be continue
+<details><summary> Lab Session -> Introduction to Magic and steps to load Sky130 tech-rules </summary>
+
+</br>
+
+> Can refer here for SkyWater Open Source PDK documentation: https://skywater-pdk.readthedocs.io/en/main/ & https://github.com/google/skywater-pdk  
+> Can refer here for details on periphery rules: https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html#denmos  
+
+<img width="733" alt="image" src="https://user-images.githubusercontent.com/118953915/214233676-d29b680c-43cd-4400-84b6-dd74820c381b.png">
+
+> cif see VIA2  
+
+<img width="473" alt="image" src="https://user-images.githubusercontent.com/118953915/214233739-c3742268-e501-4489-83e2-32d707885fb1.png">
+
+> feed clear  
+> snap int  
+ 
+<img width="338" alt="image" src="https://user-images.githubusercontent.com/118953915/214233780-cffee0af-f119-401c-923c-17072283f59b.png">
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/118953915/214233869-58416f02-2dfa-4b58-bb24-f8b6e82e9d2b.png">
+
+</details>
+
+<details><summary> Lab Session -> Fix poly.9 error in Sky130 tech-file </summary>
+
+</br>
+ 
+> tech load sky130A.tech  
+> drc check  
+
+</details>
+
+<details><summary> Lab Session -> Implement poly resistor spacing to diff and tap </summary>
+
+</br>
+
+<img width="677" alt="image" src="https://user-images.githubusercontent.com/118953915/214233994-d18beea8-bfbf-4f6d-a246-004023e8f2d3.png">
+<img width="680" alt="image" src="https://user-images.githubusercontent.com/118953915/214234080-08a52bab-c30f-46a0-b49a-0abd521ca1e0.png">
+<img width="437" alt="image" src="https://user-images.githubusercontent.com/118953915/214234123-8f53e46d-5353-43fe-bfcb-6ca4fb48bf14.png">
+<img width="439" alt="image" src="https://user-images.githubusercontent.com/118953915/214234206-dfb37b13-031c-4b34-a2e2-29202f9c7c7c.png"> 
+
+> tech load sky130A.tech  
+> drc check  
+> drc why  
+
+<img width="557" alt="image" src="https://user-images.githubusercontent.com/118953915/214234269-fd9dccd9-834d-44eb-8f10-7a8227e782e4.png">
+
+Try on another rule:  
+
+<img width="440" alt="image" src="https://user-images.githubusercontent.com/118953915/214234397-02e50454-b109-4129-93f2-9c816d467146.png">
+<img width="674" alt="image" src="https://user-images.githubusercontent.com/118953915/214234606-ed97ecf3-03ec-46f6-84ef-a01b65caeb49.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/118953915/214234643-c2faebc1-07f3-460e-ba91-8b1c2860dbfa.png">
+<img width="608" alt="image" src="https://user-images.githubusercontent.com/118953915/214234826-cd3183b7-ca0b-45af-a0f6-ba48bae33766.png">
+
+</details>
+
+<details><summary> Lab Session -> Describe DRC error as geometrical construct </summary>
+
+</br>
+
+<img width="431" alt="image" src="https://user-images.githubusercontent.com/118953915/214235505-6389bf04-ef63-470f-b68f-57aaf39c9e4d.png">
+
+> load nwell.mag  
+
+<img width="415" alt="image" src="https://user-images.githubusercontent.com/118953915/214235651-d49507d7-6b5a-4c48-abc7-af0a01efc9ba.png">
+<img width="572" alt="image" src="https://user-images.githubusercontent.com/118953915/214235693-58f4e61b-9cf9-444d-8fdf-a1efd2e28075.png">
+
+> cif ostyle drc  
+> cif see dnwell_shrink   
+> cif see nwell_missing    
+> 
+<img width="562" alt="image" src="https://user-images.githubusercontent.com/118953915/214235729-c1b2f157-5552-4072-90a5-3d1d8b050c0d.png">
+<img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/214235771-b95534ab-61c9-4c79-9a6e-fbc55ec62e80.png">
+
+</details>
+
+<details><summary> Lab Session -> Find missing or incorrect rules and fix them </summary>
+
+</br>
+ 
+ <img width="545" alt="image" src="https://user-images.githubusercontent.com/118953915/214235337-9385a1d0-95b8-43dc-9aeb-3aee68e25a90.png">
+
+> drc style drc(full)
+
+<img width="656" alt="image" src="https://user-images.githubusercontent.com/118953915/214235392-9a20ace0-cb1c-486d-ba22-1c828852c56e.png">
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/118953915/214235455-b8f38626-89da-437c-bdf9-79bb0eae65fa.png">
+
+</details>
