@@ -3405,6 +3405,9 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 </br>
 
 <img width="616" alt="image" src="https://user-images.githubusercontent.com/118953915/214232851-5be01549-4117-4879-933e-c045a43ce660.png">
+
+</br>
+
 <img width="388" alt="image" src="https://user-images.githubusercontent.com/118953915/214232895-25dca44c-4971-401d-b46e-0b42382222f5.png">  
 
 > magic -d XR  
@@ -3431,6 +3434,9 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 > snap int  
  
 <img width="338" alt="image" src="https://user-images.githubusercontent.com/118953915/214233780-cffee0af-f119-401c-923c-17072283f59b.png">
+
+</br>
+
 <img width="638" alt="image" src="https://user-images.githubusercontent.com/118953915/214233869-58416f02-2dfa-4b58-bb24-f8b6e82e9d2b.png">
 
 </details>
@@ -3441,12 +3447,6 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
  
 > tech load sky130A.tech  
 > drc check  
-
-</details>
-
-<details><summary> Lab Session -> Implement poly resistor spacing to diff and tap </summary>
-
-</br>
 
 <img width="677" alt="image" src="https://user-images.githubusercontent.com/118953915/214233994-d18beea8-bfbf-4f6d-a246-004023e8f2d3.png">
 <img width="680" alt="image" src="https://user-images.githubusercontent.com/118953915/214234080-08a52bab-c30f-46a0-b49a-0abd521ca1e0.png">
@@ -3459,7 +3459,11 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 
 <img width="557" alt="image" src="https://user-images.githubusercontent.com/118953915/214234269-fd9dccd9-834d-44eb-8f10-7a8227e782e4.png">
 
-Try on another rule:  
+</details>
+
+<details><summary> Lab Session -> Implement poly resistor spacing to diff and tap </summary>
+
+</br>
 
 <img width="440" alt="image" src="https://user-images.githubusercontent.com/118953915/214234397-02e50454-b109-4129-93f2-9c816d467146.png">
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/118953915/214234606-ed97ecf3-03ec-46f6-84ef-a01b65caeb49.png">
