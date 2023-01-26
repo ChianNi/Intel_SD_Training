@@ -3585,4 +3585,47 @@ Now we need to extract LEF to plug into design flow instead of using standard ce
 
 </br>
 
-To be continue  
+> make mount  
+> ./flow.tcl -interactive  
+> package require openlane 0.9  
+> prep -design <design> -tag <date> -overwrite  
+> set lefs [glob $::env(DESIGN_DIR)/src/*.lef]  
+> add_lefs -src $lefs  
+> run_synthesis  
+
+<img width="439" alt="image" src="https://user-images.githubusercontent.com/118953915/214742894-30c9a440-c54b-409b-9452-f554737f735f.png">
+
+ </br>
+ 
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/214742919-506fe1ee-7b30-4500-ab92-30cd3d479453.png">
+ 
+ </br>
+ 
+<img width="518" alt="image" src="https://user-images.githubusercontent.com/118953915/214742941-062d997f-8b27-4852-a75c-2a37a4d96be8.png">
+
+ </br>
+ 
+<img width="389" alt="image" src="https://user-images.githubusercontent.com/118953915/214742958-819e610e-3840-452d-bf3d-7806a1814185.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Introduction to delay tables </summary>
+
+</br>
+
+Clock gating is a power-saving feature in semiconductor microelectronics that enables switching off circuits. Many electronic devices use clock gating to turn off buses, controllers, bridges and parts of processors, to reduce dynamic power consumption.  
+<img width="598" alt="image" src="https://user-images.githubusercontent.com/118953915/214743794-aeb2ff4c-1936-4294-b8d6-43ca2ff251f8.png">
+ <img width="503" alt="image" src="https://user-images.githubusercontent.com/118953915/214743829-face9336-a994-4012-8c5c-80d7a3f63a5f.png">
+ <img width="557" alt="image" src="https://user-images.githubusercontent.com/118953915/214743869-1e83799c-bbad-4136-a0de-32b6e50120c5.png">
+ <img width="677" alt="image" src="https://user-images.githubusercontent.com/118953915/214744025-01c03091-20ce-4f9e-ad16-2361887d90d2.png">
+ <img width="719" alt="image" src="https://user-images.githubusercontent.com/118953915/214744076-dfaa881d-768f-44d7-a248-829d410a5e5f.png">
+ <img width="448" alt="image" src="https://user-images.githubusercontent.com/118953915/214744116-28847773-bffa-4afc-abfb-bc46a9ab4a23.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Delay table usage </summary>
+
+</br>
+
+
+
