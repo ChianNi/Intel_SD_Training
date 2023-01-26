@@ -3791,12 +3791,79 @@ Crosstalk is defined as the coupling of voltage to an adjacent line through mutu
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/214780433-ea7c41d7-2600-4937-9aa0-8c1cc3593cad.png">
 <img width="440" alt="image" src="https://user-images.githubusercontent.com/118953915/214780461-09fb1a67-06dd-4a64-9de8-05bebabcea89.png">
 
+</details>
 
+<details><summary> ⚡ Lecture Session: Timing analysis with real clocks using openSTA: Setup timing analysis using real clocks </summary>
+
+</br>
+
+<img width="523" alt="image" src="https://user-images.githubusercontent.com/118953915/214893895-852410df-6ccd-41ee-ab23-77fb63231193.png">
+<img width="541" alt="image" src="https://user-images.githubusercontent.com/118953915/214893827-041f0b56-d53e-456e-90fe-021833752d0c.png">
+<img width="541" alt="image" src="https://user-images.githubusercontent.com/118953915/214893971-479b8b59-7e4d-4984-94cf-6a7ad561dd76.png">
+<img width="541" alt="image" src="https://user-images.githubusercontent.com/118953915/214893999-658067ac-a7c5-4c8a-a037-5a733d9b8a33.png">
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/214894042-b538795e-10cf-4ded-a95d-c253779519fb.png">
 
 </details>
 
-To be continue
+<details><summary> ⚡ Lecture Session: Hold timing analysis using real clocks </summary>
 
+ </br>
+ 
+<img width="574" alt="image" src="https://user-images.githubusercontent.com/118953915/214894116-bee32815-8ac5-4783-8a81-26587f6ab4e6.png">
+<img width="674" alt="image" src="https://user-images.githubusercontent.com/118953915/214894165-fbad4620-1171-48a7-a181-6bf0e5a8b840.png">
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/118953915/214894197-25b822e0-024b-47da-861d-dc30c42e5452.png">
+<img width="447" alt="image" src="https://user-images.githubusercontent.com/118953915/214894230-37a90eb8-86cb-4aa1-a977-84c02bbe1baf.png">
+ 
+ </details>
+
+<details><summary> Lab Session -> Steps to analyze timing with real clocks using OpenSTA </summary>
+
+ </br>
+
+> openroad
+> read_def
+> read_lef
+> write_db
+> read_db
+> read_verilog <- cts.v
+> read_sdc
+> set_propagated_clock [all_clocks]
+
+<img width="447" alt="image" src="https://user-images.githubusercontent.com/118953915/214894311-488e7de4-cc7c-49c1-bf1b-148f8cf41c91.png">
+<img width="476" alt="image" src="https://user-images.githubusercontent.com/118953915/214894352-ac652543-241f-492c-ad44-e1f98a3f84d1.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/118953915/214894394-ed768b69-cc3d-4109-9e52-f6d5f262f892.png">
+
+</details>
+
+<details><summary> Lab Session -> Steps to execute OpenSTA with right timing libraries and CTS assignment </summary>
+
+ </br>
+
+> link_design
+
+<img width="446" alt="image" src="https://user-images.githubusercontent.com/118953915/214894724-948a55dc-0488-4d4c-a55c-e0409a8f4bdf.png">
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/118953915/214894760-aa6cdb5e-16c9-4add-9bd0-6186ef9c4c4d.png">
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/118953915/214894820-9ac3f794-a51b-4d89-aeef-180f3da00331.png">
+<img width="458" alt="image" src="https://user-images.githubusercontent.com/118953915/214894864-089f691e-cb6b-4515-be44-b5f0484c48d1.png">
+
+</details>
+
+<details><summary> Lab Session -> Steps to observe impact of bigger CTS buffers on setup and hold timing </summary>
+
+ </br>
+ 
+> exit openroad
+> lreplace
+> run_cts
+
+<img width="456" alt="image" src="https://user-images.githubusercontent.com/118953915/214895080-340417b0-b2cf-4166-87bd-daa1fc077276.png">
+<img width="652" alt="image" src="https://user-images.githubusercontent.com/118953915/214895385-6aad9d75-928f-4796-a8c3-560695aad696.png">
+<img width="605" alt="image" src="https://user-images.githubusercontent.com/118953915/214895334-ba8f7ecc-95da-4080-80e4-1f234412b1cc.png">
+<img width="652" alt="image" src="https://user-images.githubusercontent.com/118953915/214895418-d841a62f-1b9e-4bc6-ad4c-327ccd4a9f80.png">
+
+>report_clock_skew -setup/hold
+
+<img width="652" alt="image" src="https://user-images.githubusercontent.com/118953915/214895491-6b04709c-b595-47bb-a704-20d910ac1bd8.png">
 
 #
 # Day_19 
