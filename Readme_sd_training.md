@@ -3886,6 +3886,63 @@ Then will proceed to resolve DRC violation and working on power distribution net
 
 </details>
 
-<details><summary> ⚡ Lecture Session: C </summary>
+<details><summary> ⚡ Lecture Session: Routing and design rule check (DRC): Introduction to Maze Routing Lee’s Algorithm </summary>
 
 </br>
+
+Now we procees to route stage  
+
+</br>
+
+Maze Routing-Lee’s Algorithm [Lee 1961]  
+- Maze Routing Algorithm which is a manifestation of Breadth First Search (BFS) Algorithm to find the shortest path between two nodes in a grid  
+
+<img width="556" alt="image" src="https://user-images.githubusercontent.com/118953915/214913479-6ca392b8-db8e-4d9a-ad7a-64033bc65362.png">
+<img width="498" alt="image" src="https://user-images.githubusercontent.com/118953915/214913517-47d17952-e030-4498-8313-1dab88f4dd87.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Lee’s Algorithm conclusion </summary>
+
+</br>
+
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/214913667-4d21945e-254d-4d3f-b404-1c7d0c8366e1.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Design Rule Check </summary>
+
+</br>
+
+Design Rule Checking (DRC) verifies as to whether a specific design meets the constraints imposed by the process technology to be used for its manufacturing  
+
+> Can refer this website for more example and solution on DRC: 
+https://www.design-reuse.com/articles/41504/design-rule-checks-drc-a-practical-view-for-28nm-technology.html  
+
+<img width="724" alt="image" src="https://user-images.githubusercontent.com/118953915/214913790-0c66d160-120b-46aa-842e-65a6a94b4b8c.png">
+<img width="566" alt="image" src="https://user-images.githubusercontent.com/118953915/214913831-e4ab9ac7-cad6-45a6-b753-83b18667ca05.png">  
+
+</br>
+
+Via  
+- To connect between different metal layers, we need poly layer along with the metal layers that we are going to connect  
+
+</br>
+
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/118953915/214913867-9966d487-7184-4be9-a441-07d1b24db3b4.png">
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/118953915/214913904-4b580f09-2e27-40b1-a5a7-7c38306ed5de.png">
+
+
+</details>
+
+<details><summary> Lab Session -> Steps to build power distribution network </summary>
+
+ </br>
+
+<img width="489" alt="image" src="https://user-images.githubusercontent.com/118953915/214914412-8dab66c3-79b9-4fc1-8728-e45e7b90a276.png">
+
+
+</details>
+
+
+To be continue  
