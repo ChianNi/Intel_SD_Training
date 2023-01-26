@@ -3615,11 +3615,9 @@ Now we need to extract LEF to plug into design flow instead of using standard ce
 
 Clock gating is a power-saving feature in semiconductor microelectronics that enables switching off circuits. Many electronic devices use clock gating to turn off buses, controllers, bridges and parts of processors, to reduce dynamic power consumption.  
 <img width="598" alt="image" src="https://user-images.githubusercontent.com/118953915/214743794-aeb2ff4c-1936-4294-b8d6-43ca2ff251f8.png">
- <img width="503" alt="image" src="https://user-images.githubusercontent.com/118953915/214743829-face9336-a994-4012-8c5c-80d7a3f63a5f.png">
- <img width="557" alt="image" src="https://user-images.githubusercontent.com/118953915/214743869-1e83799c-bbad-4136-a0de-32b6e50120c5.png">
- <img width="677" alt="image" src="https://user-images.githubusercontent.com/118953915/214744025-01c03091-20ce-4f9e-ad16-2361887d90d2.png">
- <img width="719" alt="image" src="https://user-images.githubusercontent.com/118953915/214744076-dfaa881d-768f-44d7-a248-829d410a5e5f.png">
- <img width="448" alt="image" src="https://user-images.githubusercontent.com/118953915/214744116-28847773-bffa-4afc-abfb-bc46a9ab4a23.png">
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/118953915/214743829-face9336-a994-4012-8c5c-80d7a3f63a5f.png">
+<img width="557" alt="image" src="https://user-images.githubusercontent.com/118953915/214743869-1e83799c-bbad-4136-a0de-32b6e50120c5.png">
+<img width="677" alt="image" src="https://user-images.githubusercontent.com/118953915/214744025-01c03091-20ce-4f9e-ad16-2361887d90d2.png">
 
 </details>
 
@@ -3627,5 +3625,32 @@ Clock gating is a power-saving feature in semiconductor microelectronics that en
 
 </br>
 
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/118953915/214744076-dfaa881d-768f-44d7-a248-829d410a5e5f.png">
+<img width="448" alt="image" src="https://user-images.githubusercontent.com/118953915/214744116-28847773-bffa-4afc-abfb-bc46a9ab4a23.png">
 
+</details>
 
+<details><summary> Lab Session -> Steps to configure synthesis settings to fix slack and include vsdinv </summary>
+
+</br>
+
+> Reference github: https://github.com/AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop#day-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta
+
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/118953915/214746458-ab7e52df-22c2-462f-b59f-399423f8769e.png">
+<img width="694" alt="image" src="https://user-images.githubusercontent.com/118953915/214746566-6bea943f-6810-43ed-a5c4-5f73c0f313bd.png">
+<img width="642" alt="image" src="https://user-images.githubusercontent.com/118953915/214746590-9a38efc7-5841-492b-b6af-238562ca0eb0.png">
+
+>run_syntheisis <- need to remove previous netlist
+>run_floorplan
+
+<img width="718" alt="image" src="https://user-images.githubusercontent.com/118953915/214746648-59b2a7c3-7fcc-4e18-8b92-c00fb306d828.png">
+
+>run_placement
+
+<img width="483" alt="image" src="https://user-images.githubusercontent.com/118953915/214746692-47846d40-405e-4ec9-b3de-888a424c39c8.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Timing analysis with ideal clocks using openSTA: Setup timing analysis and introduction to flip-flop setup time </summary>
+
+</br>
