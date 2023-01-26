@@ -3863,7 +3863,9 @@ Crosstalk is defined as the coupling of voltage to an adjacent line through mutu
 
 >report_clock_skew -setup/hold
 
-<img width="652" alt="image" src="https://user-images.githubusercontent.com/118953915/214895491-6b04709c-b595-47bb-a704-20d910ac1bd8.png">
+<img width="582" alt="image" src="https://user-images.githubusercontent.com/118953915/214895922-a07bcb7a-fd0a-41ce-81da-3378a2bf7482.png">
+
+</details>
 
 #
 # Day_19 
