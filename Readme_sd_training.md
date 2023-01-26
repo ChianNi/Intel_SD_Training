@@ -3783,6 +3783,9 @@ Crosstalk is defined as the coupling of voltage to an adjacent line through mutu
 </br>
 
 <img width="447" alt="image" src="https://user-images.githubusercontent.com/118953915/214779829-11888a4b-8ca1-47c3-9003-01ecaf3f68a9.png">
+
+</br>
+
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/118953915/214780385-8995e80d-ce86-41fd-8876-0460c29b026d.png">
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/214780433-ea7c41d7-2600-4937-9aa0-8c1cc3593cad.png">
 <img width="440" alt="image" src="https://user-images.githubusercontent.com/118953915/214780461-09fb1a67-06dd-4a64-9de8-05bebabcea89.png">
