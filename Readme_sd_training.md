@@ -3654,3 +3654,113 @@ Clock gating is a power-saving feature in semiconductor microelectronics that en
 <details><summary> ⚡ Lecture Session: Timing analysis with ideal clocks using openSTA: Setup timing analysis and introduction to flip-flop setup time </summary>
 
 </br>
+
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/118953915/214777606-a2465e71-b2b7-4dea-a3b3-f50bec0f62e5.png">
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/118953915/214777696-df50458d-a636-4274-ae84-0f0304f2f0bd.png">
+<img width="474" alt="image" src="https://user-images.githubusercontent.com/118953915/214777664-fc5d390b-8469-42b9-9052-3d0ff70114d8.png">
+<img width="488" alt="image" src="https://user-images.githubusercontent.com/118953915/214777732-b93c35fc-4548-46e3-b70a-5f4fdf0df731.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Introduction to clock jitter and uncertainty </summary>
+
+</br>
+
+Jitter  
+- Deviation of a clock edge from its ideal location 
+- Typically caused by clock generator circuitry, noise, power supply variations, interference from nearby circuitry etc. Jitter is a contributing factor to the design margin specified for timing closure  
+ 
+<img width="557" alt="image" src="https://user-images.githubusercontent.com/118953915/214778043-3e8ceba7-621b-4f9c-9c81-dca1670927a7.png">
+<img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/214778076-2a26808b-becd-4286-8c13-0eaf6cd18ba3.png">
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/118953915/214778121-1b22eb24-d244-4242-bfed-d52aee504560.png">
+<img width="585" alt="image" src="https://user-images.githubusercontent.com/118953915/214778157-02f106c2-00e6-4b10-922e-b337de475028.png">
+
+</details>
+
+<details><summary> Lab Session -> Steps to configure OpenSTA for post-synth timing analysis </summary>
+
+</br>
+
+> sta pre_sta.conf
+
+<img width="743" alt="image" src="https://user-images.githubusercontent.com/118953915/214778298-5a265ada-d5da-42d5-9cc7-2b86e0f634cc.png">
+<img width="440" alt="image" src="https://user-images.githubusercontent.com/118953915/214778323-2b6955af-1830-499b-aac8-1b61ece47062.png">
+<img width="446" alt="image" src="https://user-images.githubusercontent.com/118953915/214778355-c3ec73de-2a6a-4ea4-8d5e-1dd5bfbfd6dd.png">
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/118953915/214778375-f548df50-5c9f-4f40-bbe2-73c864a5c790.png">
+
+</details>
+
+<details><summary> Lab Session -> Steps to optimize synthesis to reduce setup violations </summary>
+
+</br>
+
+<img width="446" alt="image" src="https://user-images.githubusercontent.com/118953915/214778473-83df5a28-88dd-4e06-9000-63ab1d344448.png">
+<img width="557" alt="image" src="https://user-images.githubusercontent.com/118953915/214778521-c6037916-4d97-4ca3-a825-f915d2e9c59c.png">
+<img width="434" alt="image" src="https://user-images.githubusercontent.com/118953915/214778560-977adbc8-cffb-4610-8c3f-167d21a7ba23.png">
+<img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/214778711-4445952b-4cb3-4cb3-8020-2d5253a41da5.png">
+
+> replace_cell <instance> <lib_cell>  
+>report_checks -fields {net cap slew input_pins} -digits 4  
+
+ <img width="614" alt="image" src="https://user-images.githubusercontent.com/118953915/214778801-5375a9ae-8c47-499a-9d93-2504e9859881.png">
+<img width="464" alt="image" src="https://user-images.githubusercontent.com/118953915/214778906-99f7b033-1ba0-4339-8b07-edb8fe66d21b.png">
+
+
+</details>
+
+<details><summary> Lab Session -> Steps to do basic timing ECO </summary>
+
+</br>
+
+> report_checks -from <instance> -through <instance>  
+ 
+<img width="662" alt="image" src="https://user-images.githubusercontent.com/118953915/214778964-5c357462-aba6-46b2-9693-a27e56492895.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Clock tree synthesis TritonCTS and signal integrity: Clock tree routing and buffering using H-Tree algorithm </summary>
+
+</br>
+
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/118953915/214779131-3cadc347-a3f2-43a4-9726-f0f41e182944.png">
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/118953915/214779159-71f7b483-b480-40da-8bad-f1d796f7482d.png">
+<img width="572" alt="image" src="https://user-images.githubusercontent.com/118953915/214779177-9fd9d993-1824-4bfb-af58-87ac841828bc.png">
+<img width="563" alt="image" src="https://user-images.githubusercontent.com/118953915/214779207-2aeeab14-b32d-445f-8885-d19d2c42d7b8.png">
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/118953915/214779226-119be948-43ca-43e8-9787-42a3ae74ad08.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Crosstalk and clock net shielding </summary>
+
+</br>
+
+Crosstalk is defined as the coupling of voltage to an adjacent line through mutual coupling composed of a mutual inductance, a coupling capacitance, or both  
+
+<img width="610" alt="image" src="https://user-images.githubusercontent.com/118953915/214779379-05509ce2-d79b-4a62-bd79-aeab291985f5.png">
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/118953915/214779404-489fe1c2-27d5-410a-a318-61fe0f4cd59d.png">
+
+</details>
+
+<details><summary> Lab Session -> Steps to run CTS using TritonCTS </summary>
+
+</br>
+
+<img width="438" alt="image" src="https://user-images.githubusercontent.com/118953915/214779604-3a38b13a-f235-4c91-9a25-6173eefc8c05.png">
+
+>run_cts
+
+<img width="748" alt="image" src="https://user-images.githubusercontent.com/118953915/214779656-6d006017-18ee-4dcb-9bcd-b717edf864bb.png">
+
+</details>
+
+<details><summary> Lab Session -> Steps to verify CTS runs </summary>
+
+</br>
+
+<img width="437" alt="image" src="https://user-images.githubusercontent.com/118953915/214779792-96f044c7-89fd-49a6-b370-30073c025991.png">
+<img width="447" alt="image" src="https://user-images.githubusercontent.com/118953915/214779829-11888a4b-8ca1-47c3-9003-01ecaf3f68a9.png">
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/118953915/214780385-8995e80d-ce86-41fd-8876-0460c29b026d.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/214780433-ea7c41d7-2600-4937-9aa0-8c1cc3593cad.png">
+<img width="440" alt="image" src="https://user-images.githubusercontent.com/118953915/214780461-09fb1a67-06dd-4a64-9de8-05bebabcea89.png">
+
+
