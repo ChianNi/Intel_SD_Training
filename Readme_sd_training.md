@@ -19,6 +19,7 @@
 + **[ Day_16 : Understand importance of good floorplan vs bad floor plan and introduction to library cells ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_16)**
 + **[ Day_17 : Design and characterise one library cell using Layout tool and spice simulator ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_17)**
 + **[ Day_18 : Pre-layout timing analysis and importance of good clock tree  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_18)**
++  **[ Day_19 : Final steps for RTL2GDS  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_19)**
 
 #
 # Day_0 
@@ -3791,3 +3792,31 @@ Crosstalk is defined as the coupling of voltage to an adjacent line through mutu
 <img width="440" alt="image" src="https://user-images.githubusercontent.com/118953915/214780461-09fb1a67-06dd-4a64-9de8-05bebabcea89.png">
 
 
+
+</details>
+
+To be continue
+
+
+#
+# Day_19 
+**⭐ Final steps for RTL2GDS**
+
+<details><summary> ⚡ Lecture Session: Final steps for RTL2GDS - Live session </summary>
+
+</br>
+
+After done clock routing, then will proceed to signal routing  
+- Implement the interconnect using the available metal layers as defined by PDK (there is 6 routing layers in sky130 PDK)  
+- Metal is tracks from a routing grid  
+- Routing grid is huge, so required to divide and conquer  
+   - Global Routing: Generates routing guides  
+   - Detailed Routing: Use routing guides to implement the actual wiring  
+  
+Then will proceed to resolve DRC violation and working on power distribution net  
+
+</details>
+
+<details><summary> ⚡ Lecture Session: C </summary>
+
+</br>
