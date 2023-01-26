@@ -3508,7 +3508,8 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 > drc style drc(full)
 
 <img width="656" alt="image" src="https://user-images.githubusercontent.com/118953915/214235392-9a20ace0-cb1c-486d-ba22-1c828852c56e.png">
-<img width="539" alt="image" src="https://user-images.githubusercontent.com/118953915/214235455-b8f38626-89da-437c-bdf9-79bb0eae65fa.png">
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/118953915/214235455-b8f38626-89da-437c-bdf9-79bb0eae65fa.png">   
+->  Add in nsubstratencontact and recheck: drc style drc(full)  
 
 </details>
 
