@@ -3914,7 +3914,8 @@ Maze Routing-Lee’s Algorithm [Lee 1961]
 
 </br>
 
-Design Rule Checking (DRC) verifies as to whether a specific design meets the constraints imposed by the process technology to be used for its manufacturing  
+Design Rule Checking (DRC)  
+- Verifies as to whether a specific design meets the constraints imposed by the process technology to be used for its manufacturing  
 
 > Can refer this website for more example and solution on DRC: 
 https://www.design-reuse.com/articles/41504/design-rule-checks-drc-a-practical-view-for-28nm-technology.html  
@@ -3922,14 +3923,15 @@ https://www.design-reuse.com/articles/41504/design-rule-checks-drc-a-practical-v
 <img width="724" alt="image" src="https://user-images.githubusercontent.com/118953915/214913790-0c66d160-120b-46aa-842e-65a6a94b4b8c.png">
 <img width="566" alt="image" src="https://user-images.githubusercontent.com/118953915/214913831-e4ab9ac7-cad6-45a6-b753-83b18667ca05.png">  
 
-</br>
+</br>  
 
 Via  
 - To connect between different metal layers, we need poly layer along with the metal layers that we are going to connect  
 
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/118953915/214913867-9966d487-7184-4be9-a441-07d1b24db3b4.png">
+
 </br>
 
-<img width="413" alt="image" src="https://user-images.githubusercontent.com/118953915/214913867-9966d487-7184-4be9-a441-07d1b24db3b4.png">
 <img width="550" alt="image" src="https://user-images.githubusercontent.com/118953915/214913904-4b580f09-2e27-40b1-a5a7-7c38306ed5de.png">
 
 
