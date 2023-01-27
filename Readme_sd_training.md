@@ -19,7 +19,8 @@
 + **[ Day_16 : Understand importance of good floorplan vs bad floor plan and introduction to library cells ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_16)**
 + **[ Day_17 : Design and characterise one library cell using Layout tool and spice simulator ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_17)**
 + **[ Day_18 : Pre-layout timing analysis and importance of good clock tree  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_18)**
-+  **[ Day_19 : Final steps for RTL2GDS  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_19)**
++ **[ Day_19 : Final steps for RTL2GDS  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_19)**
++ **[ Day_20 : Floorplanning and power planning labs  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_20)**
 
 #
 # Day_0 
@@ -4041,3 +4042,32 @@ Via
 
 
 </details>
+
+
+#
+# Day_20 
+**⭐ Floorplanning and power planning labs**
+
+<details><summary> ⚡ Lecture Session: Floorplanning and power planning labs - Live session </summary>
+ 
+ </br>  
+ 
+ The physical design flow uses the technology libraries that are provided by the fabrication houses. These technology files provide information regarding the type of silicon wafer used, the standard-cells used, the layout rules (like DRC in VLSI), etc.
+
+Here is some required files:
+
+File | Details |
+---| --- |
+.lib | Standard cell library is a collection of well defined and pre-characterized logic cells with multi-drive strength and multi-threshold voltage cells in the form of a predefined standard cell layout |
+.tf | Technology lef contains information about the metal layers and vias and design rules whereas cell lef file contains an abstract view of the layout of standard cells. tf file basically contain the information of technology like metal layer, via and design rule information|
+.gds | GDS file is an Integrated Circuit (IC) design file which contains many information about the circuit such as layout of a circuit, including the layers, geometric shapes, and text labels |
+.spef | SPEF is extracted after routing in Place and route stage. This helps in the accurate calculation of IR-drop analysis and other analysis after routing. This file contains the R and C parameters depending on the placement of a tile/block and the routing among the placed cells |
+.sdf | SDF file combines these information and gives out a file that has accurate delays for each component in the layout database
+.def | Design Exchange Format (DEF) is used to represent the physical layout of an IC in an ASCII format. It represents the netlist and circuit layout |   
+  
+</br>
+
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/118953915/215168033-f16190d3-0e36-4757-a94a-24ff2b518dc3.png">
+
+</details>
+
