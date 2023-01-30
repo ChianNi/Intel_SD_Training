@@ -3511,7 +3511,10 @@ $\textcolor{blue}{\text{Design Rule Checking (DRC)}}$
 
 <img width="656" alt="image" src="https://user-images.githubusercontent.com/118953915/214235392-9a20ace0-cb1c-486d-ba22-1c828852c56e.png">
 <img width="539" alt="image" src="https://user-images.githubusercontent.com/118953915/214235455-b8f38626-89da-437c-bdf9-79bb0eae65fa.png">   
-->  Add in nsubstratencontact and recheck: drc style drc(full)  
+
+</br>
+
+->Add in nsubstratencontact and recheck: drc style drc(full)  
 
 </details>
 
@@ -4071,3 +4074,88 @@ File | Details |
 
 </details>
 
+<details><summary> Lab Session -> Physical design flow - VSDBabySoC </summary>
+
+ </br>
+ 
+Here is the reference github:   
+> https://github.com/manili/VSDBabySoC  
+> https://github.com/bharath19-gs/VSDBabySoC_ICC2  
+> https://github.com/Devipriya1921/VSDBabySoC_ICC2  
+> https://github.com/bharath19-gs/synopsys_ICC2flow_130nm  
+
+Obtained collateral files:  
+> git clone https://github.com/bharath19-gs/VSDBabySoC_ICC2.git  
+> git clone https://github.com/manili/VSDBabySoC.git  
+> git clone https://github.com/bharath19-gs/synopsys_ICC2flow_130nm.git    
+
+</br>
+
+(A) Here is the steps in dc_shell:    
+> source vsdbabysoc.tcl     
+
+</br>
+
+1.Set library to link with design
+![image](https://user-images.githubusercontent.com/118953915/215523655-bccccd63-0a91-49b8-80ce-df0ed373ad10.png)  
+
+</br>
+
+2.Read verilog, read liberty
+![image](https://user-images.githubusercontent.com/118953915/215524403-b605c880-b1aa-42da-aeab-c921af471afa.png)  
+![image](https://user-images.githubusercontent.com/118953915/215524439-c2122c8b-12aa-4db3-8f02-733ce6a0fd3e.png)
+![image](https://user-images.githubusercontent.com/118953915/215524529-5d86ed81-643d-41f6-8578-4c0fddd534d4.png)
+![image](https://user-images.githubusercontent.com/118953915/215524541-387512a4-bf75-4fce-aa44-550298b95e47.png)
+![image](https://user-images.githubusercontent.com/118953915/215524568-29d9657e-05dc-460c-98e2-a8316476933d.png)
+
+</br>
+
+3.Set constraints  
+The clock in the design is "clk"  
+![image](https://user-images.githubusercontent.com/118953915/215524828-71db32df-f9ac-4773-8575-6c6f049ca9b3.png)
+![image](https://user-images.githubusercontent.com/118953915/215524853-f908e5e5-9cf3-4a29-a844-822c79a7ee54.png)
+
+</br>
+
+4.Check_design - Checks the internal representation of the current design for consistency, and issues error and warning  messages  as appropriate    
+![image](https://user-images.githubusercontent.com/118953915/215524989-4eff952c-7945-4d38-b833-14b038f5ebab.png)  
+-There is several violations will proceed compile_ultra  
+![image](https://user-images.githubusercontent.com/118953915/215525203-fbb6f832-2ee6-4024-8dcb-578f64315272.png)
+-After compile_ultra, no more violations  
+![image](https://user-images.githubusercontent.com/118953915/215525292-2cbf0b15-f14c-4c92-bf20-8a99294a47ee.png)
+
+</br>
+
+5.Check Area, Timing, Power    
+![image](https://user-images.githubusercontent.com/118953915/215526182-82babb83-01fc-4362-afe2-e18e7dc585d4.png)
+Here is the all the report:  
+![image](https://user-images.githubusercontent.com/118953915/215526333-6fda82d2-e207-44d6-9698-dbbd5fc265b3.png)
+
+</br>
+
+For area:    
+<img width="819" alt="image" src="https://user-images.githubusercontent.com/118953915/215526727-870e0f91-3ae4-4f1b-ab90-44b9afe9be2c.png">  
+For timing:  
+Timing is met  
+<img width="398" alt="image" src="https://user-images.githubusercontent.com/118953915/215527212-2ed3695a-dbd8-4515-a47f-21f79ba3d60c.png">    
+For power:  
+<img width="797" alt="image" src="https://user-images.githubusercontent.com/118953915/215529664-1c7e4a90-f865-43c7-9833-60328dfca7ce.png">
+
+</br>
+
+5.Here is the schematic:  
+> gui_start  
+![image](https://user-images.githubusercontent.com/118953915/215530045-ec0f3425-b1d8-4ed8-8f3e-e31da24b49c1.png)  
+
+
+</br> 
+
+(B) Here is the steps in icc2_shell:    
+> source top.tcl 
+![image](https://user-images.githubusercontent.com/118953915/215530310-7c22b252-02f5-4d24-aaa3-4899ad4d19d3.png)
+
+![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)
+
+</details>
+
+To be continue
