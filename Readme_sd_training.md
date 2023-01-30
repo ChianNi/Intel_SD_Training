@@ -4126,6 +4126,10 @@ The clock in the design is "clk"
 
 </br>
 
+$\textcolor{blue}{\text{Done synthesize rtl into netlist and set constraints}}$  
+
+</br>
+
 5.Check Area, Timing, Power    
 ![image](https://user-images.githubusercontent.com/118953915/215526182-82babb83-01fc-4362-afe2-e18e7dc585d4.png)
 Here is the all the report:  
@@ -4151,10 +4155,13 @@ For power:
 </br> 
 
 (B) Here is the steps in icc2_shell:    
-> source top.tcl 
+> source top.tcl  
+
 ![image](https://user-images.githubusercontent.com/118953915/215530310-7c22b252-02f5-4d24-aaa3-4899ad4d19d3.png)
 
-![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)
+In this file consists setting for multiple scenarios, tech file , etc  
+![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)  
+<img width="953" alt="image" src="https://user-images.githubusercontent.com/118953915/215538824-651e3a51-a939-4ab1-b9bf-80faf23308ea.png">  
 
 </details>
 
