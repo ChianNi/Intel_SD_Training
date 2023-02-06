@@ -21,6 +21,8 @@
 + **[ Day_18 : Pre-layout timing analysis and importance of good clock tree  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_18)**
 + **[ Day_19 : Final steps for RTL2GDS  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_19)**
 + **[ Day_20 : Floorplanning and power planning labs  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_20)**
++ **[ Day_21 : Placement and CTS  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_21)**
++ **[ Day_22 : CTS analysis labs  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_22)**
 
 #
 # Day_0 
@@ -4166,3 +4168,67 @@ In this file consists setting for multiple scenarios, tech file , etc
 </details>
 
 To be continue
+
+#
+# Day_21 
+**⭐Placement and CTS**
+
+<details><summary> ⚡ Lecture Session: Placement and CTS </summary>
+
+</br>  
+ 
+$\textcolor{blue}{\text{Placement}}$       
+- Before enter placement stage, need to perform sanity checks (Floating pins in netlist, unconstrained pins, timing, pin direction mismatch, etc)  
+- Placement is the process of placing the standard cells inside the core boundary in an optimal location. The tool tries to place the standard cell in such a way that the design should have minimal congestions and the best timing  
+- Placement stages:  
+   - Global Placement: Is a very first stage of the placement where cells are placed inside the core area for the first time looking at the timing and congestion.  Global Placement aims at generating a rough placement solution that may violate some placement constraints while maintaining a global view of the whole Netlist  
+   - Legalization: The tool will move the instances in nearby places to overcome the overlap. To match the proper power pins like the vdd pin of a standard cell should be on the vdd rail and vss on vss rail and for that if the fliping of instance is required tool also do the flipping    
+   - Detailed Placement: Final stage of placement where improve the quality: congestion, timing and power     
+- Placement Objectives / Quality Checks: Congestion, Performance, Timing, Routability, Runtime  
+   - When the number of routing tracks available for routing in a given location is less than the number necessary, the area is considered congested  
+
+$\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$    
+- CTS is the process of connecting the clocks to all clock pin of sequential circuits by using inverters/buffers in order to balance the skew and to minimize the insertion delay. All the clock pins are driven by a single clock source (PLL). Clock balancing is important for meeting all the design constraints.  
+- Inputs of CTS: Placement DB, CTS Spec File (contains the skew values defined, max and min transition of the clocks along with other timing constraint, rule defination, etc)    
+- CTS Steps:  
+  - Clustering (depending geometry location, skew group,...)  
+  - Design Rule Violation (DRV) Fixing (max transition, max fanout,...)  
+  - Insertion Delay Reduction (reduce delay)  
+  - Power Reduction (clock consume high power, reduce power)  
+  - Balancing (use buffer/inveter)  
+  - Post-Conditioning (fix DRV)
+  - ClockTreeSynthesis(CTS)
+- CTS Quality Checks:  
+   - Skew  
+   - Pulse width (Minimum pulse width checks are done to ensure that width of the clock signal is wide enough for the cell's internal operations to complete)    
+   - Duty cycle (Duty cycle is the ratio of time a load or circuit is ON compared to the time the load or circuit is OFF)    
+   - Latency  
+   - Clock tree power  
+   - Signal Integrity and Crosstalk -Timing Analysis and Fixing 
+     - Crosstalk is a signal integrity issue that occurs when the signal from one trace couples with another trace, causing interference. There are three essential principles of crosstalk: capacitive coupling, inductive coupling, and conductive coupling.  
+
+</details>
+
+<details><summary> Lab Session -> Placement and CTS </summary>
+
+</br>
+
+</details>
+
+#
+# Day_22 
+**⭐CTS analysis labs**
+
+<details><summary> ⚡ Lecture Session: CTS analysis labs </summary>
+
+### *__Lecture Session__*
+ 
+</details>
+
+
+
+<details><summary> Lab Session -> CTS </summary>
+
+</br>
+
+</details>
