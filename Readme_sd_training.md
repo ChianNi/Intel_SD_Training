@@ -4207,6 +4207,8 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$
    - Signal Integrity and Crosstalk -Timing Analysis and Fixing 
      - Crosstalk is a signal integrity issue that occurs when the signal from one trace couples with another trace, causing interference. There are three essential principles of crosstalk: capacitive coupling, inductive coupling, and conductive coupling.  
 
+> Udemy course: https://www.udemy.com/course/vlsi-academy-clock-tree-synthesis/learn/lecture/876472?start=0#overview  
+
 </details>
 
 <details><summary> Lab Session -> Placement and CTS </summary>
