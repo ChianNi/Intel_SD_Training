@@ -4168,8 +4168,10 @@ For power:
   -  Make sure include each of the collaterals (.lef, .db) - sky130*, PLL, DAC   
   -  Generate TLU+ from ITF   
     
-<img width="545" alt="image" src="https://user-images.githubusercontent.com/118953915/217433046-30f5494d-edd4-49ad-85bc-b96cfe8fdd3a.png">      
-Here is the contents:    
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/118953915/217433046-30f5494d-edd4-49ad-85bc-b96cfe8fdd3a.png">   
+
+Here is part of the contents:    
+
 <img width="931" alt="image" src="https://user-images.githubusercontent.com/118953915/217402596-3a537949-9f8f-442f-9077-12415e4b90e3.png">  
 <img width="912" alt="image" src="https://user-images.githubusercontent.com/118953915/217402693-a38a8868-cf85-4a8a-bcb6-745487e1664b.png">
 
@@ -4194,11 +4196,15 @@ $\textcolor{blue}{\text{Done floorplan, placement and power}}$
 
 </br>
 
+
 <img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/217413288-27d40a0f-9149-4a78-8999-a1ac961bb29a.png">  
+
 Here is the overview of floorplan:   
-<img width="364" alt="image" src="https://user-images.githubusercontent.com/118953915/217413428-83e9d499-cfb9-4ab6-a5d2-fbab7207b0e2.png">  
+<img width="364" alt="image" src="https://user-images.githubusercontent.com/118953915/217413428-83e9d499-cfb9-4ab6-a5d2-fbab7207b0e2.png"> 
+
 Here is each of the component in the design:      
 <img width="550" alt="image" src="https://user-images.githubusercontent.com/118953915/217414310-f2331bef-2ef8-40d8-87e3-7eafc981a9a8.png">  
+
 Here is the power metal and via:    
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/118953915/217414595-85e66fe0-dca4-4dbd-bb70-70dd8bb58315.png">  
 
