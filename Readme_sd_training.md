@@ -4241,8 +4241,7 @@ $\textcolor{blue}{\text{Output generated}}$
 
 > estimate_timing - Performs virtual in-place optimization on the current design  
  
-![image](https://user-images.githubusercontent.com/118953915/217454832-69f526d3-3cd6-4e17-ad90-37012079dba2.png)
-![image](https://user-images.githubusercontent.com/118953915/217454883-02b2fd68-f35a-4061-bb5d-eb021cf4f46a.png)
+<img width="731" alt="image" src="https://user-images.githubusercontent.com/118953915/217602701-3a369baf-ffbc-4af2-9975-f49bf56db744.png">
 
 > report_constraints -all_violators -nosplit -verbose -significant_digits 4 > violators.rpt  
 
@@ -4323,6 +4322,7 @@ Here are some reports that dump out throughout the flow:
 - $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor.sum {report_qor -summary}  
 <img width="386" alt="image" src="https://user-images.githubusercontent.com/118953915/217428187-2ae7b2af-0ea4-454e-b5d5-6af81ca0dd79.png">  
 
+<img width="584" alt="image" src="https://user-images.githubusercontent.com/118953915/217603051-8592d790-d629-4482-8c39-a252a77d79fe.png">
 
 </details>
 
