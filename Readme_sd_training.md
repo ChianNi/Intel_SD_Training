@@ -4160,17 +4160,17 @@ For power:
 (B) Here is the steps in icc2_shell:    
 > source top.tcl  
 
-![image](https://user-images.githubusercontent.com/118953915/215530310-7c22b252-02f5-4d24-aaa3-4899ad4d19d3.png)
+![image](https://user-images.githubusercontent.com/118953915/215530310-7c22b252-02f5-4d24-aaa3-4899ad4d19d3.png)    
+![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)    
 
-</br>
-
-In this file consists setting for multiple scenarios, tech file , etc    
 - Fixes that have been done to resolve the error:  
-  -  Change those collateral (tech file, tech lib, tluplus) from nangate* into sky130*  
+  -  Change those collateral (tech file, tech lib) from nangate* into sky130*  
   -  Make sure include each of the collaterals (.lef, .db) - sky130*, PLL, DAC   
+  -  Generate TLU+ from ITF   
     
-![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)  
-<img width="931" alt="image" src="https://user-images.githubusercontent.com/118953915/217402596-3a537949-9f8f-442f-9077-12415e4b90e3.png">
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/118953915/217433046-30f5494d-edd4-49ad-85bc-b96cfe8fdd3a.png">      
+Here is the contents:    
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/118953915/217402596-3a537949-9f8f-442f-9077-12415e4b90e3.png">  
 <img width="912" alt="image" src="https://user-images.githubusercontent.com/118953915/217402693-a38a8868-cf85-4a8a-bcb6-745487e1664b.png">
 
 </br>
