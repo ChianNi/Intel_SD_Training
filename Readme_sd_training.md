@@ -4094,9 +4094,11 @@ Obtained collateral files:
 </br>
 
 (A) Here is the steps in dc_shell:    
-> source vsdbabysoc.tcl     
 
 </br>
+
+> source vsdbabysoc.tcl     
+> Can refer here for full scripts: https://github.com/ChianNi/Intel_SD_Training/blob/main/Day20_Physcal_design_dc_vsdbabysoc.tcl.txt
 
 1.Set library to link with design
 ![image](https://user-images.githubusercontent.com/118953915/215523655-bccccd63-0a91-49b8-80ce-df0ed373ad10.png)  
@@ -4159,6 +4161,7 @@ For power:
 
 (B) Here is the steps in icc2_shell:    
 > source top.tcl  
+> Can refer here for full scripts:  https://github.com/ChianNi/Intel_SD_Training/blob/main/Day20_Physcal_design_icc2_top.tcl.txt    
 
 ![image](https://user-images.githubusercontent.com/118953915/215530310-7c22b252-02f5-4d24-aaa3-4899ad4d19d3.png)    
 ![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)    
@@ -4297,7 +4300,9 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$
 
 After done floorplan and power planning, proceed to placement, CTS and routing 
 
-Here is the steps/command:  
+> Can refer here for full scripts:  https://github.com/ChianNi/Intel_SD_Training/blob/main/Day20_Physcal_design_icc2_top.tcl.txt  
+ 
+Here is part of the steps/command:  
 ![image](https://user-images.githubusercontent.com/118953915/217595276-1d044601-8caf-484c-8948-96ce497fe2bf.png)
 ![image](https://user-images.githubusercontent.com/118953915/217595303-6bc8f804-7ca6-4475-acb0-d9b07ff1fc2c.png)
 
