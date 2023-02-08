@@ -4168,7 +4168,7 @@ In this file consists setting for multiple scenarios, tech file , etc
 - Fixes that have been done to resolve the error:  
   -  Change those collateral (tech file, tech lib, tluplus) from nangate* into sky130*  
   -  Make sure include each of the collaterals (.lef, .db) - sky130*, PLL, DAC   
-  -  
+    
 ![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)  
 <img width="931" alt="image" src="https://user-images.githubusercontent.com/118953915/217402596-3a537949-9f8f-442f-9077-12415e4b90e3.png">
 <img width="912" alt="image" src="https://user-images.githubusercontent.com/118953915/217402693-a38a8868-cf85-4a8a-bcb6-745487e1664b.png">
@@ -4176,9 +4176,8 @@ In this file consists setting for multiple scenarios, tech file , etc
 </br>
 
 Faced error during create_lib, caused by multiple definition of each cell in .lef  
-> Obtained updated .lef from https://github.com/bharath19-gs/synopsys_ICC2flow_130nm/tree/main/synopsys_skywater_flow_nominal/LEF
- 
 ![image](https://user-images.githubusercontent.com/118953915/217404170-2841a48d-f584-4169-895e-5c5b7dee4fd6.png)
+> Obtained updated .lef from https://github.com/bharath19-gs/synopsys_ICC2flow_130nm/tree/main/synopsys_skywater_flow_nominal/LEF
  
  </br>
  
