@@ -4151,6 +4151,7 @@ For power:
 
 5.Here is the schematic:  
 > gui_start  
+
 ![image](https://user-images.githubusercontent.com/118953915/215530045-ec0f3425-b1d8-4ed8-8f3e-e31da24b49c1.png)  
 
 
@@ -4167,6 +4168,7 @@ In this file consists setting for multiple scenarios, tech file , etc
 - Fixes that have been done to resolve the error:  
   -  Change those collateral (tech file, tech lib, tluplus) from nangate* into sky130*  
   -  Make sure include each of the collaterals (.lef, .db) - sky130*, PLL, DAC   
+  -  
 ![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)  
 <img width="931" alt="image" src="https://user-images.githubusercontent.com/118953915/217402596-3a537949-9f8f-442f-9077-12415e4b90e3.png">
 <img width="912" alt="image" src="https://user-images.githubusercontent.com/118953915/217402693-a38a8868-cf85-4a8a-bcb6-745487e1664b.png">
@@ -4175,16 +4177,21 @@ In this file consists setting for multiple scenarios, tech file , etc
 
 Faced error during create_lib, caused by multiple definition of each cell in .lef  
 > Obtained updated .lef from https://github.com/bharath19-gs/synopsys_ICC2flow_130nm/tree/main/synopsys_skywater_flow_nominal/LEF
+> 
 ![image](https://user-images.githubusercontent.com/118953915/217404170-2841a48d-f584-4169-895e-5c5b7dee4fd6.png)
  
  </br>
  
 During power placement stages: Required to reconstraints the metal and respecified the spacing:
-Violate the spacing rule:      
+Violation realed to spacing rule:      
 ![image](https://user-images.githubusercontent.com/118953915/217406435-2c6b3abf-02d6-4515-a375-76a014702cc8.png)  
-After modified (2->4), no more error:  
+After modified spacing (2->4) and metal, no more error:  
 ![image](https://user-images.githubusercontent.com/118953915/217406782-427fa9ff-af7c-48a0-af2b-37c9cb88668b.png)  
 <img width="806" alt="image" src="https://user-images.githubusercontent.com/118953915/217406283-a0cdd287-b14a-459b-8d20-35b4c3e46d6b.png">
+
+$\textcolor{blue}{\text{Done floorplan, placement and power}}$  
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/217413288-27d40a0f-9149-4a78-8999-a1ac961bb29a.png">
+<img width="364" alt="image" src="https://user-images.githubusercontent.com/118953915/217413428-83e9d499-cfb9-4ab6-a5d2-fbab7207b0e2.png">
 
 </details>
 
