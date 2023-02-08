@@ -4191,6 +4191,9 @@ After modified spacing (2->4) and metal, no more error:
  </br>
  
 $\textcolor{blue}{\text{Done floorplan, placement and power}}$  
+
+</br>
+
 <img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/217413288-27d40a0f-9149-4a78-8999-a1ac961bb29a.png">  
 Here is the overview of floorplan:   
 <img width="364" alt="image" src="https://user-images.githubusercontent.com/118953915/217413428-83e9d499-cfb9-4ab6-a5d2-fbab7207b0e2.png">  
@@ -4198,6 +4201,40 @@ Here is each of the component in the design:
 <img width="550" alt="image" src="https://user-images.githubusercontent.com/118953915/217414310-f2331bef-2ef8-40d8-87e3-7eafc981a9a8.png">  
 Here is the power metal and via:    
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/118953915/217414595-85e66fe0-dca4-4dbd-bb70-70dd8bb58315.png">  
+
+Here are some reports that dump out throughout the flow:  
+- ${REPORTS_DIR_INIT_DP}/check_design.pre_floorplan     {check_design -ems_database check_design.pre_floorplan.ems -checks dp_pre_floorplan}  
+<img width="524" alt="image" src="https://user-images.githubusercontent.com/118953915/217424341-fe43356c-8805-410e-917a-7982a779a969.png">
+
+- $REPORTS_DIR_PLACEMENT/report_macro_constraints.rpt {report_macro_constraints -allowed_orientations -preferred_location -alignment_grid -align_pins_to_tracks $all_macros}  
+<img width="376" alt="image" src="https://user-images.githubusercontent.com/118953915/217425344-1a11f8a7-8057-4551-93fb-8aae92cea7f4.png">
+
+- $REPORTS_DIR_PLACEMENT/report_placement.rpt {report_placement -physical_hierarchy_violations all -wirelength all -hard_macro_overlap -verbose high}
+<img width="491" alt="image" src="https://user-images.githubusercontent.com/118953915/217425122-dc8dd277-4736-4a18-998a-fc5277701287.png">
+
+- $REPORTS_DIR_CREATE_POWER/check_mv_design.erc_mode {check_mv_design -erc_mode}
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/118953915/217425954-a5f3d19e-23c0-4402-aedb-7a1e0cf2a854.png">
+
+- $REPORTS_DIR_CREATE_POWER/check_mv_design.power_connectivity {check_mv_design -power_connectivity}  
+<img width="593" alt="image" src="https://user-images.githubusercontent.com/118953915/217426529-1bad5ae0-1d50-4869-9c85-d782104ecd6c.png">  
+<img width="592" alt="image" src="https://user-images.githubusercontent.com/118953915/217426619-6ec210fe-22d9-4890-93b3-ffebacfbf943.png">
+
+
+- ${REPORTS_DIR_PLACE_PINS}/check_design.pre_pin_placement     {check_design -ems_database check_design.pre_pin_placement.ems -checks dp_pre_pin_placement}
+<img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/217426865-9190efc8-29d7-49e8-8e7c-5acc926094c4.png">  
+
+- $REPORTS_DIR_PLACE_PINS/report_port_placement.rpt {report_pin_placement -self}    
+<img width="348" alt="image" src="https://user-images.githubusercontent.com/118953915/217427084-34141242-9ef1-48b5-8423-a2961ad864d0.png">  
+  
+- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.rpt {report_timing -corner estimated_corner -mode [all_modes]}  
+<img width="587" alt="image" src="https://user-images.githubusercontent.com/118953915/217427239-12478d45-801c-431e-bad8-7ea1aad24988.png">    
+<img width="590" alt="image" src="https://user-images.githubusercontent.com/118953915/217427367-9582ce93-9608-4c69-acc0-4a47ae02c79d.png">    
+
+- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor {report_qor -corner estimated_corner}    
+<img width="544" alt="image" src="https://user-images.githubusercontent.com/118953915/217428032-31bc2366-8cd9-4b64-a493-86ba3f5d22ee.png">  
+
+- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor.sum {report_qor -summary}  
+<img width="386" alt="image" src="https://user-images.githubusercontent.com/118953915/217428187-2ae7b2af-0ea4-454e-b5d5-6af81ca0dd79.png">  
 
 </details>
 
