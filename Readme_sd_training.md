@@ -4225,7 +4225,6 @@ Here are some reports that dump out throughout the flow:
 <img width="593" alt="image" src="https://user-images.githubusercontent.com/118953915/217426529-1bad5ae0-1d50-4869-9c85-d782104ecd6c.png">  
 <img width="592" alt="image" src="https://user-images.githubusercontent.com/118953915/217426619-6ec210fe-22d9-4890-93b3-ffebacfbf943.png">
 
-
 - ${REPORTS_DIR_PLACE_PINS}/check_design.pre_pin_placement     {check_design -ems_database check_design.pre_pin_placement.ems -checks dp_pre_pin_placement}
 <img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/217426865-9190efc8-29d7-49e8-8e7c-5acc926094c4.png">  
 
@@ -4241,6 +4240,26 @@ Here are some reports that dump out throughout the flow:
 
 - $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor.sum {report_qor -summary}  
 <img width="386" alt="image" src="https://user-images.githubusercontent.com/118953915/217428187-2ae7b2af-0ea4-454e-b5d5-6af81ca0dd79.png">  
+
+</br>  
+
+$\textcolor{blue}{\text{Output generated}}$    
+> set_propagated_clock [all_clocks]  
+
+![image](https://user-images.githubusercontent.com/118953915/217454680-63fdada0-6207-4c2e-b2c8-fbbab4a82c78.png)
+
+> report_timing  
+
+![image](https://user-images.githubusercontent.com/118953915/217454721-f502f9e5-cd3c-4c6c-928e-74e1458d8c90.png)
+
+> estimate_timing - Performs virtual in-place optimization on the current design  
+ 
+![image](https://user-images.githubusercontent.com/118953915/217454832-69f526d3-3cd6-4e17-ad90-37012079dba2.png)
+![image](https://user-images.githubusercontent.com/118953915/217454883-02b2fd68-f35a-4061-bb5d-eb021cf4f46a.png)
+
+> report_constraints -all_violators -nosplit -verbose -significant_digits 4 > violators.rpt  
+
+<img width="401" alt="image" src="https://user-images.githubusercontent.com/118953915/217455295-cc5c26a3-1b2c-48a1-97d0-94ec8eadca94.png">
 
 </details>
 
@@ -4261,6 +4280,8 @@ $\textcolor{blue}{\text{Placement}}$
    - Detailed Placement: Final stage of placement where improve the quality: congestion, timing and power     
 - Placement Objectives / Quality Checks: Congestion, Performance, Timing, Routability, Runtime  
    - When the number of routing tracks available for routing in a given location is less than the number necessary, the area is considered congested  
+
+</br>
 
 $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$    
 - CTS is the process of connecting the clocks to all clock pin of sequential circuits by using inverters/buffers in order to balance the skew and to minimize the insertion delay. All the clock pins are driven by a single clock source (PLL). Clock balancing is important for meeting all the design constraints.  
@@ -4298,12 +4319,36 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$
 
 <details><summary> ⚡ Lecture Session: CTS analysis labs </summary>
 
-### *__Lecture Session__*
+$\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$   
+- It is a technique for distributing the clock equally among all sequential parts of a VLSI design 
+- Need to distribute the clock equally in order can balance the delays to all clock input pins 
+- Goal of CTS: To minimize skew and insertion delay and also minimum performance, area and timing
+
+![image](https://user-images.githubusercontent.com/118953915/217457184-dc1f5c77-5250-4e71-8d3a-cd94c2edd23d.png)  
+ 
+Power of pre-CTS will better thn post-CTS power, because after post-CTS will add in buffer/routing/RC parasitic etc which are causing increase in power consumption  
+
+Here are several algorithms (from training material):  
+![image](https://user-images.githubusercontent.com/118953915/217457237-ac175fc9-a0e4-48a4-89c7-1133e273447f.png)  
+
+For H-tree algorithm:  
+![image](https://user-images.githubusercontent.com/118953915/217457681-322145f9-eab9-437a-9f89-3c9981473bfc.png)  
+
+- In H tree-based approach the distance from the clock source points to each of the clock sink points are always the same  
+- In H tree approached the tool trying to minimize skew by making interconnection to subunits equal in length  
+- This type of algorithm used for the scenario where all the clock terminal points are arranged in a symmetrical manner like as in gate array are arranged in FPGAs
+- In this routing algorithm all the wires connected on the same metal layers, we don’t need to move horizontal to vertical or vertical to horizontal on two layers
+- Advantages:  
+  - Exact zero skew in terms of distance (here we are ignoring parasitic delay) due to the symmetry of the H tree  
+  - Typically used for very special structures like top-level clock level distribution not for the entire clock then distributed to the different clock sinks  
+- Disadvantages:
+  - Blockages can spoil the symmetry of the H tree because sometimes blockages are present on the metal layers  
+  - Non-uniform sink location and varying sink capacitance also complicate the design of the H tree  
+
+Various CTS checks: Skew check, Pulse  width check, Duty cycle check, Latency check, Power check, Crosstalk Quality check, Delta Delay Quality check, Glitch Quality check
  
 </details>
-
-
-
+ 
 <details><summary> Lab Session -> CTS </summary>
 
 </br>
