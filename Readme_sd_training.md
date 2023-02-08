@@ -4294,8 +4294,15 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$
 <details><summary> Lab Session -> Placement and CTS </summary>
 
 </br>
+
+After done floorplan and power planning, proceed to placement, CTS and routing 
+
+Here is the steps/command:  
+![image](https://user-images.githubusercontent.com/118953915/217595276-1d044601-8caf-484c-8948-96ce497fe2bf.png)
+![image](https://user-images.githubusercontent.com/118953915/217595303-6bc8f804-7ca6-4475-acb0-d9b07ff1fc2c.png)
+
 Here are some reports that dump out throughout the flow:   
- - ${REPORTS_DIR_PLACE_PINS}/check_design.pre_pin_placement     {check_design -ems_database check_design.pre_pin_placement.ems -checks dp_pre_pin_placement}
+ - ${REPORTS_DIR_PLACE_PINS}/check_design.pre_pin_placement {check_design -ems_database check_design.pre_pin_placement.ems -checks dp_pre_pin_placement}
 <img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/217426865-9190efc8-29d7-49e8-8e7c-5acc926094c4.png">  
 
 - $REPORTS_DIR_PLACE_PINS/report_port_placement.rpt {report_pin_placement -self}    
