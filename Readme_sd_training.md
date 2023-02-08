@@ -4161,13 +4161,32 @@ For power:
 
 ![image](https://user-images.githubusercontent.com/118953915/215530310-7c22b252-02f5-4d24-aaa3-4899ad4d19d3.png)
 
-In this file consists setting for multiple scenarios, tech file , etc  
+</br>
+
+In this file consists setting for multiple scenarios, tech file , etc    
+- Fixes that have been done to resolve the error:  
+  -  Change those collateral (tech file, tech lib, tluplus) from nangate* into sky130*  
+  -  Make sure include each of the collaterals (.lef, .db) - sky130*, PLL, DAC   
 ![image](https://user-images.githubusercontent.com/118953915/215530382-a6b1645e-ccd7-43d8-b8c8-eb37304af4d3.png)  
-<img width="953" alt="image" src="https://user-images.githubusercontent.com/118953915/215538824-651e3a51-a939-4ab1-b9bf-80faf23308ea.png">  
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/118953915/217402596-3a537949-9f8f-442f-9077-12415e4b90e3.png">
+<img width="912" alt="image" src="https://user-images.githubusercontent.com/118953915/217402693-a38a8868-cf85-4a8a-bcb6-745487e1664b.png">
+
+</br>
+
+Faced error during create_lib, caused by multiple definition of each cell in .lef  
+> Obtained updated .lef from https://github.com/bharath19-gs/synopsys_ICC2flow_130nm/tree/main/synopsys_skywater_flow_nominal/LEF
+![image](https://user-images.githubusercontent.com/118953915/217404170-2841a48d-f584-4169-895e-5c5b7dee4fd6.png)
+ 
+ </br>
+ 
+During power placement stages: Required to reconstraints the metal and respecified the spacing:
+Violate the spacing rule:      
+![image](https://user-images.githubusercontent.com/118953915/217406435-2c6b3abf-02d6-4515-a375-76a014702cc8.png)  
+After modified (2->4), no more error:  
+![image](https://user-images.githubusercontent.com/118953915/217406782-427fa9ff-af7c-48a0-af2b-37c9cb88668b.png)  
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/118953915/217406283-a0cdd287-b14a-459b-8d20-35b4c3e46d6b.png">
 
 </details>
-
-To be continue
 
 #
 # Day_21 
