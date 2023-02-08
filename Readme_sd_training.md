@@ -4177,7 +4177,7 @@ In this file consists setting for multiple scenarios, tech file , etc
 
 Faced error during create_lib, caused by multiple definition of each cell in .lef  
 > Obtained updated .lef from https://github.com/bharath19-gs/synopsys_ICC2flow_130nm/tree/main/synopsys_skywater_flow_nominal/LEF
-> 
+ 
 ![image](https://user-images.githubusercontent.com/118953915/217404170-2841a48d-f584-4169-895e-5c5b7dee4fd6.png)
  
  </br>
@@ -4191,8 +4191,11 @@ After modified spacing (2->4) and metal, no more error:
 
 $\textcolor{blue}{\text{Done floorplan, placement and power}}$  
 <img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/217413288-27d40a0f-9149-4a78-8999-a1ac961bb29a.png">
+Here is the overview of floorplan:   
 <img width="364" alt="image" src="https://user-images.githubusercontent.com/118953915/217413428-83e9d499-cfb9-4ab6-a5d2-fbab7207b0e2.png">
+Here is each of the component in the design:      
 <img width="550" alt="image" src="https://user-images.githubusercontent.com/118953915/217414310-f2331bef-2ef8-40d8-87e3-7eafc981a9a8.png">
+Here is the power metal and via:    
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/118953915/217414595-85e66fe0-dca4-4dbd-bb70-70dd8bb58315.png">
 
 </details>
