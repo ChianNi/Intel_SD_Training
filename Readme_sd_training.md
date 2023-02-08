@@ -4225,22 +4225,6 @@ Here are some reports that dump out throughout the flow:
 <img width="593" alt="image" src="https://user-images.githubusercontent.com/118953915/217426529-1bad5ae0-1d50-4869-9c85-d782104ecd6c.png">  
 <img width="592" alt="image" src="https://user-images.githubusercontent.com/118953915/217426619-6ec210fe-22d9-4890-93b3-ffebacfbf943.png">
 
-- ${REPORTS_DIR_PLACE_PINS}/check_design.pre_pin_placement     {check_design -ems_database check_design.pre_pin_placement.ems -checks dp_pre_pin_placement}
-<img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/217426865-9190efc8-29d7-49e8-8e7c-5acc926094c4.png">  
-
-- $REPORTS_DIR_PLACE_PINS/report_port_placement.rpt {report_pin_placement -self}    
-<img width="348" alt="image" src="https://user-images.githubusercontent.com/118953915/217427084-34141242-9ef1-48b5-8423-a2961ad864d0.png">  
-  
-- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.rpt {report_timing -corner estimated_corner -mode [all_modes]}  
-<img width="587" alt="image" src="https://user-images.githubusercontent.com/118953915/217427239-12478d45-801c-431e-bad8-7ea1aad24988.png">    
-<img width="590" alt="image" src="https://user-images.githubusercontent.com/118953915/217427367-9582ce93-9608-4c69-acc0-4a47ae02c79d.png">    
-
-- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor {report_qor -corner estimated_corner}    
-<img width="544" alt="image" src="https://user-images.githubusercontent.com/118953915/217428032-31bc2366-8cd9-4b64-a493-86ba3f5d22ee.png">  
-
-- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor.sum {report_qor -summary}  
-<img width="386" alt="image" src="https://user-images.githubusercontent.com/118953915/217428187-2ae7b2af-0ea4-454e-b5d5-6af81ca0dd79.png">  
-
 </br>  
 
 $\textcolor{blue}{\text{Output generated}}$    
@@ -4310,6 +4294,23 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$
 <details><summary> Lab Session -> Placement and CTS </summary>
 
 </br>
+Here are some reports that dump out throughout the flow:   
+ - ${REPORTS_DIR_PLACE_PINS}/check_design.pre_pin_placement     {check_design -ems_database check_design.pre_pin_placement.ems -checks dp_pre_pin_placement}
+<img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/217426865-9190efc8-29d7-49e8-8e7c-5acc926094c4.png">  
+
+- $REPORTS_DIR_PLACE_PINS/report_port_placement.rpt {report_pin_placement -self}    
+<img width="348" alt="image" src="https://user-images.githubusercontent.com/118953915/217427084-34141242-9ef1-48b5-8423-a2961ad864d0.png">  
+  
+- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.rpt {report_timing -corner estimated_corner -mode [all_modes]}  
+<img width="587" alt="image" src="https://user-images.githubusercontent.com/118953915/217427239-12478d45-801c-431e-bad8-7ea1aad24988.png">    
+<img width="590" alt="image" src="https://user-images.githubusercontent.com/118953915/217427367-9582ce93-9608-4c69-acc0-4a47ae02c79d.png">    
+
+- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor {report_qor -corner estimated_corner}    
+<img width="544" alt="image" src="https://user-images.githubusercontent.com/118953915/217428032-31bc2366-8cd9-4b64-a493-86ba3f5d22ee.png">  
+
+- $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor.sum {report_qor -summary}  
+<img width="386" alt="image" src="https://user-images.githubusercontent.com/118953915/217428187-2ae7b2af-0ea4-454e-b5d5-6af81ca0dd79.png">  
+
 
 </details>
 
