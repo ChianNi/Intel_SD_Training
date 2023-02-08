@@ -4187,16 +4187,18 @@ Violation realed to spacing rule:
 ![image](https://user-images.githubusercontent.com/118953915/217406435-2c6b3abf-02d6-4515-a375-76a014702cc8.png)  
 After modified spacing (2->4) and metal, no more error:  
 ![image](https://user-images.githubusercontent.com/118953915/217406782-427fa9ff-af7c-48a0-af2b-37c9cb88668b.png)  
-<img width="806" alt="image" src="https://user-images.githubusercontent.com/118953915/217406283-a0cdd287-b14a-459b-8d20-35b4c3e46d6b.png">
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/118953915/217406283-a0cdd287-b14a-459b-8d20-35b4c3e46d6b.png">  
 
+ </br>
+ 
 $\textcolor{blue}{\text{Done floorplan, placement and power}}$  
-<img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/217413288-27d40a0f-9149-4a78-8999-a1ac961bb29a.png">
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/118953915/217413288-27d40a0f-9149-4a78-8999-a1ac961bb29a.png">  
 Here is the overview of floorplan:   
-<img width="364" alt="image" src="https://user-images.githubusercontent.com/118953915/217413428-83e9d499-cfb9-4ab6-a5d2-fbab7207b0e2.png">
+<img width="364" alt="image" src="https://user-images.githubusercontent.com/118953915/217413428-83e9d499-cfb9-4ab6-a5d2-fbab7207b0e2.png">  
 Here is each of the component in the design:      
-<img width="550" alt="image" src="https://user-images.githubusercontent.com/118953915/217414310-f2331bef-2ef8-40d8-87e3-7eafc981a9a8.png">
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/118953915/217414310-f2331bef-2ef8-40d8-87e3-7eafc981a9a8.png">  
 Here is the power metal and via:    
-<img width="674" alt="image" src="https://user-images.githubusercontent.com/118953915/217414595-85e66fe0-dca4-4dbd-bb70-70dd8bb58315.png">
+<img width="674" alt="image" src="https://user-images.githubusercontent.com/118953915/217414595-85e66fe0-dca4-4dbd-bb70-70dd8bb58315.png">  
 
 </details>
 
