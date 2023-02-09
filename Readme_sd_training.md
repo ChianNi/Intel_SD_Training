@@ -23,7 +23,8 @@
 + **[ Day_20 : Floorplanning and power planning labs  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_20)**
 + **[ Day_21 : Placement and CTS  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_21)**
 + **[ Day_22 : CTS analysis labs  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_22)**
-
++ **[ Day_23 : Clock gating technique ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_23)**
++ **[ Day_24 : Timing violations and ECO ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_24)**
 #
 # Day_0 
 **⭐System/Tool Setup Check & GitHub ID creation**
@@ -4266,7 +4267,7 @@ $\textcolor{blue}{\text{Output generated}}$
 
 </details>
 
-<details><summary> Lab Session -> Experiment on core utilization </summary>
+<details><summary> 🛠️ Lab Session -> Experiment on core utilization </summary>
 
 Modified into 40%  
 ![image](https://user-images.githubusercontent.com/118953915/217708966-01bcd525-e00a-445a-91cf-e30261593234.png)
@@ -4293,10 +4294,12 @@ Number of slack decrease: (previous when core utilization 7% & latency 3.0: slac
 > report_constraints -all_violators -nosplit -verbose -significant_digits 4 >  vio1.rpt  
 
 Number of violations decrease: (previous the total number of violation: 161)  
-<img width="404" alt="image" src="https://user-images.githubusercontent.com/118953915/217713257-69249cd5-49ee-4446-9473-ab3cc7f0c16a.png">
+<img width="404" alt="image" src="https://user-images.githubusercontent.com/118953915/217713257-69249cd5-49ee-4446-9473-ab3cc7f0c16a.png">  
  
- 
- 
+💡  
+set_propagated_clock ideal for placement stage  
+set_propagated_clock [all_clocks] for post-CTS stage  
+
 </details>
 
 
@@ -4418,3 +4421,24 @@ Various CTS checks: Skew check, Pulse  width check, Duty cycle check, Latency ch
 </br>
 
 </details>
+
+#
+# Day_23 
+**⭐Clock gating technique**
+<details><summary> ⚡ Lecture Session: Clock gating technique </summary>
+
+</details>
+ 
+<details><summary> Lab Session -> Clock gating technique </summary>
+
+</details>
+ 
+#
+# Day_24 
+**⭐Timing violations and ECO**
+
+<details><summary> ⚡ Lecture Session: Timing violations and ECO </summary>
+ 
+</details>
+ 
+<details><summary> Lab Session -> Timing violations and ECO </summary>
