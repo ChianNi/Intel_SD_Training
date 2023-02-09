@@ -4295,6 +4295,9 @@ Number of slack decrease: (previous when core utilization 7% & latency 3.0: slac
 
 Number of violations decrease: (previous the total number of violation: 161)  
 <img width="404" alt="image" src="https://user-images.githubusercontent.com/118953915/217713257-69249cd5-49ee-4446-9473-ab3cc7f0c16a.png">  
+
+Here is the report on area/utilization:   
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/118953915/217880893-a30ee0da-845e-4337-9e6f-b81008eb4ff8.png">   
  
 </details>
 
@@ -4339,7 +4342,20 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$
    - Signal Integrity and Crosstalk -Timing Analysis and Fixing 
      - Crosstalk is a signal integrity issue that occurs when the signal from one trace couples with another trace, causing interference. There are three essential principles of crosstalk: capacitive coupling, inductive coupling, and conductive coupling.  
 
-> Udemy course: https://www.udemy.com/course/vlsi-academy-clock-tree-synthesis/learn/lecture/876472?start=0#overview  
+</details>
+
+<details><summary> ⚡ Lecture Session: Concept on CTS (Trainning video on Udemy) </summary>
+
+</br>
+
+> Can refer this link for CTS trainning video: [Udemy-Course on CTS](https://www.udemy.com/course/vlsi-academy-clock-tree-synthesis/learn/lecture/876472?start=0#overview)  
+
+CTS  balancing the clock delay to all clock inputs by inserting buffers/inverters along the clock routes of an ASIC design  
+
+There are several clock tree quality check:   
+<img width="571" alt="image" src="https://user-images.githubusercontent.com/118953915/217882456-7f5d1448-37f4-4e5e-b03d-0ae1d9216587.png">
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/118953915/217882470-3d925bc9-d9e5-44ab-831a-0541b7723f99.png">
+<img width="523" alt="image" src="https://user-images.githubusercontent.com/118953915/217882526-fadabbbd-6dc3-496c-9beb-2abc4a351065.png">
 
 </details>
 
