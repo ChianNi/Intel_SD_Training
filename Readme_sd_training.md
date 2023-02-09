@@ -4151,8 +4151,24 @@ For power:
 
 </br>
 
+$\textcolor{orange}{\text{Disable setting latency}}$  
+For area: (slightly decrease)       
+<img width="625" alt="image" src="https://user-images.githubusercontent.com/118953915/217707941-eec8b056-6e27-4e9a-ac29-eced9c2070fe.png">
+  
+For timing: (data required and data arrival time decrease)       
+Timing is met  
+<img width="652" alt="image" src="https://user-images.githubusercontent.com/118953915/217707870-f6c0104e-8633-4376-9a12-4fc227f1265c.png">
+    
+For power: (slightly decrease)    
+<img width="624" alt="image" src="https://user-images.githubusercontent.com/118953915/217707903-38611d87-73f0-4f21-8ad4-64bc885b6599.png">
+
+
+</br>
+
 5.Here is the schematic:  
 > gui_start  
+
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/118953915/217707680-44006f56-85ff-430e-bc86-74872de2dc19.png">  
 
 ![image](https://user-images.githubusercontent.com/118953915/215530045-ec0f3425-b1d8-4ed8-8f3e-e31da24b49c1.png)  
 
@@ -4247,7 +4263,42 @@ $\textcolor{blue}{\text{Output generated}}$
 
 <img width="401" alt="image" src="https://user-images.githubusercontent.com/118953915/217455295-cc5c26a3-1b2c-48a1-97d0-94ec8eadca94.png">
 
+
 </details>
+
+<details><summary> Lab Session -> Experiment on core utilization </summary>
+
+Modified into 40%  
+![image](https://user-images.githubusercontent.com/118953915/217708966-01bcd525-e00a-445a-91cf-e30261593234.png)
+
+Here is the floorplan view:  
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/118953915/217709310-b8b1fff4-0d99-4188-a4f1-7f9948efc035.png">  
+Here is the view of standard cell:    
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/118953915/217709458-b6c035af-1ba8-4c9f-95b0-b356528fba04.png">  
+Here is the view of power metal and via:  
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/118953915/217709380-48ed1166-4b5b-4e87-8f88-7876ae084289.png">  
+  
+Output generated:  
+ 
+> set_propagated_clock [all_clocks]  
+> estimate_timing  
+ 
+<img width="425" alt="image" src="https://user-images.githubusercontent.com/118953915/217713196-e39365b6-e8d0-462e-b552-db3e98048b90.png">
+
+> report_timing    
+ 
+Number of slack decrease: (previous when core utilization 7% & latency 3.0: slack -14.27)   
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/118953915/217713509-1269ef85-a66d-4853-91a9-2be0a138cb97.png">
+
+> report_constraints -all_violators -nosplit -verbose -significant_digits 4 >  vio1.rpt  
+
+Number of violations decrease: (previous the total number of violation: 161)  
+<img width="404" alt="image" src="https://user-images.githubusercontent.com/118953915/217713257-69249cd5-49ee-4446-9473-ab3cc7f0c16a.png">
+ 
+ 
+ 
+</details>
+
 
 #
 # Day_21 
