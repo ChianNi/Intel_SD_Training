@@ -4296,10 +4296,6 @@ Number of slack decrease: (previous when core utilization 7% & latency 3.0: slac
 Number of violations decrease: (previous the total number of violation: 161)  
 <img width="404" alt="image" src="https://user-images.githubusercontent.com/118953915/217713257-69249cd5-49ee-4446-9473-ab3cc7f0c16a.png">  
  
-💡  
-set_propagated_clock ideal for placement stage  
-set_propagated_clock [all_clocks] for post-CTS stage  
-
 </details>
 
 
@@ -4364,19 +4360,33 @@ Here are some reports that dump out throughout the flow:
 <img width="517" alt="image" src="https://user-images.githubusercontent.com/118953915/217426865-9190efc8-29d7-49e8-8e7c-5acc926094c4.png">  
 
 - $REPORTS_DIR_PLACE_PINS/report_port_placement.rpt {report_pin_placement -self}    
-<img width="348" alt="image" src="https://user-images.githubusercontent.com/118953915/217427084-34141242-9ef1-48b5-8423-a2961ad864d0.png">  
+<img width="307" alt="image" src="https://user-images.githubusercontent.com/118953915/217866765-50df322a-2ee6-499d-88d3-64c5c88cf87c.png">
+ 
   
 - $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.rpt {report_timing -corner estimated_corner -mode [all_modes]}  
-<img width="587" alt="image" src="https://user-images.githubusercontent.com/118953915/217427239-12478d45-801c-431e-bad8-7ea1aad24988.png">    
-<img width="590" alt="image" src="https://user-images.githubusercontent.com/118953915/217427367-9582ce93-9608-4c69-acc0-4a47ae02c79d.png">    
+<img width="584" alt="image" src="https://user-images.githubusercontent.com/118953915/217867264-191189b7-effc-4091-b380-4af520809dc7.png">
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/118953915/217867386-b3fbc9cf-6891-4554-b1aa-cde68d47d358.png">
+   
 
 - $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor {report_qor -corner estimated_corner}    
-<img width="544" alt="image" src="https://user-images.githubusercontent.com/118953915/217428032-31bc2366-8cd9-4b64-a493-86ba3f5d22ee.png">  
+<img width="541" alt="image" src="https://user-images.githubusercontent.com/118953915/217868859-83e6798e-8401-4d67-9225-d9442d71bb2a.png">
 
 - $REPORTS_DIR_TIMING_ESTIMATION/{DESIGN_NAME}.post_estimated_timing.qor.sum {report_qor -summary}  
-<img width="386" alt="image" src="https://user-images.githubusercontent.com/118953915/217428187-2ae7b2af-0ea4-454e-b5d5-6af81ca0dd79.png">  
-
+<img width="381" alt="image" src="https://user-images.githubusercontent.com/118953915/217869216-fe076c95-a954-4bba-a8ba-df378f1b0f68.png">
+ 
+ 
+Here is the schematic view of CTS:  
 <img width="584" alt="image" src="https://user-images.githubusercontent.com/118953915/217603051-8592d790-d629-4482-8c39-a252a77d79fe.png">
+
+</br>
+
+💡Before CTS should be ideal clock, after CTS / post-CTS clock will propagate 
+> set_propagated_clock [all_clocks]  
+
+Redirect several reports for comparison purpose:  
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/118953915/217865944-82a513cf-629d-474e-9871-57edff6e3c83.png">  
+<img width="734" alt="image" src="https://user-images.githubusercontent.com/118953915/217866074-11829d08-b60d-4449-961e-487eb8d0080a.png">
+
 
 </details>
 
