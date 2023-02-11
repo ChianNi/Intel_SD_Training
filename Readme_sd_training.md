@@ -4498,6 +4498,29 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (Routing)}}$
 
 <details><summary> ⚡ Lecture Session: Timing violations and ECO </summary>
  
+$\textcolor{blue}{\text{Clock Tree Synthesis (Engineering Change Order (ECO))}}$   
+- To accommodate specification changes, to rectify functional errors, or to fix non-functional design requirements, such as timing and power, with minimal disturbance to the existing implementation to improve the design  
+- Incorporate last minute changes in design -typically ECO on the gate level netlist, make the same changes in RTL   
+- Then pass all verifications before it is passed on to layout. Make sure the ECO pass formal and functional verification before you start editing your layout  
+- In this stage all the violations are fixed and seal all the sign-off checks that weren’t done during the PD flow  
+- ECO steps:  
+   - Step 1: Investigate the problem using the recent database
+   - Step 2: ECO generation to address the problem
+   - Step 3: ECO implementation with the recent database4.After implementing and fixing the problem, save it in the database for future. 
+- ECO strategies:  
+<img width="360" alt="image" src="https://user-images.githubusercontent.com/118953915/218275441-2706d62d-0bd9-4ca9-a30c-9a54d90e0ada.png">
+
 </details>
  
-<details><summary> Lab Session -> Timing violations and ECO </summary>
+<details><summary> Lab Session -> Timing violations and ECO </summary>  
+
+ </br> 
+ 
+Have perform some ECO to improve timing:  
+Upsize cell which will improve drive strength of cell that will help in reduce the delay  
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/218275519-1faf4511-73bf-449a-9699-bdb2a8779161.png">  
+ 
+The timing slack is improved from -3ns+ into -1ns+   
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218275607-ae8397b2-c6a5-4d04-ac70-94fabc220983.png">
+ 
+</details>
