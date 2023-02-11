@@ -4444,7 +4444,29 @@ Various CTS checks: Skew check, Pulse  width check, Duty cycle check, Latency ch
  
 <details><summary> Lab Session -> CTS </summary>
 
-</br>
+ </br>
+ 
+(A) Checks and reports issues that can lead to bad QoR (Clock tree structure, constraints and clock tree exceptions)   
+> check_clock_tree  
+
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/118953915/218276629-545f64c8-02c8-4d1c-9f5b-affc335e9151.png">
+
+There is one warning:  
+![image](https://user-images.githubusercontent.com/118953915/218276201-800a76b0-9e2e-4eae-bfac-3ec9f509da28.png)
+
+(B) The check_legality command checks the legality of the current placement and output a report of violation statistics  
+This check is failed    
+> check_legality  
+
+![image](https://user-images.githubusercontent.com/118953915/218276224-01bca175-d239-4854-8c48-aeb1a5e572c5.png)
+
+In order to perform check_legality, need to run legalize_placement first  
+> legalize_placement
+
+![image](https://user-images.githubusercontent.com/118953915/218276240-38d9c5ca-bce8-4561-b6d0-d827ba1e0e72.png)
+
+Some details:  
+![image](https://user-images.githubusercontent.com/118953915/218276339-081b52fd-12fd-4906-8123-9e451680b769.png)
 
 </details>
 
