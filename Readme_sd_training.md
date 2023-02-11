@@ -4448,6 +4448,8 @@ Various CTS checks: Skew check, Pulse  width check, Duty cycle check, Latency ch
 
 </details>
 
+TO BE CONTINUE  
+
 #
 # Day_23 
 **⭐Clock gating technique**
@@ -4485,10 +4487,6 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (Routing)}}$
 <img width="275" alt="image" src="https://user-images.githubusercontent.com/118953915/218274475-51621abb-d17f-4483-8589-0622eab3f5fb.png">   
 
 - All above will be done in command: route_opt
-
-</details>
- 
-<details><summary> Lab Session -> Clock gating technique </summary>
 
 </details>
  
