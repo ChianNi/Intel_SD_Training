@@ -4451,7 +4451,40 @@ Various CTS checks: Skew check, Pulse  width check, Duty cycle check, Latency ch
 #
 # Day_23 
 **⭐Clock gating technique**
+
 <details><summary> ⚡ Lecture Session: Clock gating technique </summary>
+
+</br>
+
+$\textcolor{blue}{\text{Clock Tree Synthesis (Advanced H-Tree for million flop clock end-points randomly placed)}}$  
+- A digital circuit having lot of clocks, so if designing a clock tree will be huge with many buffers etc  
+- So the whole chip will section into smaller versions and then each section will have its own clock tree, and then finally a complete routed tree    
+Figure from training video:  
+![image](https://user-images.githubusercontent.com/118953915/218273869-8587919e-10d8-4df9-baf9-4d4128038749.png)  
+
+$\textcolor{blue}{\text{Clock Tree Synthesis (Clock Gating)}}$  
+- Beside area and timing, there is another important factor which is power -> Need power “aware” CTS    
+- Clock gating is one of the techniques used to save the dynamic power of clock elements in the design  
+- The principle behind clock gating is to stop the clock of those sequential elements whose data is not toggling  
+- Clock gating technique using AND, OR Universal NAND gate
+- It has been found that 50% of the dynamic power originates from clock-related circuits  
+![image](https://user-images.githubusercontent.com/118953915/218274041-932ece1a-9239-4304-bf6e-00bf599fbaf1.png)
+- Clock gating is inserted during synthesis stage and optimized in the implementation stage (Physical Design stage)  
+- Example scenario why required clock gating: If there is a block only need clock signal for 10 mins but the clock signal is running 1hr, so a lot of power is dissipating (due to switching activity), so we need clock gating which act as switch  
+
+$\textcolor{blue}{\text{Clock Tree Synthesis (Routing)}}$  
+- The last step of physical design flow
+- Making physical connections between signal pins using metal layers 
+- There is mainly 3 types of routing: 
+   - P/G routing (power gorund mesh)
+   - Clock routing
+   - Signal routinga
+      - Global routing
+      - Detailed routing
+- Basic flow of routing:  
+<img width="275" alt="image" src="https://user-images.githubusercontent.com/118953915/218274475-51621abb-d17f-4483-8589-0622eab3f5fb.png">   
+
+- All above will be done in command: route_opt
 
 </details>
  
