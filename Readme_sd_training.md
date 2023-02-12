@@ -4508,7 +4508,24 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (Routing)}}$
 - Basic flow of routing:  
 <img width="275" alt="image" src="https://user-images.githubusercontent.com/118953915/218274475-51621abb-d17f-4483-8589-0622eab3f5fb.png">   
 
-- All above will be done in command: route_opt
+- All above will be done in command: route_opt  
+ 
+</details>
+ 
+<details><summary> Lab Session -> Routing </summary>
+
+</br>  
+
+Three types of routing:  P/G routing, Clock routing and Signal routing  
+  
+P/G routing:  
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/218314033-3742347a-2391-4608-ab3b-d2d597448573.png">
+
+Clock Routing and signal routing:  
+- place_opt: Place and optimize the current design  
+- clock_opt: Synthesize and route the clocks in the current design and then further optimize the design based on the propagated clock latencies  
+- route_auto: runs global routing, track assignment and detail routing in one step   
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/118953915/218313642-66749ac3-a5a9-445f-94f6-3dc3644ca720.png">  
 
 </details>
  
@@ -4542,5 +4559,16 @@ Upsize cell which will improve drive strength of cell that will help in reduce t
  
 The timing slack is improved from -3ns+ into -1ns+   
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218275607-ae8397b2-c6a5-4d04-ac70-94fabc220983.png">
- 
+
+Compare the result of ECO:  
+(A) From timing perspective: Improve   
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218312891-5149b5bc-bbe6-42b3-a5d9-591852fa8492.png">  
+  
+(B) From area perspective: Become worse 
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218312919-cf72e942-6abe-49d7-8557-22a56ef0f597.png">
+  
+(C) From power perspective: Become worse 
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218312942-db2d92cf-6183-4107-be91-6d39669224a6.png">
+  
+
 </details>
