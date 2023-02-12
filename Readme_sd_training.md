@@ -4439,6 +4439,34 @@ For H-tree algorithm:
   - Non-uniform sink location and varying sink capacitance also complicate the design of the H tree  
 
 Various CTS checks: Skew check, Pulse  width check, Duty cycle check, Latency check, Power check, Crosstalk Quality check, Delta Delay Quality check, Glitch Quality check
+
+Some details:  
+<img width="441" alt="image" src="https://user-images.githubusercontent.com/118953915/218314681-8fba274a-0ff5-4491-9419-e5a7f42b915e.png">    
+After add in legalized_placement into top.tcl, rerun and set into debug mode  
+> set cts_use_debug_mode true ; compile_clock_tree  
+
+<img width="429" alt="image" src="https://user-images.githubusercontent.com/118953915/218314703-729e7e41-9e4f-4eeb-b43a-617a11a2958d.png">  
+ 
+Performs clock tree synthesis and incremental physical optimization  
+> clock_opt   
+ 
+This process results in a timing optimized design with fully implemented clock trees  
+The clock_opt command does the following:    
+1.Performs clock tree power optimization   
+2.Synthesizes(Re-Synthesizes) the clock trees  
+3.Optimizes the clock trees  
+4.Adjusts the I/O timing   
+5.Performs RC extraction of the clock nets and computes accurate clock arrival times  
+6.Performs placement and timing optimization  
+
+Some times there will be some unrouted clock trees -So to remove them, we use the command  
+> remove_clock_tree  
+
+After CTS we do synthesis, but before you synthesize the clock trees, use the check_clock_tree command to verify that the clock trees are properly defined  
+> check_clock_tree -clocks my_clk  
+
+💡 CTS tries to Minimize skew and meet minimum insertion delay target  
+ 
  
 </details>
  
@@ -4452,7 +4480,7 @@ Various CTS checks: Skew check, Pulse  width check, Duty cycle check, Latency ch
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/118953915/218276629-545f64c8-02c8-4d1c-9f5b-affc335e9151.png">
 
 There is one warning:  
-![image](https://user-images.githubusercontent.com/118953915/218276201-800a76b0-9e2e-4eae-bfac-3ec9f509da28.png)
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/118953915/218276201-800a76b0-9e2e-4eae-bfac-3ec9f509da28.png">
 
 (B) The check_legality command checks the legality of the current placement and output a report of violation statistics  
 This check is failed    
@@ -4465,12 +4493,31 @@ In order to perform check_legality, need to run legalize_placement first
 
 ![image](https://user-images.githubusercontent.com/118953915/218276240-38d9c5ca-bce8-4561-b6d0-d827ba1e0e72.png)
 
-Some details:  
-![image](https://user-images.githubusercontent.com/118953915/218276339-081b52fd-12fd-4906-8123-9e451680b769.png)
+Report_clock_tree
+- Reports max global skew, late/early insertion delay, number of levels in clock tree, number of clock tree references (buffers), clock DRC violations
+ 
+Report_clock_timing 
+- Reports actual, relevant skew, latency, interclock latency etc. for paths that are related. Example: report_clock_timing –type skew
+
+> report_clock_timing -type summary
+
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/118953915/218316007-ff3ee4ba-1bee-4d5b-add1-cfd618be3857.png">
+
+> report_clock_timing -type skew
+
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/118953915/218316095-3f344ca1-ca85-4999-8d53-5c251a55767b.png">
+
+> report_clock_timing -type latency  
+
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/118953915/218318227-447af8c9-8b72-4c68-ae7d-8340b51cf44d.png">
+
+
+> report_clock_timing -type transition  
+
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/118953915/218318236-7f404d70-8283-464d-b28b-5e8c75a38dcc.png">
+
 
 </details>
-
-TO BE CONTINUE  
 
 #
 # Day_23 
