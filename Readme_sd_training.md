@@ -4306,7 +4306,7 @@ Here is the report on area/utilization:
 # Day_21 
 **⭐Placement and CTS**
 
-<details><summary> ⚡ Lecture Session: Placement and CTS </summary>
+<details><summary> ⚡ Lecture Session: Placement and CTS - Live session </summary>
 
 </br>  
  
@@ -4414,7 +4414,7 @@ Redirect several reports for comparison purpose:
 # Day_22 
 **⭐CTS analysis labs**
 
-<details><summary> ⚡ Lecture Session: CTS analysis labs </summary>
+<details><summary> ⚡ Lecture Session: CTS analysis labs - Live session </summary>
 
 $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$   
 - It is a technique for distributing the clock equally among all sequential parts of a VLSI design 
@@ -4527,7 +4527,7 @@ Report_clock_timing
 # Day_23 
 **⭐Clock gating technique**
 
-<details><summary> ⚡ Lecture Session: Clock gating technique </summary>
+<details><summary> ⚡ Lecture Session: Clock gating technique - Live session </summary>
 
 </br>
 
@@ -4584,7 +4584,7 @@ Clock Routing and signal routing:
 # Day_24 
 **⭐Timing violations and ECO**
 
-<details><summary> ⚡ Lecture Session: Timing violations and ECO </summary>
+<details><summary> ⚡ Lecture Session: Timing violations and ECO - Live session </summary>
  
 $\textcolor{blue}{\text{Clock Tree Synthesis (Engineering Change Order (ECO))}}$   
 - To accommodate specification changes, to rectify functional errors, or to fix non-functional design requirements, such as timing and power, with minimal disturbance to the existing implementation to improve the design  
