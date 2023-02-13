@@ -1,4 +1,4 @@
-## Table of contents
+## Table of contents  
 
 + **[ Day_0 : System/Tool Setup Check & GitHub ID creation ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_0)**
 + **[ Day_1 : Introduction to Verilog RTL design and Synthesis ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_1)**
@@ -4605,9 +4605,10 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (Engineering Change Order (ECO))}}$
  </br> 
  
 Have perform some ECO to improve timing:  
-Upsize cell which will improve drive strength of cell that will help in reduce the delay  
+Upsize cell which will improve drive strength of cell that will help in reduce the delay    
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/218275519-1faf4511-73bf-449a-9699-bdb2a8779161.png">  
- 
+$\fbox{NOTE:}$ Not recommend to upsize register since there is clock pin on it where CTS have build clock on it   
+
 The timing slack is improved from -3ns+ into -1ns+   
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218275607-ae8397b2-c6a5-4d04-ac70-94fabc220983.png">
 
@@ -4615,10 +4616,10 @@ Compare the result of ECO:
 (A) From timing perspective: Improve   
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218312891-5149b5bc-bbe6-42b3-a5d9-591852fa8492.png">  
   
-(B) From area perspective: Become worse 
+(B) From area perspective: Become worse (since cell size increase)  
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218312919-cf72e942-6abe-49d7-8557-22a56ef0f597.png">
   
-(C) From power perspective: Become worse 
+(C) From power perspective: Become worse (since cell size increase, area increase)    
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218312942-db2d92cf-6183-4107-be91-6d39669224a6.png">
   
 
