@@ -25,6 +25,8 @@
 + **[ Day_22 : CTS analysis labs  ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_22)**
 + **[ Day_23 : Clock gating technique ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_23)**
 + **[ Day_24 : Timing violations and ECO ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_24)**
++ **[ Day_25 : RISC-V core RTL2GDS flow ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_25)** 
+
 #
 # Day_0 
 **⭐System/Tool Setup Check & GitHub ID creation**
@@ -4622,5 +4624,34 @@ Compare the result of ECO:
 (C) From power perspective: Become worse (since cell size increase, area increase)    
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218312942-db2d92cf-6183-4107-be91-6d39669224a6.png">
   
-
 </details>
+
+<details><summary> 🛠️ Lab Session -> Add in decap cell </summary>
+ 
+</br> 
+
+Filler cell is inserted by the P&R tool to fill gaps in the layout after placement and routing is completed  
+Decap cell is basically a capacitor cell which is used temporarily in the design between power and ground rails to counter the functional failure  
+-> Decoupling capacitors are used to filter out voltage spikes and pass through only the DC component of the signal   
+> Can refer here for more information on decap cell sky130_fd_sc_hd__decap: [skywater-pdk-docs](https://antmicro-skywater-pdk-docs.readthedocs.io/en/test-submodules-in-rtd/contents/libraries/sky130_fd_sc_hd/cells/decap/README.html)
+
+  
+Set in the top.tcl:    
+![image](https://user-images.githubusercontent.com/118953915/218637225-7c3c9986-4000-413c-8b42-9903a3565c4d.png)  
+   
+Here is all the available fill cells and decap cells:   
+![image](https://user-images.githubusercontent.com/118953915/218637229-d9126562-ad3e-4b97-874c-e27eee539127.png)  
+   
+Tool auto insert those cells:    
+![image](https://user-images.githubusercontent.com/118953915/218637240-373fa142-ddc4-4b86-801b-6cc73e666044.png)  
+    
+> report_power
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218637526-4436f09a-7845-4fb1-9d85-46e059dcda94.png">
+
+
+</details>  
+
+
+
+
+ 
