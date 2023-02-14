@@ -4409,6 +4409,11 @@ Redirect several reports for comparison purpose:
 <img width="650" alt="image" src="https://user-images.githubusercontent.com/118953915/217865944-82a513cf-629d-474e-9871-57edff6e3c83.png">  
 <img width="734" alt="image" src="https://user-images.githubusercontent.com/118953915/217866074-11829d08-b60d-4449-961e-487eb8d0080a.png">
 
+💡Expectation: Cells shown in the analysis column in report timing of estimate_timing should be in the main column in post-layout timing reports  
+> estimate timing   
+
+Performs  virtual in-place optimization on the current design by simulating the effects of removing repeaters, building repeater trees and sizing cells   
+<img width="901" alt="image" src="https://user-images.githubusercontent.com/118953915/218641889-cf1c2f6e-816a-40c4-a6b5-5691cde31877.png">  
 
 </details>
 
@@ -4602,7 +4607,7 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (Engineering Change Order (ECO))}}$
 
 </details>
  
-<details><summary> Lab Session -> Timing violations and ECO </summary>  
+<details><summary> Lab Session -> ECO </summary>  
 
  </br> 
  
