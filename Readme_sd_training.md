@@ -4303,7 +4303,8 @@ Number of violations decrease: (previous the total number of violation: 161)
 
 Here is the report on area/utilization:   
 > report_utilization  
- 
+
+Although the core_utilization ratio is set to 40%, but in the report_utilization is getting 0.0234 because the calculation is excluding macro cell area    
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/218921917-dc5706f4-b6ae-4a08-b7f4-c2702f10a331.png">
   
 </br>  
@@ -4671,12 +4672,18 @@ Tool auto insert those cells:
 </details>  
 
 #
+# Day_25 
+**⭐RISC-V core RTL2GDS flow**
+Have been convered in previous day training
+
+
+#
 # Day_26 
 **⭐Introduction to mixed-signal flow**
 
 <details><summary> ⚡ Lecture Session: Introduction to mixed-signal flow - Live session </summary>
 
-
+</details>
 
 
  
