@@ -26,6 +26,7 @@
 + **[ Day_23 : Clock gating technique ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_23)**
 + **[ Day_24 : Timing violations and ECO ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_24)**
 + **[ Day_25 : RISC-V core RTL2GDS flow ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_25)** 
++ **[ Day_26 : Introduction to mixed-signal flow ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_26)**
 
 #
 # Day_0 
@@ -4298,9 +4299,23 @@ Number of slack decrease: (previous when core utilization 7% & latency 3.0: slac
 Number of violations decrease: (previous the total number of violation: 161)  
 <img width="404" alt="image" src="https://user-images.githubusercontent.com/118953915/217713257-69249cd5-49ee-4446-9473-ab3cc7f0c16a.png">  
 
+</br>  
+
 Here is the report on area/utilization:   
-<img width="581" alt="image" src="https://user-images.githubusercontent.com/118953915/217880893-a30ee0da-845e-4337-9e6f-b81008eb4ff8.png">   
+> report_utilization  
  
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/218921917-dc5706f4-b6ae-4a08-b7f4-c2702f10a331.png">
+  
+</br>  
+
+Here is the detials of each command:  
+
+Command | Detials |
+--- | --- |
+report_utilization | Report utilization of the current block  </br> The utilization calculation involves the computation of available area (Capacity) and the utilized area (Demand)  </br>  > Utilization = Demand / Capacity <br> <img width="446" alt="image" src="https://user-images.githubusercontent.com/118953915/218916802-07e13661-9f06-4667-9c06-d86866b8c2b9.png"> |  
+initialize_floorplan | Creates  an  initial  floorplan  with a die boundary, core, site array (or rows), and wire tracks. Support is provided for a die boundary that is coincident with the core, or a rectilinear core with rectangular die boundary. |  
+initialize_floorplan -core_utilization ratio | Specifies the utilization of the core area. The  utilization  is the  total  area  of the core occupied by all standard cells and macro cells divided by the total core area. You  can  specify  a value  between 0 and 1.  The cell area includes all standard and macro cells. For example, a core utilization  of  0.8  specifies that  80  percent of the core area is used for cell placement at this stage. The tool might later add more cell area, the remaining area is available for routing. By default, the core utilization is 0.7. |
+
 </details>
 
 
@@ -4653,8 +4668,13 @@ Tool auto insert those cells:
 > report_power
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/118953915/218637526-4436f09a-7845-4fb1-9d85-46e059dcda94.png">
 
-
 </details>  
+
+#
+# Day_26 
+**⭐Introduction to mixed-signal flow**
+
+<details><summary> ⚡ Lecture Session: Introduction to mixed-signal flow - Live session </summary>
 
 
 
