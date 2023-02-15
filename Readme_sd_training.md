@@ -4673,7 +4673,8 @@ Tool auto insert those cells:
 
 #
 # Day_25 
-**⭐RISC-V core RTL2GDS flow**
+**⭐RISC-V core RTL2GDS flow**  
+
 Have been convered in previous day training
 
 
