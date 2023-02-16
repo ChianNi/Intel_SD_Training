@@ -4686,5 +4686,78 @@ Have been convered in previous day training
 
 </details>
 
+</br>  
 
+(A) Introduction to mixed-signal flow  
  
+Electronic signal   
+- Signal used to convey one device to another device either in digital or analog. A message encoded by changing the voltage of an electric  
+- Types of electronic signal: Analog and Digital     
+- Signal that most available in the nature is analog (Eg: Temperature,..)   
+- Signal that microcontroller/microprocessors understand/speak is digital (Eg: Verilog, VHDL,…)  
+- Use ADC’s and DAC’s to get/take in analog signals    
+
+Mixed-signal integrated circuit   
+- Is any integrated circuit that has both analog circuits and digital circuits on a single semiconductor die  
+- A mixed-signal IC minimizes off-chip interconnects between digital and analog functionality in the system—typically reducing size and weight due to minimized packaging and a smaller module substrate, therefore increases the reliability of the system    
+
+Application Specific Integrated Circuit (ASIC)  
+- This integrated circuit is aptly named since an ASIC microchip is designed and manufactured for one specific application and does not allow you to reprogram or modify it after it is produced. This means ASICs are not intended for general use    
+
+Field Programmable Gate Array (FPGA)  
+- Is an integrated circuit that may be programmed to execute a tailored function for a particular purpose. FPGAs have become highly popular in the VLSI area. The code for FPGA programming is written in languages like VHDL and Verilog    
+
+Analog vs Digital    
+- Analog and digital signals are types of signals that carrying information 
+- The major difference between both signals is that the analog signals have continuous electrical signals, while digital signals have non-continuous electrical signals which are discrete   
+ 
+💡 Analog signal have more precise result but there is more noise, but digital signal is easier to read and less noise but the result not accurate (basically 1’s and 0’s)   
+
+> Can refer here for more details on convertion signal : [Details on conversion signal](https://www.tutorialspoint.com/digital_communication/digital_communication_quantization.htm#:~:text=The%20digitization%20of%20analog%20signals,process%20is%20called%20as%20Quantization)
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/219398932-94f9704d-ba16-45f6-a4e3-5b7d4ccc51fd.png">  
+
+Mixed-signal chips are those that at least partially deal with input signals whose precise values matter  
+- This broad class includes RF, Analog, Analog-to-Digital and Digital-to-Analog conversion 
+- More recently, a large number of Mixed-Signal chips where at least part of the chip design needs to measure signals with high precision   
+These chips have very different Design and Process Technology demands than normal Digital circuits  
+
+Here is the AMS design flow:  
+AMS - Analog and mixed signal (digital and analog)  
+![image](https://user-images.githubusercontent.com/118953915/219399183-34cbf704-0c9f-4b32-8480-cd2f1e6e8e73.png)
+
+</br>  
+
+> Can refer this video for details: [AMS Design Flow](https://www.youtube.com/watch?v=qogQOwEAkb4)  
+  
+Here is the block diagram representation for mixed signal design (figure from training material):  
+![image](https://user-images.githubusercontent.com/118953915/219399462-a87f549e-b90a-47bc-a8d9-f0e0f8bafdca.png)
+In VSDBabySoC:  
+- RVMYTH processor - digital block  
+- PLL - analog block  
+- DAC - analog block(for digital to analog conversion)  
+
+</br>  
+
+(B) Introduction to various files  
+
+> Can refer previous training notes for more details on various file: [Lecture notes on Day20](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_20)
+
+File | Details |  
+---|---|  
+LEF file (Library Exchange Format file) |  Physical properties such as width, height etc regarding the standard cells |  
+tf (technology file) or tlef(technology lef) | Contain same information |  
+Cell tf | Contains information in width,height of each cell |  
+lib (liberty file) | Contains the timing information of the cells |  
+gdsII and OASIS file | GDSII is a file format similar to JPEG, DOCX, XLSX etc to enable a layout design to be transferred from one place to another(IP owner handoff to PD team, PD team to foundry for fabrication), to be viewed/used for verifications like Physical verification checks by EDA tools </br>  Eg: Can get the IP (eg:PLL) from other person and reused  |  
+
+![image](https://user-images.githubusercontent.com/118953915/219400147-4d632d97-5cf6-4ea5-9149-4d7c2e212ba7.png)
+Where to get the information in WHAT and WHY TO DO?This is where we need the following files 1.LEF file2.LIB file3.Tf files(tlu+ file)
+
+</br>  
+
+Here is the VLSI Physical Design Flow:  
+> Can refer this link for full slides : [VLSI Physical Design Flow](https://www.slideshare.net/vlsisyst/vlsi-physical-design-flow)  
+
+![image](https://user-images.githubusercontent.com/118953915/219400224-3de60917-1096-49cb-99c5-4c7c9fcf6ada.png)
+
