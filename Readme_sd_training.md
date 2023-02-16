@@ -4684,30 +4684,28 @@ Have been convered in previous day training
 
 <details><summary> ⚡ Lecture Session: Introduction to mixed-signal flow - Live session </summary>
 
-</details>
-
 </br>  
 
 (A) Introduction to mixed-signal flow  
  
-Electronic signal   
+$\textcolor{blue}{\text{Electronic signal}}$   
 - Signal used to convey one device to another device either in digital or analog. A message encoded by changing the voltage of an electric  
 - Types of electronic signal: Analog and Digital     
 - Signal that most available in the nature is analog (Eg: Temperature,..)   
 - Signal that microcontroller/microprocessors understand/speak is digital (Eg: Verilog, VHDL,…)  
 - Use ADC’s and DAC’s to get/take in analog signals    
 
-Mixed-signal integrated circuit   
+$\textcolor{blue}{\text{Mixed-signal integrated circuit}}$     
 - Is any integrated circuit that has both analog circuits and digital circuits on a single semiconductor die  
 - A mixed-signal IC minimizes off-chip interconnects between digital and analog functionality in the system—typically reducing size and weight due to minimized packaging and a smaller module substrate, therefore increases the reliability of the system    
 
-Application Specific Integrated Circuit (ASIC)  
+$\textcolor{blue}{\text{Application Specific Integrated Circuit (ASIC)}}$    
 - This integrated circuit is aptly named since an ASIC microchip is designed and manufactured for one specific application and does not allow you to reprogram or modify it after it is produced. This means ASICs are not intended for general use    
 
-Field Programmable Gate Array (FPGA)  
+$\textcolor{blue}{\text{Field Programmable Gate Array (FPGA)}}$   
 - Is an integrated circuit that may be programmed to execute a tailored function for a particular purpose. FPGAs have become highly popular in the VLSI area. The code for FPGA programming is written in languages like VHDL and Verilog    
 
-Analog vs Digital    
+$\textcolor{blue}{\text{Analog vs Digital}}$      
 - Analog and digital signals are types of signals that carrying information 
 - The major difference between both signals is that the analog signals have continuous electrical signals, while digital signals have non-continuous electrical signals which are discrete   
  
@@ -4716,6 +4714,8 @@ Analog vs Digital
 > Can refer here for more details on convertion signal : [Details on conversion signal](https://www.tutorialspoint.com/digital_communication/digital_communication_quantization.htm#:~:text=The%20digitization%20of%20analog%20signals,process%20is%20called%20as%20Quantization)
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/118953915/219398932-94f9704d-ba16-45f6-a4e3-5b7d4ccc51fd.png">  
+
+</br> 
 
 Mixed-signal chips are those that at least partially deal with input signals whose precise values matter  
 - This broad class includes RF, Analog, Analog-to-Digital and Digital-to-Analog conversion 
@@ -4732,6 +4732,9 @@ AMS - Analog and mixed signal (digital and analog)
   
 Here is the block diagram representation for mixed signal design (figure from training material):  
 ![image](https://user-images.githubusercontent.com/118953915/219399462-a87f549e-b90a-47bc-a8d9-f0e0f8bafdca.png)
+
+</br> 
+
 In VSDBabySoC:  
 - RVMYTH processor - digital block  
 - PLL - analog block  
@@ -4751,8 +4754,12 @@ Cell tf | Contains information in width,height of each cell |
 lib (liberty file) | Contains the timing information of the cells |  
 gdsII and OASIS file | GDSII is a file format similar to JPEG, DOCX, XLSX etc to enable a layout design to be transferred from one place to another(IP owner handoff to PD team, PD team to foundry for fabrication), to be viewed/used for verifications like Physical verification checks by EDA tools </br>  Eg: Can get the IP (eg:PLL) from other person and reused  |  
 
+Sources of various file:  
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/118953915/219409943-b725b748-e08b-4c36-9580-e46f582cb841.png">
+
+Here is the list of input files reqiured for physical design:  
+Then will obtain GDSII file    
 ![image](https://user-images.githubusercontent.com/118953915/219400147-4d632d97-5cf6-4ea5-9149-4d7c2e212ba7.png)
-Where to get the information in WHAT and WHY TO DO?This is where we need the following files 1.LEF file2.LIB file3.Tf files(tlu+ file)
 
 </br>  
 
@@ -4761,3 +4768,20 @@ Here is the VLSI Physical Design Flow:
 
 ![image](https://user-images.githubusercontent.com/118953915/219400224-3de60917-1096-49cb-99c5-4c7c9fcf6ada.png)
 
+</br>  
+
+$\textcolor{blue}{\text{IP cores}}$     
+- Consists of a block of logic or data that is used in a semiconductor chip  
+- It is usually the intellectual property of a particular person or company. IP cores are used when making a FPGA or ASIC  
+- IP cores are created throughout the design process and can be turned into components for reuse
+- There are different categories for IP cores including hard IP cores and soft IP cores  
+   - Soft IP core: Can be customized during the physical design phase and mapped to any process technology (No change in functionality, only can change placement/technology)
+   - Hard IP core : Has the logic implementation and the physical implementation. In other words, the physical layout of a hard macro-IP is finished and fixed in a particular process technology
+
+</br>  
+
+How it actually works in the semiconductor industry (figure from training material):   
+- Moore's law is the observation that the number of transistors in a dense integrated circuit (IC) doubles about every two years   
+<img width="572" alt="image" src="https://user-images.githubusercontent.com/118953915/219414425-cd5e0cf4-a3a1-4cbe-be02-28efd4aab4ca.png">  
+
+</details>
