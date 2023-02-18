@@ -27,6 +27,7 @@
 + **[ Day_24 : Timing violations and ECO ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_24)**
 + **[ Day_25 : RISC-V core RTL2GDS flow ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_25)** 
 + **[ Day_26 : Introduction to mixed-signal flow ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_26)**
++ **[ Day_27 : Introduction to crosstalk - Glitch and delta delay ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_27)**
 
 #
 # Day_0 
@@ -1846,7 +1847,7 @@ Here is the ETM model Illustration:
 3.QTM (Quick Timing Models)  
 In the early stages of the design cycle, if a block not yet have a netlist, we can use a quick timing model to describe its initial timing. Later in the cycle, we can replace each quick timing model with a netlist block to obtain more accurate timing  
 
->Can refer here for more detials: http://mantravlsi.blogspot.com/2014/06/timing-models-etm-qtm-ilm.html
+>Can refer here for more details: http://mantravlsi.blogspot.com/2014/06/timing-models-etm-qtm-ilm.html
  
 </details> 
 
@@ -4675,16 +4676,21 @@ Tool auto insert those cells:
 # Day_25 
 **⭐RISC-V core RTL2GDS flow**  
 
-Have been convered in previous training -> [Day20 training notes](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_20
-)  
-
-<details><summary> Simplified RTL2GDS flow </summary>
+<details><summary> RTL2GDS flow </summary>
  
  </br>
  
+$\textcolor{blue}{\text{Have been convered in previous training}}$    
+
+</br>  
+
+$\fbox{Theory:}$   
 Details of each stage can refer previous training -> [Day15 training notes](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_15)  
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/118953915/212530024-9e78d4ce-4ddb-4a6d-9b51-1aedc721f0cb.png">
 
+$\fbox{Lab:}$    
+Can refer previous training -> [Day20 training notes](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_20
+)  
 </details>
 
 #
@@ -4792,5 +4798,21 @@ $\textcolor{blue}{\text{IP cores}}$
 How it actually works in the semiconductor industry (figure from training material):   
 - Moore's law is the observation that the number of transistors in a dense integrated circuit (IC) doubles about every two years   
 <img width="572" alt="image" src="https://user-images.githubusercontent.com/118953915/219414425-cd5e0cf4-a3a1-4cbe-be02-28efd4aab4ca.png">  
+
+</details>
+
+#
+# Day_27 
+**⭐Introduction to crosstalk - Glitch and delta delay**
+
+<details><summary> ⚡ Lecture Session: Introduction to crosstalk - Glitch and delta delay - Live session </summary>
+
+</br> 
+
+</details>
+
+<details><summary> Lab Session -> Glitch and delta delay </summary>
+ 
+</br> 
 
 </details>
