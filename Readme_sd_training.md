@@ -4675,8 +4675,17 @@ Tool auto insert those cells:
 # Day_25 
 **⭐RISC-V core RTL2GDS flow**  
 
-Have been convered in previous day training
+Have been convered in previous training -> [Day20 training notes](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_20
+)  
 
+<details><summary> Simplified RTL2GDS flow </summary>
+ 
+ </br>
+ 
+Details of each stage can refer previous training -> [Day15 training notes](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_15)  
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/118953915/212530024-9e78d4ce-4ddb-4a6d-9b51-1aedc721f0cb.png">
+
+</details>
 
 #
 # Day_26 
