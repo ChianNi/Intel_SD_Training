@@ -4363,11 +4363,11 @@ $\textcolor{blue}{\text{Clock Tree Synthesis (CTS)}}$
 
 </details>
 
-<details><summary> ⚡ Lecture Session: Concept on CTS (Trainning video on Udemy) </summary>
+<details><summary> ⚡ Lecture Session: Concept on CTS (Training video on Udemy) </summary>
 
 </br>
 
-> Can refer this link for CTS trainning video: [Udemy-Course on CTS](https://www.udemy.com/course/vlsi-academy-clock-tree-synthesis/learn/lecture/876472?start=0#overview)  
+> Can refer this link for CTS training video: [Udemy-Course on CTS](https://www.udemy.com/course/vlsi-academy-clock-tree-synthesis/learn/lecture/876472?start=0#overview)  
 
 CTS  balancing the clock delay to all clock inputs by inserting buffers/inverters along the clock routes of an ASIC design  
 
@@ -4809,10 +4809,106 @@ How it actually works in the semiconductor industry (figure from training materi
 
 </br> 
 
+$\textcolor{blue}{\text{Signal Integrity and Crosstalk}}$     
+- Both are the quality checks of the clock routes  
+- Signal integrity is the ability of an electrical signal to carry information reliably and resist the effects of high-frequency electromagnetic interference from nearby signals   
+- Crosstalk is the undesirable electrical interaction between two or more physically adjacent nets due to capacitive cross-coupling   
+- Crosstalk is a type of noise signal that corrupts the actual signal while transmission through the communication medium
+   - Geometry decrease, wire interconnect become closer (routing congested), causing increase in crosstalk
+
+$\textcolor{blue}{\text{Aggressor and Victim Nets}}$   
+- A net that receives undesirable cross-coupling effects from a nearby net is called a victim net   
+- A net that causes these effects in a victim net is called an aggress or net  
+
+$\textcolor{blue}{\text{Crosstalk-Glitch}}$   
+- Glitch is any unwanted pulse at the output of a combinational gate. In other words, a glitch is a small spike that happens at the output of a gate. A glitch happens generally, if the delays to the combinational gate output are not balanced  
+- When one net is switching, and another net is constant then switching signal may cause spikes on other net because of which coupling capacitance (Cc) occurs between two nets, this is called as crosstalk noise 
+- Types of Glitches: Rise, Fall, Overshoot, Undershoot
+
+Here is the example of glitch (Figure take from training material):   
+![image](https://user-images.githubusercontent.com/118953915/219958353-25bd44a7-6f8c-455c-9ae8-103bc1182508.png)
+ 
+> Can refer this link for more information on glitch https://www.quora.com/What-is-a-glitch-in-a-digital-circuit 
+
+![image](https://user-images.githubusercontent.com/118953915/219958419-4cac01e6-9505-42ab-9cab-6526efd93ac8.png)
+ 
+
+Performing Crosstalk Delay Analysis
+1. Enable PrimeTime SI
+> set_app_var si_enable_analysis true
+
+2. Back-annotate the design with cross-coupling capacitance information in a SPEF or GPD file 
+> read_parasitics - keep_capacitive_coupling file_name.spf
+
+
+💡 Before report_timing must run check_timing
+
+Using check_timing  
+Types to checking specific to crosstalk analysis:  
+- no_driving_cell  
+- ideal_clocks   
+- partial_input_delay  
+- unexpandable_clocks  
+
+Timing Reports  
+- report_timing  
+- -crosstalk_delta  
+- report_si_bottleneck  
+- report_delay_calculation –crosstalk  
+- report_si_double_switching  
+- report_noise  
+- Viewing the Crosstalk Analysis Report   
+   - report_timing- transition_time -crosstalk_delta \ -input_pins -significant_digits 4  
+
+Bottleneck Reports  
+- report_si_bottleneck ( Determine major victim/aggressor nets that causing multiple violations)  
+   - The report_si_bottleneck command reports the nets that have the largest crosstalk  effects that contribute to timing violations  
+- report_bottleneck (Determine causes of multiple min/max delay violation)  
+   - A bottleneck is a common point in the design that contributes to multiple violations  
+- delta_delay  
+- delta_delay_ratio  
+- total_victim_delay_bump  
+- delay_bump_per_aggressor  
+- To get a list of all the victim nets with a delay violationor within 2.0time units of a violation, listed in order of delta delay   
+     - report_si_bottleneck -cost_type delta_delay \ -slack_lesser_than 2.0  
+- report_delay_calculation –crosstalk  
+- size_cell  
+- set_coupling_separation  
+- -include_clock_nets  
+- minimum_active_aggressor  
+- In the following example command, the bottleneck command reports nets where three or more active aggressors area ffecting the net     
+    - report_si_bottleneck -cost_type delta_delay \ - minimum_active_aggressors 3  
+  
+Crosstalk Net Delay Calculation (victim net)  
+- report_delay_calculation -crosstalk \ -from[get_pins g1/Z] -to[get_pins g2/A]  
+  
+Reporting Crosstalk Settings  
+- To check your crosstalk settings:  
+   - report_si_delay_analysis  
+   - report_si_noise_analysis  
+   - report_si_aggressor_exclusion  
+
+</details>
+
+<details><summary> ⚡ Lecture Session: Signal Integrity (Training video on Udemy) </summary>
+
+</br>
+
+> Can refer this link for Signal Integrity training video: [Udemy-Course on Signal Integrity](https://www.udemy.com/course/vlsi-academy-crosstalk/learn/lecture/1619402#overview)  
+
 </details>
 
 <details><summary> Lab Session -> Glitch and delta delay </summary>
  
 </br> 
 
+> Can refer for more detials: [Synopsys user guide on pt_shell(https://picture.iczhiku.com/resource/eetop/WYkreqGDkEtiYbVX.pdf)  
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/118953915/219960397-bbd5651d-895f-453f-8579-b58566284bde.png">
+
+  
+Facing error in read in / restore the design from icc2_shell into pt_shell    
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/219960046-99f50add-dbf2-4804-b8da-65e8e50a24cd.png">
+
 </details>
+
+To be continue  
