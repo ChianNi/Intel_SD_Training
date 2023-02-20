@@ -4918,7 +4918,7 @@ Setup the design:
 > read_verilog <.v from icc2_shell>  
 > link_design  
 > current_design “vsdbabysoc“  
-> read_sdc <.sdc from icc2_shell>   
+> read_sdc <.sdc from icc2_shell>   -> create_clock -name clk -period 10 -waveform {0 5} [get_pins {pll/CLK}]
  
  </br> 
   
