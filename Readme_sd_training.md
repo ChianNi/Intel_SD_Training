@@ -4838,7 +4838,7 @@ Performing Crosstalk Delay Analysis
 > set_app_var si_enable_analysis true
 
 2. Back-annotate the design with cross-coupling capacitance information in a SPEF or GPD file 
-> read_parasitics - keep_capacitive_coupling file_name.spf
+> read_parasitics -keep_capacitive_coupling file_name.spf
 
 
 💡 Before report_timing must run check_timing
@@ -4869,7 +4869,7 @@ Bottleneck Reports
 - delta_delay_ratio  
 - total_victim_delay_bump  
 - delay_bump_per_aggressor  
-- To get a list of all the victim nets with a delay violationor within 2.0time units of a violation, listed in order of delta delay   
+- To get a list of all the victim nets with a delay violationor within 2.0 time units of a violation, listed in order of delta delay   
      - report_si_bottleneck -cost_type delta_delay \ -slack_lesser_than 2.0  
 - report_delay_calculation –crosstalk  
 - size_cell  
@@ -4910,30 +4910,62 @@ PT Required file:
 >https://www.eit.lth.se/fileadmin/eit/courses/etin35/2018/PrimeTime_Slides.pdf  
 
  </br> 
- 
+
+Setup the design:      
+> set search_path “/nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./VSDBabySoC/src/lib”
+> set link_library “* /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsddac.db /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsdpll.db  ~/training/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db”
+> set target_library “/nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsddac.db /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsdpll.db  ~/training/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db”
+> read_verilog /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./write_data_dir/vsdbabysoc/vsdbabysoc.pt.v.gz
+> link_design
+> current_design “vsdbabysoc“
+> read_sdc /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./write_data_dir/vsdbabysoc/vsdbabysoc.sdc/func1.sdc.gz 
+ </br> 
+  
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/118953915/220148694-949e3749-481f-432a-b723-2f5b45359ecb.png">  
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/118953915/220148601-18c43963-935d-4ca5-975b-43dc390a4e95.png">  
+<img width="141" alt="image" src="https://user-images.githubusercontent.com/118953915/220147999-3da79755-d35a-483c-b129-86beee0c676b.png">  
+
+</br> 
+   
 Generate spef file:  
 > write_parasitics -format  spef -output vsdbabysoc.spef
 <img width="736" alt="image" src="https://user-images.githubusercontent.com/118953915/220141957-534cfbf9-505f-44bd-bafc-54ea8c798d6d.png">
- 
- </br> 
 
-Facing error in read in / restore the design from icc2_shell into pt_shell    
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/219960046-99f50add-dbf2-4804-b8da-65e8e50a24cd.png">
+</br>
   
-  </br> 
+Enable signal integrity analysis:  
+>set_app_var si_enable_analysis true  
+>read_parasitics -keep_capacitive_coupling /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/vsdbabysoc.spef.temp1_25.spef
 
-Have try below command:    
-> set_app_var si_enable_analysis true  
-> read_verilog /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./write_data_dir/vsdbabysoc/vsdbabysoc.pt.v.gz  
-> read_parasitics -keep_capacitive_coupling /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/vsdbabysoc.spef.temp1_25.spef  
-> read_db {/nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsddac.db /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsdpll.db  ~/training/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db }  
-> read_sdc /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./write_data_dir/vsdbabysoc/vsdbabysoc.sdc  
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/118953915/220147500-2aefa096-d97f-4a0f-b9c9-4ae784a47c4a.png">
+
+</br>
   
-  </br> 
+</br>
+  
+(A) check_timing  
+-> XTALK-011  (information)  Signal  integrity analysis is enabled but the design has no signal integrity data  
+-> RC-005 (warning) Failed to compute the %s RC network delay from the pin '%s' to the pin '%s' in the network '%s'  
+<img width="796" alt="image" src="https://user-images.githubusercontent.com/118953915/220152153-ef7cd27f-86bf-4fe2-88f5-56edaabd6876.png">  
 
-Failed to read in design properly so dint have clk on pin: pll/clk  
-<img width="422" alt="image" src="https://user-images.githubusercontent.com/118953915/220142720-18553ed8-6ad4-4f07-a487-84a5c6e79b4e.png">
+<img width="558" alt="image" src="https://user-images.githubusercontent.com/118953915/220154352-32131893-fde3-4b86-aaf3-c9f68463ce32.png">
+
+</br>  
+
+(B) Bottleneck Reports  
+- report_si_bottleneck ( Determine major victim/aggressor nets that causing multiple violations)  
+   - The report_si_bottleneck command reports the nets that have the largest crosstalk  effects that contribute to timing violations  
+- report_bottleneck (Determine causes of multiple min/max delay violation)  
+   - A bottleneck is a common point in the design that contributes to multiple violations
+<img width="690" alt="image" src="https://user-images.githubusercontent.com/118953915/220155486-f7b825b5-ca18-4039-8617-66ea18bc5e6e.png">
+<img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/220156561-f56be461-9abe-48e8-8813-396c0a48644c.png">
+
+
+</br>  
+
+(C) Report crosstalk setting  
+-> Need to debug why nothing report out    
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/118953915/220156068-b7622bdd-6202-4ca3-903c-65d260fca285.png">
 
 </details>
-
 To be continue  
