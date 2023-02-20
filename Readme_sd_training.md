@@ -4905,9 +4905,34 @@ Reporting Crosstalk Settings
 > Can refer for more detials: [Synopsys user guide on pt_shell(https://picture.iczhiku.com/resource/eetop/WYkreqGDkEtiYbVX.pdf)  
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/118953915/219960397-bbd5651d-895f-453f-8579-b58566284bde.png">
 
-  
+PT Required file:  
+<img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/220142245-af3ce42f-fc75-4710-825f-6cb75cdcaa37.png">
+>https://www.eit.lth.se/fileadmin/eit/courses/etin35/2018/PrimeTime_Slides.pdf  
+
+ </br> 
+ 
+Generate spef file:  
+> write_parasitics -format  spef -output vsdbabysoc.spef
+<img width="736" alt="image" src="https://user-images.githubusercontent.com/118953915/220141957-534cfbf9-505f-44bd-bafc-54ea8c798d6d.png">
+ 
+ </br> 
+
 Facing error in read in / restore the design from icc2_shell into pt_shell    
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/219960046-99f50add-dbf2-4804-b8da-65e8e50a24cd.png">
+  
+  </br> 
+
+Have try below command:    
+> set_app_var si_enable_analysis true  
+> read_verilog /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./write_data_dir/vsdbabysoc/vsdbabysoc.pt.v.gz  
+> read_parasitics -keep_capacitive_coupling /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/vsdbabysoc.spef.temp1_25.spef  
+> read_db {/nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsddac.db /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsdpll.db  ~/training/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db }  
+> read_sdc /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./write_data_dir/vsdbabysoc/vsdbabysoc.sdc  
+  
+  </br> 
+
+Failed to read in design properly so dint have clk on pin: pll/clk  
+<img width="422" alt="image" src="https://user-images.githubusercontent.com/118953915/220142720-18553ed8-6ad4-4f07-a487-84a5c6e79b4e.png">
 
 </details>
 
