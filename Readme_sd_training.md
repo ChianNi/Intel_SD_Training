@@ -4911,31 +4911,32 @@ PT Required file:
 
  </br> 
 
-Setup the design:      
-> set search_path “/nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./VSDBabySoC/src/lib”
-> set link_library “* /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsddac.db /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsdpll.db  ~/training/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db”
-> set target_library “/nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsddac.db /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/./rvmyth/avsdpll.db  ~/training/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db”
-> read_verilog /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./write_data_dir/vsdbabysoc/vsdbabysoc.pt.v.gz
-> link_design
-> current_design “vsdbabysoc“
-> read_sdc /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/./write_data_dir/vsdbabysoc/vsdbabysoc.sdc/func1.sdc.gz 
+Setup the design:        
+> set search_path “<lib dir>”  
+> set link_library “<.db>”  
+> set target_library “<.db>”  
+> read_verilog <.v from icc2_shell>  
+> link_design  
+> current_design “vsdbabysoc“  
+> read_sdc <.sdc from icc2_shell>   
+ 
  </br> 
   
-<img width="799" alt="image" src="https://user-images.githubusercontent.com/118953915/220148694-949e3749-481f-432a-b723-2f5b45359ecb.png">  
-<img width="799" alt="image" src="https://user-images.githubusercontent.com/118953915/220148601-18c43963-935d-4ca5-975b-43dc390a4e95.png">  
-<img width="141" alt="image" src="https://user-images.githubusercontent.com/118953915/220147999-3da79755-d35a-483c-b129-86beee0c676b.png">  
-
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/220164738-14ed82cc-dcff-402f-9ce5-21a7acfabec1.png">  
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/220164153-b927dd63-a5fb-4864-a852-ee021b82930e.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/220164302-a9b511e0-bf27-44c4-8c91-ff16ae68a16e.png">
+ 
 </br> 
    
 Generate spef file:  
-> write_parasitics -format  spef -output vsdbabysoc.spef
+> write_parasitics -format  spef -output <design>.spef
 <img width="736" alt="image" src="https://user-images.githubusercontent.com/118953915/220141957-534cfbf9-505f-44bd-bafc-54ea8c798d6d.png">
 
 </br>
   
 Enable signal integrity analysis:  
 >set_app_var si_enable_analysis true  
->read_parasitics -keep_capacitive_coupling /nfs/site/disks/png_mip_gen6p9ddr_0042/chiannio/trainning/day20/vsdbabysoc.spef.temp1_25.spef
+>read_parasitics -keep_capacitive_coupling {spef}
 
 <img width="799" alt="image" src="https://user-images.githubusercontent.com/118953915/220147500-2aefa096-d97f-4a0f-b9c9-4ae784a47c4a.png">
 
