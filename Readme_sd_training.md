@@ -28,7 +28,9 @@
 + **[ Day_25 : RISC-V core RTL2GDS flow ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_25)** 
 + **[ Day_26 : Introduction to mixed-signal flow ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_26)**
 + **[ Day_27 : Introduction to crosstalk - Glitch and delta delay ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_27)**
-
++ **[ Day_28 : Introduction to DRC/LVS ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_28)**
++ **[ Day_29 : DRC/LVS labs ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_29)**
+ 
 #
 # Day_0 
 **⭐System/Tool Setup Check & GitHub ID creation**
@@ -2526,7 +2528,8 @@ Generate waveform:
 Will proceed using iverilog to generate waveform  
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/118953915/212933363-4337f66e-f0fa-4b01-964a-f6c5ed37da59.png">
 
- Here is the waveform for both pre_synthesis and post_synthesis:  
+Here is the waveform for both pre_synthesis and post_synthesis:  
+Both of the waveform from the simulation should be same  
 <img width="541" alt="image" src="https://user-images.githubusercontent.com/118953915/212933561-8d0d5abb-f75c-48a9-9e18-4dccc5bb742b.png">
 
 </details>
@@ -4896,6 +4899,18 @@ Reporting Crosstalk Settings
 
 > Can refer this link for Signal Integrity training video: [Udemy-Course on Signal Integrity](https://www.udemy.com/course/vlsi-academy-crosstalk/learn/lecture/1619402#overview)  
 
+Crosstalk noise reason:  
+
+- High routing density and large number of standard cells  
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/220358149-753c1cbe-a784-4680-9ed3-9b58a038a997.png">  
+
+- Increase in number of metal layers resulting in increase in lateral capacitance  
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/118953915/220358227-083b2c9e-7bde-438b-b2a3-f3a3c303e4e7.png">  
+
+- Lower supply voltage leading to lesser noise margin  
+<img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/220358396-a28f6671-0f52-4945-bf56-2750e4d5dbce.png"> 
+
+ 
 </details>
 
 <details><summary> Lab Session -> Glitch and delta delay </summary>
@@ -4970,3 +4985,24 @@ Enable signal integrity analysis:
 
 </details>
 To be continue  
+
+#
+# Day_28 
+**⭐Introduction to DRC/LVS**
+
+<details><summary> ⚡ Lecture Session: Introduction to DRC/LVS - Live session </summary>
+
+</br>
+
+
+</details>
+
+#
+# Day_29 
+**⭐DRC/LVS labs**
+
+<details><summary> Lab Session-> DRC/LVS labs </summary>
+
+</br>
+
+</details>
