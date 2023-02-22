@@ -5046,8 +5046,11 @@ Here is the reference link:
 
 </br>  
 
-Understanding Skywater PDK - Layers  
+- Understanding Skywater PDK - Layers  
 <img width="362" alt="image" src="https://user-images.githubusercontent.com/118953915/220711579-a6fb472a-020c-4735-80bb-ec4bc7f1decf.png">  
+
+</br>  
+
 <img width="492" alt="image" src="https://user-images.githubusercontent.com/118953915/220711622-8d178b31-696f-46c5-b50d-aa46ac74b54a.png">  
 <img width="491" alt="image" src="https://user-images.githubusercontent.com/118953915/220711658-2f89b623-910b-4201-91ae-55773f4918c8.png">  
 
@@ -5061,13 +5064,34 @@ Understanding Skywater PDK - Layers
 
 <img width="528" alt="image" src="https://user-images.githubusercontent.com/118953915/220713765-e9d66125-bb11-4aa7-96ef-9575a74042f7.png">
 
+- Understanding Skywater PDK - Devices  
 
+<img width="625" alt="image" src="https://user-images.githubusercontent.com/118953915/220714622-51f6a882-3d2b-45d3-a783-b71957ffb160.png">
+
+- Opensource Tools And Flows 
+
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/220714790-bb797448-4931-4dae-a5e7-b00da973a2f0.png">
+
+</br>  
+
+<img width="309" alt="image" src="https://user-images.githubusercontent.com/118953915/220714848-1f31877a-4ca4-4ae7-b2fb-fdeca3d619eb.png">
+
+</br>  
+
+<img width="537" alt="image" src="https://user-images.githubusercontent.com/118953915/220714920-c89e03e2-2a47-4e0b-b770-ffe165d0699b.png">
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/220714976-0014932d-a3a5-469d-916b-668a4c2da804.png">
+
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/118953915/220715295-26c93eb9-6b1c-4391-9799-8f52aecf9600.png">
+<img width="502" alt="image" src="https://user-images.githubusercontent.com/118953915/220715339-b9933d74-fd82-4ab7-be76-7aaad4dc6e37.png">
+<img width="524" alt="image" src="https://user-images.githubusercontent.com/118953915/220715385-e8b81b3a-769a-4b74-bb2c-6c209757fad6.png">
+<img width="518" alt="image" src="https://user-images.githubusercontent.com/118953915/220715417-ab240ecc-a207-4977-8caa-dac6d00755d2.png">
 </details>
 
 <details><summary> Lab Session-> DRC/LVS labs </summary>
 
 </br>
 
+- Check Tool Installations  
 
 
 </details>
