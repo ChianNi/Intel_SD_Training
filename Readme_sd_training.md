@@ -4980,9 +4980,6 @@ Enable signal integrity analysis:
 
 
 (C) Report crosstalk setting  
-- crosstalk_delta - Shows annotated delta delay values in a separate column  
-From the column "Delta", stated 0.00    
-<img width="450" alt="image" src="https://user-images.githubusercontent.com/118953915/220676945-ec7f4ee9-53f0-4add-b41f-6a99c0c71576.png">
 
 -> Need to debug why nothing report out    
 <img width="710" alt="image" src="https://user-images.githubusercontent.com/118953915/220156068-b7622bdd-6202-4ca3-903c-65d260fca285.png">
