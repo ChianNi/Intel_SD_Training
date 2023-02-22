@@ -5087,14 +5087,73 @@ Here is the reference link:
 <img width="518" alt="image" src="https://user-images.githubusercontent.com/118953915/220715417-ab240ecc-a207-4977-8caa-dac6d00755d2.png">
 </details>
 
-<details><summary> Lab Session-> DRC/LVS labs </summary>
+<details><summary> Lab Session-> Check Tool Installations  </summary>
 
 </br>
 
-- Check Tool Installations  
+  - Magic  
+<img width="473" alt="image" src="https://user-images.githubusercontent.com/118953915/220716253-735d4a80-def8-43e7-8c74-0a1e5c38713a.png">  
+<img width="465" alt="image" src="https://user-images.githubusercontent.com/118953915/220716311-e5887f51-b21b-4768-991e-fc994405bf1a.png">
 
+   - Netgen  
+<img width="455" alt="image" src="https://user-images.githubusercontent.com/118953915/220716366-b2379d93-d4e3-4227-bdfb-e2bf7c96b1e6.png">
+
+   - xschem
+<img width="457" alt="image" src="https://user-images.githubusercontent.com/118953915/220716543-41a50cc3-a4a0-417b-91c6-662e035fe618.png">
+
+   - ngspice
+<img width="462" alt="image" src="https://user-images.githubusercontent.com/118953915/220716625-77eae66d-0084-456c-b18d-cb621e262a8c.png">  
+
+</br> 
+
+<img width="469" alt="image" src="https://user-images.githubusercontent.com/118953915/220716683-6eaaf02e-ffa3-487f-a28d-5c40f1b1ca46.png">  
+
+<img width="460" alt="image" src="https://user-images.githubusercontent.com/118953915/220716784-56da2868-65e9-46e1-a6c7-8d7e271e2248.png">
 
 </details>
+
+<details><summary> Lab Session-> Creating Sky130 Device Layout In Magic </summary>  
+ 
+</br>  
+
+<img width="882" alt="image" src="https://user-images.githubusercontent.com/118953915/220718886-751f118c-07f7-4d2f-8a6d-fc129b9d6ffa.png">
+<img width="718" alt="image" src="https://user-images.githubusercontent.com/118953915/220718975-18923962-faf0-490d-8c61-cf8decfb9f78.png">
+<img width="678" alt="image" src="https://user-images.githubusercontent.com/118953915/220719024-2bee71d3-df78-4d5f-af29-e0cb53feeb1c.png">
+<img width="678" alt="image" src="https://user-images.githubusercontent.com/118953915/220719076-707203c8-bd18-4180-8496-80a1b601593c.png">
+<img width="628" alt="image" src="https://user-images.githubusercontent.com/118953915/220719110-f33386f2-c80d-420b-b0e9-d09b3d093483.png">
+<img width="607" alt="image" src="https://user-images.githubusercontent.com/118953915/220719153-69ccdb7b-8a95-432c-a1b5-537c353e2049.png">
+
+</details>
+
+<details><summary> Lab Session-> Creating Simple Schematic In Xschem </summary>  
+ 
+</br>  
+
+Reference Github: [Physical Verification using SKY130](https://github.com/Emad-H/Physical-Verification-using-SKY130#lab---density-rules)  
+<img width="939" alt="image" src="https://user-images.githubusercontent.com/118953915/220718659-e7455079-1f81-46e6-a839-313a04366538.png">
+<img width="894" alt="image" src="https://user-images.githubusercontent.com/118953915/220718806-615eb8a2-0a27-49ed-b576-2082ac863f5a.png">
+
+</details>
+
+<details><summary> Lab Session-> Creating Symbol And Exporting Schematic In Xschem </summary>  
+ 
+</br>  
+
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/118953915/220720450-129aaa8c-54b8-41b3-9325-b72dd5dc9639.png">
+
+</details>
+
+<details><summary> Lab Session-> Importing Schematic To Layout And Inverter Layout Steps </summary>  
+ 
+</br>  
+
+</details>
+
+<details><summary> Lab Session-> Final DRC/LVS Checks And Post Layout Simulations </summary>  
+ 
+</br>  
+
+
 
 #
 # Day_29 
