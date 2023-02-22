@@ -5005,7 +5005,7 @@ ERC (Electrical rule check) | Involves checking a design for all electrical conn
 
 </details>
 
-<details><summary> ⚡ Lecture Session:  Final DRC/LVS Checks And Post Layout Simulations  </summary>
+<details><summary> ⚡ Lecture Session:  Introduction to SkyWater SKY130 </summary>
 
 </br>
 
@@ -5176,9 +5176,51 @@ After done create schematic need to functionally validate the schematic by creat
  
 </br>  
 
-<img width="664" alt="image" src="https://user-images.githubusercontent.com/118953915/220729638-de9f3527-d86f-459f-b224-a2d24b5b07ea.png">
-<img width="626" alt="image" src="https://user-images.githubusercontent.com/118953915/220729875-7b5a283d-333f-45ff-9cf0-acc1a4779d26.png">
-<img width="469" alt="image" src="https://user-images.githubusercontent.com/118953915/220729951-78179531-cf40-4b1f-ace0-0748e62ecf3b.png">
+<img width="840" alt="image" src="https://user-images.githubusercontent.com/118953915/220729638-de9f3527-d86f-459f-b224-a2d24b5b07ea.png">
+<img width="826" alt="image" src="https://user-images.githubusercontent.com/118953915/220729875-7b5a283d-333f-45ff-9cf0-acc1a4779d26.png">
+<img width="669" alt="image" src="https://user-images.githubusercontent.com/118953915/220729951-78179531-cf40-4b1f-ace0-0748e62ecf3b.png">
+
+<img width="699" alt="image" src="https://user-images.githubusercontent.com/118953915/220734488-e733b966-7613-477b-b878-234646856e24.png">
+
+</details>
+
+<details><summary> ⚡ Lecture Session:  DRC/LVS Theory </summary>
+
+</br>
+
+- Understanding GDS Format  
+<img width="658" alt="image" src="https://user-images.githubusercontent.com/118953915/220737924-0aeb0bd0-4d07-4484-9eaa-253df6402743.png">  
+<img width="412" alt="image" src="https://user-images.githubusercontent.com/118953915/220738153-feb18d07-e6c6-4a88-8fab-2277fde85a0a.png">
+
+</br>  
+
+<img width="647" alt="image" src="https://user-images.githubusercontent.com/118953915/220738230-103b7bcf-15c6-45df-8978-8a581546baf9.png">
+
+- Extraction Commands, Styles and Options In Magic  
+<img width="695" alt="image" src="https://user-images.githubusercontent.com/118953915/220738556-876d94d2-4537-4f3b-9bbb-c4d11f935f05.png">
+<img width="722" alt="image" src="https://user-images.githubusercontent.com/118953915/220738591-21c39d1a-28f0-427f-a239-bf7447f341df.png">
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/118953915/220738638-867a16af-6d5f-4b91-b423-670323956565.png">
+
+- Advanced Extraction Options In Magic  
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/118953915/220739088-967438c5-3987-4286-aae5-5051356c8a00.png">
+
+- GDS Reading Option In Magic  
+<img width="644" alt="image" src="https://user-images.githubusercontent.com/118953915/220739369-da5ad12e-ccfe-416a-82e6-6bb75c9cb101.png">
+
+- GDS Writing, Input, Output Styles and Output Issues  
+<img width="672" alt="image" src="https://user-images.githubusercontent.com/118953915/220740406-f040c99f-e3d8-43d9-baa2-2a3bcd3b2bd1.png">
+<img width="556" alt="image" src="https://user-images.githubusercontent.com/118953915/220740440-d6da4578-9646-4f8b-93f8-f061ca6a9890.png">
+
+
+- DRC Rules In Magic  
+<img width="512" alt="image" src="https://user-images.githubusercontent.com/118953915/220740023-6ad3780d-a52a-45f4-9454-2f86d0f8130a.png">
+
+- Extraction Rules And Errors In Magic  
+<img width="634" alt="image" src="https://user-images.githubusercontent.com/118953915/220740488-bd2eaba0-2bf5-4d12-babb-99a1925a31c8.png">
+<img width="666" alt="image" src="https://user-images.githubusercontent.com/118953915/220740544-082ff428-b497-4f9a-b7b2-6c451297060c.png">
+
+- LVS Setup For Netgen  
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/118953915/220740842-9789c533-00bf-4526-8d42-90d8cfd5c0c0.png">
 
 
 #
