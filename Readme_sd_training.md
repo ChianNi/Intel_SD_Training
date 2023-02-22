@@ -5139,13 +5139,36 @@ Reference Github: [Physical Verification using SKY130](https://github.com/Emad-H
  
 </br>  
 
-<img width="530" alt="image" src="https://user-images.githubusercontent.com/118953915/220720450-129aaa8c-54b8-41b3-9325-b72dd5dc9639.png">
+After done create schematic need to functionally validate the schematic by create a testbench  
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/118953915/220720450-129aaa8c-54b8-41b3-9325-b72dd5dc9639.png">  
 
+-> Need generate a ramp input and review the output response after connecting the power supplies  
+-> Insert 2 voltage sources from the default xschem library, one for the input and one for the supply ; GND node to the supply connections  
+-> Create "opins" for the input and ouput signals in order to review design in Ngspice  
+-> The supply voltage is set to 1.8v. For the input voltage, we must set the supply to a piece-wise linear function to get ramp like behaviour  
+-> The PWL function has voltage and time values that state that the supply will start at 0v, then start to ramp up from 20 ns till it reaches its final value at 900 ns of 1.8v   
+-> Need place two more statements for ngspice, but as these aren't specific to any component, they must be placed in text boxes(s1,s2)  
+-> s1 will specify the location of the device models used in the device schematic. We will use a .lib statement that selects a top level file that tells ngspice where to find all the models and also specifying a simulation corner for all the models. We shall use the typical corner tt  
+-> s2 will tell ngspice to run a transient simulation for 1 ns and monitor voltages for the in and out pins  
+<img width="826" alt="image" src="https://user-images.githubusercontent.com/118953915/220724814-4337ad17-b575-4a0a-ad68-cac039f88162.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/118953915/220727548-8fa5a236-d810-45e6-91f6-e83d05e0a424.png">
+<img width="678" alt="image" src="https://user-images.githubusercontent.com/118953915/220727989-f3fa6556-4ac2-406d-bcb7-d1155193137a.png">
+  
+  
 </details>
 
 <details><summary> Lab Session-> Importing Schematic To Layout And Inverter Layout Steps </summary>  
  
 </br>  
+
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/118953915/220728217-89b770ae-f948-4313-b2b3-7b776639cb24.png">  
+<img width="847" alt="image" src="https://user-images.githubusercontent.com/118953915/220728360-f5e666bf-1734-4a3a-8240-f89f408963b5.png">  
+
+-> Set some parameters that are only adjustable in the layout which will make it more convenient to wire the whole layout up  
+-> For the pfet, need set the "Top guard ring via coverage" to 100. This will put a local interconnect to metal1 via the top of the guard ring  
+-> For "Source via coverage" put +40 and for "Drain via coverage" put -40. This will split the source drain contacts, making it easy to connect them with a wire   
+-> For the nfet, need set the "Bottom guard ring via coverage" to 100, while the source and drain via coverages are set to +40 and -40, respectively, like the pfet  
+<img width="730" alt="image" src="https://user-images.githubusercontent.com/118953915/220728929-351a23d5-ca74-42f6-be5f-ce48fd3c3385.png">
 
 </details>
 
@@ -5153,6 +5176,9 @@ Reference Github: [Physical Verification using SKY130](https://github.com/Emad-H
  
 </br>  
 
+<img width="664" alt="image" src="https://user-images.githubusercontent.com/118953915/220729638-de9f3527-d86f-459f-b224-a2d24b5b07ea.png">
+<img width="626" alt="image" src="https://user-images.githubusercontent.com/118953915/220729875-7b5a283d-333f-45ff-9cf0-acc1a4779d26.png">
+<img width="469" alt="image" src="https://user-images.githubusercontent.com/118953915/220729951-78179531-cf40-4b1f-ace0-0748e62ecf3b.png">
 
 
 #
