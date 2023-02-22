@@ -4938,8 +4938,7 @@ Setup the design:
  </br> 
   
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/220164738-14ed82cc-dcff-402f-9ce5-21a7acfabec1.png">  
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/220164153-b927dd63-a5fb-4864-a852-ee021b82930e.png">
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/118953915/220164302-a9b511e0-bf27-44c4-8c91-ff16ae68a16e.png">
+![image](https://user-images.githubusercontent.com/118953915/220674877-78fd3e57-dc84-4a26-9780-1faef7c6da17.png)
  
 </br> 
    
@@ -4979,7 +4978,12 @@ Enable signal integrity analysis:
 
 </br>  
 
+
 (C) Report crosstalk setting  
+- crosstalk_delta - Shows annotated delta delay values in a separate column  
+From the column "Delta", stated 0.00    
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/118953915/220676945-ec7f4ee9-53f0-4add-b41f-6a99c0c71576.png">
+
 -> Need to debug why nothing report out    
 <img width="710" alt="image" src="https://user-images.githubusercontent.com/118953915/220156068-b7622bdd-6202-4ca3-903c-65d260fca285.png">
 
@@ -4991,6 +4995,20 @@ To be continue
 **⭐Introduction to DRC/LVS**
 
 <details><summary> ⚡ Lecture Session: Introduction to DRC/LVS - Live session </summary>
+
+</br>  
+
+Physical Verification
+Check | Details | 
+---| --- |  
+DRC (Design Rule Check) | Determine if the layout satisfies a set of rules required for manufacturing (layout met specification given by foundary: spacing rule,…)|   
+LVS (Layout vs Schematic) | It is another major check in  thephysical verification stage. Here you are verifying that the layout you have created is functionally the same as the schematic/netlist of the design (check schematic netlist and layout netlist, make sure functionality is same for both, check shorts/opens/parameter mismatch/…) |  
+ARC (Antenna Rule Checking)| Process antenna effect or “plasma induced gate oxide damage” is a manufacturing effect |  
+ERC (Electrical rule check) | Involves checking a design for all electrical connections that are considered dangerous (floating/VDD or VSS issue/…) | 
+
+</details>
+
+<details><summary> ⚡ Lecture Session:  </summary>
 
 </br>
 
