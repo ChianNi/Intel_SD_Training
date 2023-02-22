@@ -5005,9 +5005,69 @@ ERC (Electrical rule check) | Involves checking a design for all electrical conn
 
 </details>
 
-<details><summary> ⚡ Lecture Session:  </summary>
+<details><summary> ⚡ Lecture Session:  Final DRC/LVS Checks And Post Layout Simulations  </summary>
 
 </br>
+
+
+ 
+All figure from training material video   
+Here is the reference link:  
+<img width="354" alt="image" src="https://user-images.githubusercontent.com/118953915/220710660-8ae7ac6b-c865-40c9-a34f-be72ebdb1162.png">  
+
+- Introduction to SkyWater SKY130 
+ 
+<img width="399" alt="image" src="https://user-images.githubusercontent.com/118953915/220710307-6bd3e49c-d288-4cdc-adfc-c0fab68207bc.png">  
+
+- Opensource EDA Tools   
+
+
+<img width="375" alt="image" src="https://user-images.githubusercontent.com/118953915/220710933-87411452-0b61-404f-acc7-80f6cfef7ae3.png">    
+
+</br>  
+
+<img width="556" alt="image" src="https://user-images.githubusercontent.com/118953915/220711001-e7b4549d-c33b-49ea-aa9e-b14b2b56fb6b.png">    
+
+</br>  
+  
+<img width="338" alt="image" src="https://user-images.githubusercontent.com/118953915/220711233-4f0795dc-0411-41f6-b9c6-a4572ec735ec.png">    
+
+</br>  
+
+<img width="392" alt="image" src="https://user-images.githubusercontent.com/118953915/220711295-c72266d5-68db-4732-ab27-0d9a6a959d0d.png">      
+  
+</br>  
+
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/118953915/220711473-daf431cb-aaeb-42c9-9956-0f183ea90772.png">    
+
+</br>  
+
+<img width="404" alt="image" src="https://user-images.githubusercontent.com/118953915/220711536-e87a3a1f-dadd-4569-851c-a33716c0205d.png">  
+
+</br>  
+
+Understanding Skywater PDK - Layers  
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/118953915/220711579-a6fb472a-020c-4735-80bb-ec4bc7f1decf.png">  
+<img width="492" alt="image" src="https://user-images.githubusercontent.com/118953915/220711622-8d178b31-696f-46c5-b50d-aa46ac74b54a.png">  
+<img width="491" alt="image" src="https://user-images.githubusercontent.com/118953915/220711658-2f89b623-910b-4201-91ae-55773f4918c8.png">  
+
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/118953915/220713702-f8c46b3a-cba4-4aeb-ac05-9c6ccac7b202.png">
+
+</br>
+
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/220713732-6af7edd8-c848-4a97-98be-b0541dab7530.png">
+
+</br>
+
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/118953915/220713765-e9d66125-bb11-4aa7-96ef-9575a74042f7.png">
+
+
+</details>
+
+<details><summary> Lab Session-> DRC/LVS labs </summary>
+
+</br>
+
 
 
 </details>
