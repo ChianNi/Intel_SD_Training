@@ -4830,7 +4830,14 @@ $\textcolor{blue}{\text{Crosstalk-Glitch}}$
 
 Here is the example of glitch (Figure take from training material):   
 ![image](https://user-images.githubusercontent.com/118953915/219958353-25bd44a7-6f8c-455c-9ae8-103bc1182508.png)
- 
+
+</br>  
+
+If one net is switching and another neighbouring net is at constant logic and if they have mutual capacitance between them, the other net may get affected and that net may have a sudden raising or falling bump or spike. such a spike on the victim net is called a crosstalk glitch or crosstalk noise  
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/118953915/221133741-c446ec57-7581-40e9-8555-6b19468f2d30.png">  
+
+</br>
+
 > Can refer this link for more information on glitch https://www.quora.com/What-is-a-glitch-in-a-digital-circuit 
 
 ![image](https://user-images.githubusercontent.com/118953915/219958419-4cac01e6-9505-42ab-9cab-6526efd93ac8.png)
@@ -5179,7 +5186,7 @@ After done create schematic need to functionally validate the schematic by creat
 <img width="840" alt="image" src="https://user-images.githubusercontent.com/118953915/220729638-de9f3527-d86f-459f-b224-a2d24b5b07ea.png">
 <img width="826" alt="image" src="https://user-images.githubusercontent.com/118953915/220729875-7b5a283d-333f-45ff-9cf0-acc1a4779d26.png">
 <img width="669" alt="image" src="https://user-images.githubusercontent.com/118953915/220729951-78179531-cf40-4b1f-ace0-0748e62ecf3b.png">
-
+<img width="457" alt="image" src="https://user-images.githubusercontent.com/118953915/221129144-b571d393-c050-4560-b425-97446f9def9b.png">
 <img width="699" alt="image" src="https://user-images.githubusercontent.com/118953915/220734488-e733b966-7613-477b-b878-234646856e24.png">
 
 </details>
@@ -5211,16 +5218,87 @@ After done create schematic need to functionally validate the schematic by creat
 <img width="672" alt="image" src="https://user-images.githubusercontent.com/118953915/220740406-f040c99f-e3d8-43d9-baa2-2a3bcd3b2bd1.png">
 <img width="556" alt="image" src="https://user-images.githubusercontent.com/118953915/220740440-d6da4578-9646-4f8b-93f8-f061ca6a9890.png">
 
-
 - DRC Rules In Magic  
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/118953915/220740023-6ad3780d-a52a-45f4-9454-2f86d0f8130a.png">
 
 - Extraction Rules And Errors In Magic  
 <img width="634" alt="image" src="https://user-images.githubusercontent.com/118953915/220740488-bd2eaba0-2bf5-4d12-babb-99a1925a31c8.png">
 <img width="666" alt="image" src="https://user-images.githubusercontent.com/118953915/220740544-082ff428-b497-4f9a-b7b2-6c451297060c.png">
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/118953915/220740842-9789c533-00bf-4526-8d42-90d8cfd5c0c0.png">
 
 - LVS Setup For Netgen  
-<img width="683" alt="image" src="https://user-images.githubusercontent.com/118953915/220740842-9789c533-00bf-4526-8d42-90d8cfd5c0c0.png">
+<img width="661" alt="image" src="https://user-images.githubusercontent.com/118953915/221129676-1b768495-538c-45b5-9959-63321949e175.png">
+<img width="666" alt="image" src="https://user-images.githubusercontent.com/118953915/221129761-c7ca6f99-8d5e-4329-ab12-4dad3562f70d.png">
+
+- Verification By XOR  
+<img width="608" alt="image" src="https://user-images.githubusercontent.com/118953915/221130710-61a19cab-0cdf-44ff-a4aa-0d9a72149c26.png">
+ 
+</details>  
+
+<details><summary> Lab Session-> GDS Read </summary>  
+ 
+</br>   
+
+<img width="783" alt="image" src="https://user-images.githubusercontent.com/118953915/221131756-f970d4da-69f2-4bbf-987d-7164441f87e6.png">
+<img width="829" alt="image" src="https://user-images.githubusercontent.com/118953915/221131825-abf61765-4442-4c5f-beec-bcaffe930c40.png">
+
+</details>  
+
+<details><summary> Lab Session-> Ports </summary>  
+ 
+</br>   
+
+<img width="760" alt="image" src="https://user-images.githubusercontent.com/118953915/221132069-54b5b2e5-bc30-40bc-8c59-42485249513a.png">
+<img width="549" alt="image" src="https://user-images.githubusercontent.com/118953915/221132150-599944cf-4c08-4f17-9481-06aed466a465.png">
+
+</details>  
+
+<details><summary> Lab Session-> Abstract Views </summary>  
+ 
+</br>   
+
+<img width="635" alt="image" src="https://user-images.githubusercontent.com/118953915/221132192-a6d911ae-ad0f-451b-abf4-8ceee3f067e7.png">
+<img width="748" alt="image" src="https://user-images.githubusercontent.com/118953915/221132279-be316d99-4d07-43c9-9728-01cbdfc63ea2.png">
+<img width="775" alt="image" src="https://user-images.githubusercontent.com/118953915/221132357-2bd61115-99ff-4acb-8322-5caf48a5e47b.png">
+<img width="708" alt="image" src="https://user-images.githubusercontent.com/118953915/221132397-d19da53c-f26d-4bc5-9d18-dc5b6e818e2f.png">
+
+</details>  
+
+<details><summary> Lab Session-> Basic Extraction </summary>  
+ 
+</br>   
+
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/118953915/221132446-90387b5b-8de4-42e5-a872-4a67614da928.png">
+<img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/221132494-4d1717cd-0a53-48a3-b43e-39acbe2503bd.png">
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/118953915/221132579-9c928d1d-aed2-49eb-a9fa-268554374e78.png">
+
+</details>  
+
+<details><summary> Lab Session-> Setup for DRC </summary>  
+ 
+</br>  
+
+<img width="790" alt="image" src="https://user-images.githubusercontent.com/118953915/221132688-0c6d1516-4a46-48eb-ba99-8e33ab4b0237.png">
+<img width="626" alt="image" src="https://user-images.githubusercontent.com/118953915/221132760-c3bc3df7-f1cf-4064-a293-ad0c28117ceb.png">
+<img width="690" alt="image" src="https://user-images.githubusercontent.com/118953915/221132853-c83a32d3-744f-4979-acf2-6027673355f1.png">
+
+</details>  
+
+<details><summary> Lab Session-> Setup for LVS </summary>  
+ 
+</br>   
+
+<img width="595" alt="image" src="https://user-images.githubusercontent.com/118953915/221132942-0fc8ad93-aafd-4039-ade8-ddd842056139.png">
+
+</details>  
+
+<details><summary> Lab Session-> Setup for XOR </summary>  
+ 
+</br>   
+
+<img width="868" alt="image" src="https://user-images.githubusercontent.com/118953915/221132993-ee9ae5c7-afca-4c87-be3b-b432da12cf2f.png">
+
+</details>  
 
 
 #
