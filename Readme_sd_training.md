@@ -5371,6 +5371,7 @@ After done create schematic need to functionally validate the schematic by creat
 <img width="670" alt="image" src="https://user-images.githubusercontent.com/118953915/221350001-c1c68c64-0c65-4b00-a543-ed551ce7cd4a.png">
 <img width="795" alt="image" src="https://user-images.githubusercontent.com/118953915/221350006-21e61e79-2d9a-4410-91f3-eabef866c3c4.png">
 <img width="851" alt="image" src="https://user-images.githubusercontent.com/118953915/221350012-a844d235-e502-4014-8420-2bf4437d0080.png">
+<img width="870" alt="image" src="https://user-images.githubusercontent.com/118953915/221352435-aa085f1e-81ce-4306-985f-784cec611a53.png">
 
 </details>
 
@@ -5378,11 +5379,20 @@ After done create schematic need to functionally validate the schematic by creat
  
 </br>  
 
+<img width="823" alt="image" src="https://user-images.githubusercontent.com/118953915/221352453-a93790ab-e9ba-4fd6-8533-50e09cb3b30a.png">
+<img width="857" alt="image" src="https://user-images.githubusercontent.com/118953915/221352464-a0efe21a-d699-408e-b21f-5069ff145d6e.png">
+<img width="827" alt="image" src="https://user-images.githubusercontent.com/118953915/221352495-fbe303de-ad1b-41ef-8fed-158d3620b479.png">
+
 </details>
 
 <details><summary> Lab Session-> Angle Error And Overlap Rule </summary>  
  
 </br>  
+
+<img width="888" alt="image" src="https://user-images.githubusercontent.com/118953915/221352507-dd7c9f63-7391-434d-8b34-967e1a213664.png">
+<img width="888" alt="image" src="https://user-images.githubusercontent.com/118953915/221352517-4327ed68-dd19-4d8e-b9d6-f29ebd51c2ce.png">
+<img width="715" alt="image" src="https://user-images.githubusercontent.com/118953915/221352526-57dc8cfb-2bd1-4803-932f-3006827acbce.png">
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/118953915/221352530-3eb52767-3d76-411d-8a32-873312e9617d.png">
 
 </details>
 
