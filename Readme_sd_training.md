@@ -5358,9 +5358,9 @@ After done create schematic need to functionally validate the schematic by creat
  
 </br>  
 
-<img width="437" alt="image" src="https://user-images.githubusercontent.com/118953915/221349984-2a686db9-e8e2-417e-a7de-2a8677861ca6.png">
-<img width="443" alt="image" src="https://user-images.githubusercontent.com/118953915/221349990-410e41ef-251f-4859-81be-d1ff7edfed49.png">
-<img width="449" alt="image" src="https://user-images.githubusercontent.com/118953915/221349995-9e874fc5-2d79-45cf-bcc5-0739a3ee7634.png">
+<img width="637" alt="image" src="https://user-images.githubusercontent.com/118953915/221349984-2a686db9-e8e2-417e-a7de-2a8677861ca6.png">
+<img width="643" alt="image" src="https://user-images.githubusercontent.com/118953915/221349990-410e41ef-251f-4859-81be-d1ff7edfed49.png">
+<img width="649" alt="image" src="https://user-images.githubusercontent.com/118953915/221349995-9e874fc5-2d79-45cf-bcc5-0739a3ee7634.png">
 
 </details>
 
@@ -5368,9 +5368,9 @@ After done create schematic need to functionally validate the schematic by creat
  
 </br>  
 
-<img width="470" alt="image" src="https://user-images.githubusercontent.com/118953915/221350001-c1c68c64-0c65-4b00-a543-ed551ce7cd4a.png">
-<img width="595" alt="image" src="https://user-images.githubusercontent.com/118953915/221350006-21e61e79-2d9a-4410-91f3-eabef866c3c4.png">
-<img width="651" alt="image" src="https://user-images.githubusercontent.com/118953915/221350012-a844d235-e502-4014-8420-2bf4437d0080.png">
+<img width="670" alt="image" src="https://user-images.githubusercontent.com/118953915/221350001-c1c68c64-0c65-4b00-a543-ed551ce7cd4a.png">
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/118953915/221350006-21e61e79-2d9a-4410-91f3-eabef866c3c4.png">
+<img width="851" alt="image" src="https://user-images.githubusercontent.com/118953915/221350012-a844d235-e502-4014-8420-2bf4437d0080.png">
 
 </details>
 
