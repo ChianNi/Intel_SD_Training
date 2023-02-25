@@ -4925,9 +4925,6 @@ Crosstalk noise reason:
  
 </br> 
 
-> Can refer for more detials: [Synopsys user guide on pt_shell(https://picture.iczhiku.com/resource/eetop/WYkreqGDkEtiYbVX.pdf)  
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/118953915/219960397-bbd5651d-895f-453f-8579-b58566284bde.png">
-
 PT Required file:  
 <img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/220142245-af3ce42f-fc75-4710-825f-6cb75cdcaa37.png">
 >https://www.eit.lth.se/fileadmin/eit/courses/etin35/2018/PrimeTime_Slides.pdf  
