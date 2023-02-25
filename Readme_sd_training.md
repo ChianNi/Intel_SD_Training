@@ -5446,8 +5446,43 @@ Contact Cut Rules | A Via is the contact cuts made between metal layers to conne
 # Day_29 
 **⭐DRC/LVS labs**
 
-<details><summary> Lab Session-> DRC/LVS labs </summary>
+<details><summary> Lecture Session-> DRC/LVS labs - Live session </summary>
+
+</br>  
+
+Here is the reference github: [Physical-Verification-using-synopsys](https://github.com/Devipriya1921/Physical-Verification-using-synopsys-40nm#verification-tools)
+
+</br>  
+
+Recap on some KeyTerms (taken from reference github):  
+
+Term | Details |
+---|---|
+Custom | Is a method of creating integrated circuits that specifies the architecture (Like, Analog) of each individual transistors as well as inter connections (via, contacts)|
+Custom Jobs | Custom Compiler Design Checking and Physical Verification |
+Design Specifications| Customer requirements  PDK file, Input elements, Technology file |
+Schematic Capture| Circuit creation |
+Symbol Creation| Creating the schematic into symbol |
+Simulation| Pre-Layout Simulation  PrimeWave |
+Layout| SDL, LE(Layout Editor) |
+Parasitic extraction| Extracting the binary coefficient values of resistor and capacitor |
+
+</br>  
+
+Details on Verification Tools (taken from reference github):  
+
+Tool | Details |
+--- | ---|  
+Custom Compiler| The Synopsys Custom Compiler design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. </br> Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. </br> The Custom Compiler design environment includes features for mixed-signal design entry, design debug, simulation management, analysis, and reporting. </br> For layout, Custom Compiler provides fast and user-friendly polygon editing features and boosts productivity with its pioneering visually-assisted automation flow. Visually assisted automation is an innovative approach that delivers 2-10X better layout productivity—especially for difficult FinFET-based designs. </br> Custom Compiler includes built-in verification features to catch physical and electrical errors during layout. These include design rule checking, electromigration checking, and resistance and capacitance extraction. </br> The Custom Compiler design environment makes it easy to communicate design intent and achieve analog design closure, with support for templates and early parasitic simulation. </br> For more information you may check at https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html </br> Command: custom_compiler|  
+IC Validator | IC Validator physical verification is a comprehensive and high-performance signoff solution that improves productivity for customers at all process nodes, from mature to advanced. IC Validator offers the industry’s best distributed processing scalability to over 4,000 CPU cores. </br> The tool’s performance and scalability enabled some of the industry’s largest reticle limit chips with billions of transistors, same-day design rule checking (DRC), layout versus schematic (LVS), and fill turnaround time. </br> IC Validator is seamlessly integrated with the Synopsys Fusion Compiler RTL-to-GDSII solution and IC Compiler II place and route system in the Fusion Design Platform. </br> This integrated fusion technology accelerates design closure for manufacturing by enabling independent signoff-quality analysis and automatic repair within the implementation environment. </br> For more information you may check at https://www.synopsys.com/implementation-and-signoff/physical-verification.html |   
+PrimeWave | PrimeWave Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. </br> It delivers a seamless simulation experience around all the engines of Synopsys PrimeSim solution, with comprehensive analysis, improved productivity, and ease of use. </br> PrimeWave Design Environment also offers powerful Tcl-based scripting capability enabling easy regressions across thousands of corners. </br> For more information you may check at https://www.synopsys.com/implementation-and-signoff/ams-simulation/primewave.html |   
+
 
 </br>
 
+IC Validator 
+- Is a comprehensive and high-performance signoff solution that improves productivity for customers at all process nodes, from mature to advanced. It is a physical verification tool architected for massive and efficient distributed processing.
+- ICV can run Design Rule Checks (DRC) which ensure the design meets manufacturing requirements and will not result in a chip failure   
+- ICV can also run Layout Versus Schematic (LVS) which checking compares the extracted netlist from the layout to the original schematic netlist to determine if they match  
+ 
 </details>
