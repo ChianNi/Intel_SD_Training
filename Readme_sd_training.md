@@ -5400,17 +5400,27 @@ After done create schematic need to functionally validate the schematic by creat
  
 </br>  
 
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/118953915/221354352-64c6c0fe-aa79-432e-85d9-ada430bb8ab7.png">
+
 </details>
 
 <details><summary> Lab Session-> Latch-up And Antenna Rules </summary>  
  
 </br>  
 
+<img width="711" alt="image" src="https://user-images.githubusercontent.com/118953915/221354423-ae6a3d7b-0df1-4cd0-837a-7855c8659f1e.png">
+<img width="893" alt="image" src="https://user-images.githubusercontent.com/118953915/221354450-3c1f3cf9-2830-48ad-9ce0-c697262d6107.png">
+<img width="892" alt="image" src="https://user-images.githubusercontent.com/118953915/221354488-424b5904-dcff-42b9-8d38-1a64d29d402c.png">
+
 </details>
 
 <details><summary> Lab Session-> Lab For Density Rules </summary>  
  
 </br>  
+
+<img width="829" alt="image" src="https://user-images.githubusercontent.com/118953915/221354497-532797af-c920-46f1-8f54-f17f01d24512.png">
+<img width="939" alt="image" src="https://user-images.githubusercontent.com/118953915/221354502-e9f6ecf2-1158-4de7-aa82-19b40398f942.png">
+<img width="866" alt="image" src="https://user-images.githubusercontent.com/118953915/221354512-bd7fdf5d-96c4-4dd4-a632-bf7e04987392.png">
 
 </details>
 
