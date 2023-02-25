@@ -4991,8 +4991,10 @@ Enable signal integrity analysis:
 -> Need to debug why nothing report out    
 <img width="710" alt="image" src="https://user-images.githubusercontent.com/118953915/220156068-b7622bdd-6202-4ca3-903c-65d260fca285.png">
 
+
+Need to further debug why the result is showing CLEAN    
+
 </details>
-To be continue  
 
 #
 # Day_28 
@@ -5100,6 +5102,9 @@ Here is the reference link:
 
   - Magic  
 <img width="473" alt="image" src="https://user-images.githubusercontent.com/118953915/220716253-735d4a80-def8-43e7-8c74-0a1e5c38713a.png">  
+
+</br> 
+
 <img width="465" alt="image" src="https://user-images.githubusercontent.com/118953915/220716311-e5887f51-b21b-4768-991e-fc994405bf1a.png">
 
    - Netgen  
@@ -5108,12 +5113,15 @@ Here is the reference link:
    - xschem
 <img width="457" alt="image" src="https://user-images.githubusercontent.com/118953915/220716543-41a50cc3-a4a0-417b-91c6-662e035fe618.png">
 
-   - ngspice
+   - ngspice  
+   
 <img width="462" alt="image" src="https://user-images.githubusercontent.com/118953915/220716625-77eae66d-0084-456c-b18d-cb621e262a8c.png">  
 
 </br> 
 
 <img width="469" alt="image" src="https://user-images.githubusercontent.com/118953915/220716683-6eaaf02e-ffa3-487f-a28d-5c40f1b1ca46.png">  
+
+</br> 
 
 <img width="460" alt="image" src="https://user-images.githubusercontent.com/118953915/220716784-56da2868-65e9-46e1-a6c7-8d7e271e2248.png">
 
@@ -5300,6 +5308,92 @@ After done create schematic need to functionally validate the schematic by creat
 
 </details>  
 
+</details>
+
+<details><summary> ⚡ Lecture Session:  Introduction to DRC rules </summary>
+
+</br>
+
+<img width="526" alt="image" src="https://user-images.githubusercontent.com/118953915/221346723-27f4ad2a-94ef-40b7-a069-e29bdaad1524.png">
+<img width="562" alt="image" src="https://user-images.githubusercontent.com/118953915/221346767-7549ba11-7c6d-433b-9cd2-ae9856ec7853.png">
+
+> Can refer previous training notes: [Day-17](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_17)
+
+
+</details>
+
+<details><summary> Lab Session-> Width Rule And Spacing Rule </summary>  
+ 
+</br>  
+
+<img width="625" alt="image" src="https://user-images.githubusercontent.com/118953915/221346573-76453a65-afb9-4f5c-92e6-35821cd717ba.png">
+<img width="628" alt="image" src="https://user-images.githubusercontent.com/118953915/221346581-74f77db8-e47d-4b41-ad89-be33d733b2dc.png">
+<img width="563" alt="image" src="https://user-images.githubusercontent.com/118953915/221346588-e4e2191f-c1ce-4dd6-a475-00b3c3720db8.png">
+
+</details>
+
+<details><summary> Lab Session-> Via Size, Multiple Vias, Via Overlap and Autogenerate Vias </summary>  
+ 
+</br>  
+
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/118953915/221346602-4a3b938c-fc2a-4630-b480-fbd6fb96e345.png">
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/118953915/221346618-37bafad5-7970-403a-a270-93f0e2e9eded.png">
+<img width="577" alt="image" src="https://user-images.githubusercontent.com/118953915/221346633-01f5356b-7543-411c-8cec-38705396863e.png">
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/118953915/221346644-b655b9e2-0182-48aa-983e-e2271a87cb91.png">
+
+</details>
+
+<details><summary> Lab Session-> Minumum Area Rule And Minimum Hole Rule </summary>  
+ 
+</br>  
+
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/118953915/221346665-19465a83-fd20-49d2-99f2-aa4060faabac.png">
+<img width="546" alt="image" src="https://user-images.githubusercontent.com/118953915/221346670-bcb48bc9-79a0-4f7b-839b-da6699309946.png">
+<img width="622" alt="image" src="https://user-images.githubusercontent.com/118953915/221346675-d6161cd4-81b5-4932-9dbd-c3c96840da6d.png">
+
+</details>
+
+<details><summary> Lab Session-> Wells And Deep N-Well </summary>  
+ 
+</br>  
+
+</details>
+
+<details><summary> Lab Session-> Derived Layers </summary>  
+ 
+</br>  
+
+</details>
+
+<details><summary> Lab Session-> Paramterized And PDK Devices </summary>  
+ 
+</br>  
+
+</details>
+
+<details><summary> Lab Session-> Angle Error And Overlap Rule </summary>  
+ 
+</br>  
+
+</details>
+
+<details><summary> Lab Session-> Unimplemented Rules </summary>  
+ 
+</br>  
+
+</details>
+
+<details><summary> Lab Session-> Latch-up And Antenna Rules </summary>  
+ 
+</br>  
+
+</details>
+
+<details><summary> Lab Session-> Lab For Density Rules </summary>  
+ 
+</br>  
+
+</details>
 
 #
 # Day_29 
