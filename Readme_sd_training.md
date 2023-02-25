@@ -1,3 +1,4 @@
+
 ## Table of contents  
 
 + **[ Day_0 : System/Tool Setup Check & GitHub ID creation ](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_0)**
@@ -5317,9 +5318,26 @@ After done create schematic need to functionally validate the schematic by creat
 <img width="526" alt="image" src="https://user-images.githubusercontent.com/118953915/221346723-27f4ad2a-94ef-40b7-a069-e29bdaad1524.png">
 <img width="562" alt="image" src="https://user-images.githubusercontent.com/118953915/221346767-7549ba11-7c6d-433b-9cd2-ae9856ec7853.png">
 
+</br> 
+
 > Can refer previous training notes: [Day-17](https://github.com/ChianNi/Intel_SD_Training/blob/main/Readme_sd_training.md#day_17)
 
-> Theory can refer this github as reference: [Design rule checking](https://github.com/Emad-H/Physical-Verification-using-SKY130#day-3---design-rule-checking)
+</br>
+
+Details on Back-end Metal Layer Rules ( Reference from [Github: Physical-Verification-using-SKY130](https://github.com/Emad-H/Physical-Verification-using-SKY130#day-3---design-rule-checking)) :  
+
+Rule | Details | 
+--- | --- |
+Width Rule | Gives the minimum width of a layer. </br> Not adhering to this can cause spot defects to be larger than the width of the layer itself, causing open circuits in wires. </br> Minimum width for implants are given based on angle of implant and crystalline structure of the silicon. Implants in layer with very small widths may not act like they are supposed to. </br> Feature size of a process gives the minimum width of a transistor (or its polysilicon layer) |
+Spacing Rule | Gives the minimum spacing between two layers. </br> Not adhering to spacing rales may cause material defects creating shorts between layers. </br> Has several complications based on optical effects of the mask. |
+Wide-Spacing Rule |  If a wire or piece of layout is wider than a given distance, then other wires of any width must be kept away from it by an additional amount of space. |
+Notch Rule | Similar to the spacing rule (generally the same in most processes). </br> Gives the minimum space between two forks of the same piece of layer. |
+Minimum and Maximum Area Rules | Gives the minimum and maximum areas for a metal layer. </br> Prevents delamination issues in the metal surface. </br> Implants only have minimum area rules, due to concerns same as that of the width rule. |
+Minimum Hole Area Rule | Gives the minimum are a hole in a metal layer must be. </br> Small holes in a metal layer make it more likely that oxide grown over the hole may not completely fill it. |
+Contact Cut Rules | A Via is the contact cuts made between metal layers to connect them using other metals. </br> As the holes connect layers from above and below, their positioning is critical. </br> Contact cut rules ensure masks can be positioned correctly. </br> Contact cuts must be surrounded by a minimum amount of metal around them. </br> Magic displays arrays of contact cuts for the same layer to layer connect as a single large contact cut (via) for design simplicity. |
+
+
+
 
 </details>
 
