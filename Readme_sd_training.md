@@ -4923,12 +4923,6 @@ Crosstalk noise reason:
 
 <details><summary> Lab Session -> Glitch and delta delay </summary>
  
-</br> 
-
-PT Required file:  
-<img width="623" alt="image" src="https://user-images.githubusercontent.com/118953915/220142245-af3ce42f-fc75-4710-825f-6cb75cdcaa37.png">
->https://www.eit.lth.se/fileadmin/eit/courses/etin35/2018/PrimeTime_Slides.pdf  
-
  </br> 
 
 Setup the design:        
