@@ -4979,6 +4979,9 @@ Enable signal integrity analysis:
 - report_bottleneck (Determine causes of multiple min/max delay violation)  
    - A bottleneck is a common point in the design that contributes to multiple violations
 
+<img width="690" alt="image" src="https://user-images.githubusercontent.com/118953915/220155486-f7b825b5-ca18-4039-8617-66ea18bc5e6e.png">
+<img width="397" alt="image" src="https://user-images.githubusercontent.com/118953915/220156561-f56be461-9abe-48e8-8813-396c0a48644c.png">
+
 </br>  
 
 
